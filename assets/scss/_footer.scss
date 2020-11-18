@@ -1,0 +1,9 @@
+@import "_variables";
+
+.footer {
+}
+
+@include mq(mobile) {
+  .footer {
+  }
+}

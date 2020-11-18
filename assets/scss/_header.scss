@@ -1,0 +1,9 @@
+@import "_variables";
+
+.header {
+}
+
+@include mq(mobile) {
+  .header {
+  }
+}
