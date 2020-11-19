@@ -53,14 +53,14 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-.screen-reader-text {
-  display: none;
-}
-
-.site-main {
-  width: 100%;
-  min-width: $--content-width-md;
-  margin: 0 auto;
+.sr-only:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
 }
 
 .-sp {

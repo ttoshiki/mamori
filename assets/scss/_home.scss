@@ -1,4 +1,140 @@
-@import "_variables";
+@use "./variables";
 
 .home {
+  &__wrapper {
+    padding-bottom: 80px;
+  }
+
+  &__logo {
+    width: 80%;
+    max-width: 240px;
+    margin: 24px auto 0;
+  }
+
+  &__intro {
+    margin: 56px auto 0;
+    text-align: center;
+  }
+
+  &__introText {
+    font-size: 44px;
+    font-weight: 600;
+    font-feature-settings: "palt";
+    line-height: 1;
+  }
+
+  &__introStrong {
+    margin: 0 4px;
+    font-size: 72px;
+    font-weight: 600;
+  }
+
+  &__introHeading {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto 0;
+  }
+
+  &__introParagraph {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__introImage {
+    width: 60%;
+    max-width: 592px;
+    margin: 40px auto 0;
+  }
+
+  &__concept {
+    margin-top: 56px;
+    background-color: $--color-primary;
+  }
+
+  &__conceptHeading {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #836c39;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  &__conceptParagraph {
+    margin: 12px 0;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__concept {
+    padding: 24px 0;
+  }
+
+  &__aboutBlock {
+    margin: 56px auto 0;
+  }
+
+  &__aboutHeading {
+    margin: 0 0 16px;
+    font-size: 32px;
+    color: $--color-secondary;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+
+  &__aboutHeadingSpan {
+    display: inline-block;
+    width: 206px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid $--color-secondary;
+  }
+
+  &__aboutSpan {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: $--color-primary;
+    text-align: center;
+
+    &.-facility {
+      margin: 16px 0 0;
+    }
+  }
+
+  &__aboutSmall {
+    display: block;
+    font-size: 13px;
+    color: $--color-primary;
+    text-align: center;
+
+    &.-emphasis {
+      font-weight: 600;
+    }
+  }
+
+  &__mapWrapper {
+    width: 56%;
+    margin: 64px auto 0;
+  }
+
+  &__map {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__aboutSubSection {
+    margin-top: 24px;
+  }
 }

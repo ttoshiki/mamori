@@ -62,14 +62,14 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
-.screen-reader-text {
-  display: none;
-}
-
-.site-main {
-  width: 100%;
-  min-width: 1100px;
-  margin: 0 auto;
+.sr-only:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
 }
 
 .-sp {
@@ -101,9 +101,147 @@ textarea {
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  color: #04287e;
+  color: #1f2a66;
 }
 
 .error404 .custom-logo-link img {
   filter: none;
+}
+
+@use "./variables";
+.home__wrapper {
+  padding-bottom: 80px;
+}
+
+.home__logo {
+  width: 80%;
+  max-width: 240px;
+  margin: 24px auto 0;
+}
+
+.home__intro {
+  margin: 56px auto 0;
+  text-align: center;
+}
+
+.home__introText {
+  font-size: 44px;
+  font-weight: 600;
+  font-feature-settings: "palt";
+  line-height: 1;
+}
+
+.home__introStrong {
+  margin: 0 4px;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.home__introHeading {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+.home__introParagraph {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.home__introImage {
+  width: 60%;
+  max-width: 592px;
+  margin: 40px auto 0;
+}
+
+.home__concept {
+  margin-top: 56px;
+  background-color: #1f2a66;
+}
+
+.home__conceptHeading {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: #836c39;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.home__conceptParagraph {
+  margin: 12px 0;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home__concept {
+  padding: 24px 0;
+}
+
+.home__aboutBlock {
+  margin: 56px auto 0;
+}
+
+.home__aboutHeading {
+  margin: 0 0 16px;
+  font-size: 32px;
+  color: #836c39;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.home__aboutHeadingSpan {
+  display: inline-block;
+  width: 206px;
+  padding-bottom: 6px;
+  border-bottom: 4px solid #836c39;
+}
+
+.home__aboutSpan {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2a66;
+  text-align: center;
+}
+
+.home__aboutSpan.-facility {
+  margin: 16px 0 0;
+}
+
+.home__aboutSmall {
+  display: block;
+  font-size: 13px;
+  color: #1f2a66;
+  text-align: center;
+}
+
+.home__aboutSmall.-emphasis {
+  font-weight: 600;
+}
+
+.home__mapWrapper {
+  width: 56%;
+  margin: 64px auto 0;
+}
+
+.home__map {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.home__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home__aboutSubSection {
+  margin-top: 24px;
 }
