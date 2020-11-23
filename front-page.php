@@ -82,9 +82,9 @@ get_header();
 					</small>
 					<div class="home__aboutSubSection">
 						<small class="home__aboutSmall -emphasis">
-							▶京都市営地下鉄　東西線・烏丸線<br>
-							▶烏丸御池駅　徒歩6分<br>
-							▶（京都駅から南北線で3駅）
+							京都市営地下鉄　東西線・烏丸線<br>
+							烏丸御池駅　徒歩6分<br>
+							（烏丸線で３駅）
 						</small>
 					</div>
 				</div>
@@ -98,6 +98,10 @@ get_header();
 					設立：平成29年9月1日<br>
 					代表者名：江藤智
 				</small>
+			</section>
+			<section class="home__contact">
+				<p class="home__contactParagraph">Mamoriについてのお問い合わせはこちら</p>
+				<address class="home__contactAddress"><a href="mailto:inc.namakemono@gmail.com">inc.namakemono@gmail.com</a></address>
 			</section>
 		</div>
 	</main><!-- #main -->

@@ -110,7 +110,7 @@ textarea {
 
 @use "./variables";
 .home__wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 32px;
 }
 
 .home__logo {
@@ -243,9 +243,25 @@ textarea {
   margin-top: 24px;
 }
 
+.home__contact {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.home__contactParagraph {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1f2a66;
+}
+
+.home__contactAddress {
+  margin: 0;
+  font-style: normal;
+}
+
 @media screen and (max-width: 480px) {
   .home__wrapper {
-    padding-bottom: 0;
+    padding-bottom: 24px;
   }
   .home__logo {
     width: 43%;
@@ -282,6 +298,9 @@ textarea {
   .home__aboutBlock.-facility {
     margin: 32px auto 0;
   }
+  .home__aboutBlock:last-of-type {
+    margin-bottom: 0;
+  }
   .home__aboutHeading {
     font-size: 24px;
   }
@@ -297,5 +316,11 @@ textarea {
   }
   .home__map {
     padding-bottom: 66%;
+  }
+  .home__contact {
+    margin-top: 60px;
+  }
+  .home__contactParagraph {
+    margin-bottom: 4px;
   }
 }

@@ -2,7 +2,7 @@
 
 .home {
   &__wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 32px;
   }
 
   &__logo {
@@ -134,12 +134,28 @@
   &__aboutSubSection {
     margin-top: 24px;
   }
+
+  &__contact {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  &__contactParagraph {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: $--color-primary;
+  }
+
+  &__contactAddress {
+    margin: 0;
+    font-style: normal;
+  }
 }
 
 @include mq(mobile) {
   .home {
     &__wrapper {
-      padding-bottom: 0;
+      padding-bottom: 24px;
     }
     &__logo {
       width: 43%;
@@ -185,6 +201,10 @@
       &.-facility {
         margin: 32px auto 0;
       }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     &__aboutHeading {
@@ -206,6 +226,14 @@
 
     &__map {
       padding-bottom: 66%;
+    }
+
+    &__contact {
+      margin-top: 60px;
+    }
+
+    &__contactParagraph {
+      margin-bottom: 4px;
     }
   }
 }
