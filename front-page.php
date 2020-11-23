@@ -55,7 +55,7 @@ get_header();
 					<span class="home__aboutSpan">24時間、年中無休</span>
 					<small class="home__aboutSmall">（年末年始、メンテナンス時は休業）</small>
 				</div>
-				<div class="home__aboutBlock">
+				<div class="home__aboutBlock -facility">
 					<h2 class="home__aboutHeading">
 						<span class="home__aboutHeadingSpan">施設内容一覧</span>
 						</h2>
@@ -77,8 +77,8 @@ get_header();
 						<span class="home__aboutHeadingSpan">アクセス</span>
 					</h2>
 					<small class="home__aboutSmall -emphasis">
-						604-8241　京都府京都市中京区三条通西洞院東入 フィルパーク西洞院4階<br>
-						（京都府京都市中京区釡座町4-1　フィルパーク西洞院4階）
+						604-8241　京都府京都市中京区<br class="-sp">三条通西洞院東入 フィルパーク西洞院4階<br>
+						（京都府京都市中京区釡座町4-1<br class="-sp">　フィルパーク西洞院4階）
 					</small>
 					<div class="home__aboutSubSection">
 						<small class="home__aboutSmall -emphasis">
@@ -94,7 +94,7 @@ get_header();
 				</h2>
 				<small class="home__aboutSmall -emphasis">
 					社名：株式会社ナマケモノ<br>
-					住所：東京都中央区湊2-14-1 リベルタ銀座イースト2階<br>
+					住所：東京都中央区湊2-14-1 <br class="-sp">リベルタ銀座イースト2階<br>
 					設立：平成29年9月1日<br>
 					代表者名：江藤智
 				</small>

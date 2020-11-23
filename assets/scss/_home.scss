@@ -8,7 +8,7 @@
   &__logo {
     width: 80%;
     max-width: 240px;
-    margin: 24px auto 0;
+    margin: 40px auto 0;
   }
 
   &__intro {
@@ -47,6 +47,7 @@
   }
 
   &__concept {
+    padding: 24px 0;
     margin-top: 56px;
     background-color: $--color-primary;
   }
@@ -66,10 +67,6 @@
     line-height: 1.6;
     color: #ffffff;
     text-align: center;
-  }
-
-  &__concept {
-    padding: 24px 0;
   }
 
   &__aboutBlock {
@@ -136,5 +133,79 @@
 
   &__aboutSubSection {
     margin-top: 24px;
+  }
+}
+
+@include mq(mobile) {
+  .home {
+    &__wrapper {
+      padding-bottom: 0;
+    }
+    &__logo {
+      width: 43%;
+    }
+
+    &__intro {
+      margin: 16px auto 0;
+    }
+
+    &__introText {
+      font-size: 22px;
+    }
+
+    &__introStrong {
+      font-size: 34px;
+    }
+
+    &__introHeading {
+      margin: 24px auto 0;
+    }
+
+    &__introImage {
+      width: 100%;
+      margin: 8px auto 0;
+      vertical-align: bottom;
+    }
+
+    &__concept {
+      margin-top: 0;
+    }
+
+    &__conceptHeading {
+      font-size: 23px;
+    }
+
+    &__conceptParagraph {
+      font-size: 13px;
+    }
+
+    &__aboutBlock {
+      margin: 32px auto 64px;
+
+      &.-facility {
+        margin: 32px auto 0;
+      }
+    }
+
+    &__aboutHeading {
+      font-size: 24px;
+    }
+
+    &__aboutSpan {
+      font-size: 20px;
+
+      &.-facility {
+        margin: 24px 0 0;
+      }
+    }
+
+    &__mapWrapper {
+      width: 100%;
+      margin: 32px auto 0;
+    }
+
+    &__map {
+      padding-bottom: 66%;
+    }
   }
 }
