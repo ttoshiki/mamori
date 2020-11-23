@@ -24,6 +24,7 @@
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/ogp.jpg" />
   <meta property="og:site_name" content="Mamori" />
 	<meta property="og:locale" content="ja_JP" />
+	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon_32.ico">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/64x64.png">
   <title>Mamori</title>
