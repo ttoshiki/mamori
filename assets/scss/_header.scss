@@ -1,6 +1,9 @@
 @import "_variables";
 
 .header {
+  &__logo {
+    width: 80px;
+  }
 }
 
 @include mq(mobile) {

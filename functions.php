@@ -190,3 +190,17 @@ function official_pagination()
         'total' => $wp_query->max_num_pages
     ));
 }
+
+/**
+ * Google Fonts
+ */
+
+function twpp_enqueue_styles()
+{
+    wp_enqueue_style(
+        'google-webfont-style',
+        '//fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');

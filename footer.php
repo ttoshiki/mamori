@@ -14,11 +14,10 @@
 </div><!-- #page -->
 
 <footer class="footer">
-  <div class="footer__toTop"><a href=""><?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/images/icons/to_top.svg'); ?></a></div>
-  <div class="footer__upper">
-    <div class="footer__logo"><a href=""><?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/images/icons/logo_light.svg'); ?></a></div>
-    <nav>
-      <div class="footer__upperLinkBlock">
+  <div class="footer__toTop"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/to_top.svg'); ?></a></div>
+    <div class="footer__upper">
+      <div class="footer__logo"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/logo-light.svg'); ?></a></div>
+      <nav class="footer__upperLinkNav">
         <ul class="footer__upperLinkList">
           <li class="footer__upperLinkItem">
             <a href="<?php echo home_url(); ?>">Mamoriとは</a>
@@ -47,9 +46,8 @@
             <a href="<?php echo home_url(); ?>">見学予約</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
   <div class="footer__lower">
     <nav>
       <ul class="footer__lowerLinkList">

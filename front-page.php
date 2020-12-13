@@ -17,7 +17,6 @@ get_header();
 
 	<main class="site-main">
 		<div class="home__wrapper">
-			<h1 class="home__logo"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?></h1>
 			<section class="home__intro">
 				<span class="home__introText">【烏丸御池】 徒歩<strong class="home__introStrong">6</strong>分</span>
 				<h2 class="home__introHeading">
