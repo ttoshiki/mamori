@@ -37,7 +37,7 @@
 <div id="page" class="site">
 	<header id="header" class="header">
 		<div class="header__logo"><a href="<?php echo home_url(); ?>"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?></a></div>
-		<nav class="header__hammenu -sp">
+		<nav class="header__hammenu -tab">
 			<span class="header__trigger" href="#" @click="toggleMenu" id="trigger">
 				<span></span>
 				<span></span>
@@ -71,37 +71,37 @@
 		<nav class="header__nav -pc">
 			<ul class="header__navList">
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">ABOUT</span>
 						<span class="header__navLink">Mamoriとは</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">FACILITY</span>
 						<span class="header__navLink">施設・設備</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">PRICE</span>
 						<span class="header__navLink">料金</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">Q&A</span>
 						<span class="header__navLink">よくあるご質問</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">NEWS</span>
 						<span class="header__navLink">お知らせ</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>">
+					<a href="<?php echo home_url(); ?>" class="header__navLink">
 						<span class="header__navLink -en">ACCESS</span>
 						<span class="header__navLink">アクセス</span>
 					</a>
@@ -110,11 +110,13 @@
 			<div class="header__navConversion">
 				<ul class="header__navConversionList">
 					<li class="header__navConversionItem">
-						<a href="<?php echo home_url(); ?>" class="header__navConversionLink">
+						<a href="<?php echo home_url(); ?>" class="header__navConversionLink -contact">
 							<span class="header__navConversionText -en">CONTACT</span>
 							<span class="header__navConversionText">お問い合わせ</span>
 						</a>
-						<a href="<?php echo home_url(); ?>" class="header__navConversionLink">
+					</li>
+					<li class="header__navConversionItem">
+						<a href="<?php echo home_url(); ?>" class="header__navConversionLink -mypage">
 							<span class="header__navConversionText -en">MYPAGE</span>
 							<span class="header__navConversionText">マイページ</span>
 						</a>

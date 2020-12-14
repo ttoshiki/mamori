@@ -22,7 +22,8 @@ $--content-width-xl: 1280px;
 // media-query
 $breakpoints: (
   "mobile": "screen and (max-width: 480px)",
-  "pc": "screen and (min-width: 481px)",
+  "tablet": "screen and (max-width: 960px)",
+  "pc": "screen and (min-width: 961px)",
 );
 
 @mixin mq($breakpoint: pc) {

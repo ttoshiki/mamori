@@ -49,6 +49,10 @@ textarea {
   appearance: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -63,15 +67,25 @@ textarea {
   clip-path: inset(50%);
 }
 
+.-tab {
+  display: none;
+}
+
 .-sp {
   display: none;
 }
 
-@include mq(mobile) {
+@include mq(tablet) {
   .-pc {
     display: none;
   }
 
+  .-tab {
+    display: block;
+  }
+}
+
+@include mq(mobile) {
   .-sp {
     display: block;
   }

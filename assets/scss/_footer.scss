@@ -85,5 +85,33 @@
 
 @include mq(mobile) {
   .footer {
+    padding-bottom: 45px;
+
+    &__logo {
+      width: 28.03%;
+    }
+
+    &__upper {
+      padding: 0 4.8vw;
+      margin-top: 16px;
+    }
+
+    &__upperLinkNav {
+      margin-left: 8vw;
+    }
+
+    &__upperLinkList {
+      &:not(:first-child) {
+        margin-left: 8vw;
+      }
+    }
+
+    &__upperLinkItem {
+      font-size: 11px;
+    }
+
+    &__lowerLinkItem {
+      font-size: 11px;
+    }
   }
 }

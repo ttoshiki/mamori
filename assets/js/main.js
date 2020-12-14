@@ -9,4 +9,36 @@ jQuery(function() {
     jQuery("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
+
+  // サイドメニュー途中から固定
+  const sideMenu = jQuery("#side-conversion")
+  const positionY = sideMenu.offset().top - 24;
+
+  jQuery(window).on("scroll", function () {
+    if (jQuery(window).scrollTop() > positionY) {
+      sideMenu.addClass("-fixed");
+    } else {
+      sideMenu.removeClass("-fixed");
+    }
+  });
+
+  // spメニューOPEN
+  jQuery(".header__trigger").on('click', function() {
+    if ((jQuery(this)).hasClass("-opened")) {
+      jQuery(".header__hammenuWrapper").fadeOut(300);
+      jQuery(".header__cover").fadeOut(300);
+    } else {
+      jQuery(".header__hammenuWrapper").fadeIn(300);
+      jQuery(".header__cover").fadeIn(300);
+    }
+    if (!(jQuery("#header").hasClass("-fixed"))) {
+      jQuery(".header").addClass('-fixed');
+    } else {
+      jQuery("header").removeClass("-fixed");
+    }
+    jQuery(this).toggleClass('-opened')
+    jQuery(".header__trigger").toggleClass('active');
+  });
 })
+
+
