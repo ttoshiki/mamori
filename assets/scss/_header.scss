@@ -161,7 +161,7 @@
     }
 
     &__trigger.active span:nth-of-type(1) {
-      background-color: variables.$black;
+      background-color: variables.$white;
       -webkit-transform: translate(-12px, 26px) rotate(-45deg);
       transform: translate(-12px, 26px) rotate(-45deg);
     }
@@ -171,43 +171,81 @@
     }
 
     &__trigger.active span:nth-of-type(3) {
-      background-color: variables.$black;
+      background-color: variables.$white;
       -webkit-transform: translate(-12px, 26px) rotate(-45deg);
       transform: translate(-12px, 26px) rotate(45deg);
     }
 
     &__hammenuWrapper {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
+      z-index: 100;
       display: none;
-      width: 86vw;
-      height: 82vh;
+      width: 100vw;
+      height: 100vh;
       min-height: 560px;
       overflow-y: scroll;
-      background-color: variables.$white;
-
-      li a {
-        padding: 2px 4px;
-        font-size: 16px;
-        font-weight: 600;
-        font-weight: 300;
-        color: #000000;
-        letter-spacing: 2px;
-      }
+      background-color: rgba($color: variables.$color-primary, $alpha: 0.9);
 
       .header__hammenuItem {
         text-align: center;
         letter-spacing: 3px;
 
         &:not(:first-child) {
-          margin-top: 8vw;
+          margin-top: 4vw;
         }
       }
     }
 
     &__hammenuInner {
-      margin: 4vh auto 0;
+      margin: 8vh auto 0;
+    }
+
+    &__hammenuLink {
+      display: inline-flex;
+      flex-direction: column;
+      color: variables.$white;
+    }
+
+    &__hammenuText {
+      font-size: 12px;
+
+      &.-en {
+        font-size: 30px;
+      }
+    }
+
+    &__hammenuConversion {
+      display: flex;
+      justify-content: center;
+      margin: 10vw 0 0;
+
+      .side-conversion-link {
+        width: 20vw;
+        height: 20vw;
+
+        &:not(:first-child) {
+          margin: 0 0 0 20px;
+        }
+
+        &.-secondary {
+          color: variables.$color-primary;
+          background-color: variables.$white;
+
+          .icon_angle {
+            stroke: variables.$color-primary;
+          }
+        }
+      }
+
+      .side-conversion-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        font-weight: 600;
+      }
     }
   }
 }

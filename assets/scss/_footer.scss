@@ -85,7 +85,9 @@
 
 @include variables.mq(variables.$mobile) {
   .footer {
-    padding-bottom: 45px;
+    &.home {
+      padding-bottom: 45px;
+    }
 
     &__logo {
       width: 28.03%;

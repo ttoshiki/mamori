@@ -50,25 +50,57 @@
 			<div class="header__hammenuWrapper">
 				<div class="header__hammenuInner">
 					<ul class="header__hammenuList">
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">INFORMATION</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">ABOUT</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">PROFILE</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">CONTACT</a></li>
-          </ul>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/menu_heading-sp@2x.png" alt="" class="header__hammenuHeading">
-          <ul class="header__hammenuList">
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">COLUMN</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">DIARY</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">LIVE STREAM</a></li>
-            <li class="header__hammenuItem"><a href="<?php echo home_url(); ?>" class="-en">Q&A</a></li>
-          </ul>
-          <div class="header__hammenuFollow">
-            <span class="header__hammenuFollowHeading -en">FOLLOW ME</span>
-            <ul class="header__hammenuFollowList">
-              <li class="header__followItem">
-              </li>
-            </ul>
-          </div>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url('/about/'); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">ABOUT</span>
+								<span class="header__hammenuText">Mamoriとは</span>
+							</a>
+						</li>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">FACILITY</span>
+								<span class="header__hammenuText">施設・設備</span>
+							</a>
+						</li>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">PRICE</span>
+								<span class="header__hammenuText">料金</span>
+							</a>
+						</li>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">Q&A</span>
+								<span class="header__hammenuText">よくあるご質問</span>
+							</a>
+						</li>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">NEWS</span>
+								<span class="header__hammenuText">お知らせ</span>
+							</a>
+						</li>
+						<li class="header__hammenuItem">
+							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+								<span class="header__hammenuText -en">ACCESS</span>
+								<span class="header__hammenuText">アクセス</span>
+							</a>
+						</li>
+					</ul>
+					<div class="header__hammenuConversion">
+						<a href="<?php echo home_url(); ?>" class="side-conversion-link -primary">
+							<span class="side-conversion-text">入会する</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
+						</a>
+						<a href="<?php echo home_url(); ?>" class="side-conversion-link -secondary">
+							<span class="side-conversion-text">見学に<br>ついて</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
+						</a>
+						<a href="<?php echo home_url(); ?>" class="side-conversion-link -secondary">
+							<span class="side-conversion-text">資料<br><span class="side-conversion-text -comp">ダウンロード</span></span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>

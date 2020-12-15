@@ -13,7 +13,7 @@
 
 </div><!-- #page -->
 
-<footer class="footer">
+<footer class="footer<?php if(is_front_page()) { echo ' home'; } ?>">
   <div class="footer__toTop"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/to_top.svg'); ?></a></div>
     <div class="footer__upper">
       <div class="footer__logo"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/logo-light.svg'); ?></a></div>

@@ -142,11 +142,85 @@
 @include variables.mq(variables.$mobile) {
   .company {
     &__wrapper {
-      padding: 64px 0 80px;
+      padding: 64px 0 40px;
     }
 
     &__subHeading {
       justify-content: center;
+    }
+
+    &__subHeading {
+      margin-top: 64px;
+    }
+
+    &__overview {
+      table {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &:not(:last-child) {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+
+      th,
+      td {
+        text-align: center;
+        border: 1px solid #cacaca;
+      }
+
+      th {
+        padding: 4px 0;
+      }
+
+      td {
+        border-top: none;
+
+        &.-wide {
+          padding: 8px 10px;
+        }
+      }
+    }
+
+    &__officerHeading {
+      width: 80%;
+      margin: 32px auto 0;
+      font-size: 16px;
+    }
+
+    &__officerBlock {
+      flex-direction: column;
+    }
+
+    &__officerImage {
+      width: 44.27%;
+      margin: 8px auto 0;
+    }
+
+    &__officerCareer {
+      width: 80%;
+      margin: 24px auto 0;
+
+      dl {
+        flex-direction: column;
+        margin: 6px 0;
+      }
+    }
+
+    &__historyDetails {
+      dl {
+        flex-direction: column;
+        width: 80%;
+        margin: 12px auto;
+      }
     }
   }
 }
