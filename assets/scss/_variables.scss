@@ -1,33 +1,30 @@
-// Border
-// $border-radius-regular: 4px;
-// $border-width-regular: 1px;
-
-// hover Opacity Rule
-// $--hover-opacity: 0.6;
-
 // Color Rule
-$--color-primary: #1f2a66;
-$--color-secondary: #836c39;
+$color-primary: #1f2a66;
+$color-secondary: #836c39;
 
 $white: #ffffff;
 $black: #333333;
 
 // Width Rule
-$--content-width-xxs: 320px;
-$--content-width-xs: 769px;
-$--content-width-sm: 1000px;
-$--content-width-md: 1100px;
-$--content-width-xl: 1280px;
+$content-width-xxs: 320px;
+$content-width-xs: 769px;
+$content-width-sm: 1000px;
+$content-width-md: 1100px;
+$content-width-xl: 1280px;
 
 // media-query
-$breakpoints: (
-  "mobile": "screen and (max-width: 480px)",
-  "tablet": "screen and (max-width: 960px)",
-  "pc": "screen and (min-width: 961px)",
-);
+// $breakpoints: (
+//   "mobile": "screen and (max-width: 480px)",
+//   "tablet": "screen and (max-width: 960px)",
+//   "pc": "screen and (min-width: 961px)",
+// );
 
-@mixin mq($breakpoint: pc) {
-  @media #{map-get($breakpoints, $breakpoint)} {
+$mobile: 480px;
+$tablet: 960px;
+$pc: 961px;
+
+@mixin mq($break-point) {
+  @media screen and (max-width: $break-point) {
     @content;
   }
 }

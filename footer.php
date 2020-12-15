@@ -52,7 +52,7 @@
     <nav>
       <ul class="footer__lowerLinkList">
         <li class="footer__lowerLinkItem">
-          <a href="<?php echo home_url(); ?>">運営会社</a>
+          <a href="<?php echo home_url('/company/'); ?>">運営会社</a>
         </li>
         <li class="footer__lowerLinkItem">
           <a href="<?php echo home_url(); ?>">利用規約</a>

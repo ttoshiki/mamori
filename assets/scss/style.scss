@@ -10,11 +10,12 @@ License URI: LICENSE
 Text Domain: Mamori
 */
 
-@import "variables";
-@import "base";
-@import "module";
-@import "layout";
-@import "header";
-@import "footer";
-@import "404";
-@import "home";
+@use "variables";
+@use "base";
+@use "module";
+@use "layout";
+@use "header";
+@use "footer";
+// @use "404";
+@use "home";
+@use "company";

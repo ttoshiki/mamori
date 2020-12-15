@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 .-en {
   font-family: "Barlow Condensed", sans-serif;
@@ -11,7 +11,7 @@
   font-size: 90px;
   font-weight: 500;
   line-height: 1.1;
-  color: $--color-primary;
+  color: variables.$color-primary;
 
   &::after {
     position: absolute;
@@ -24,20 +24,34 @@
   }
 
   &.-light {
-    color: $white;
+    color: variables.$white;
 
     &::after {
       background-color: #8a8a8a;
     }
 
     & + .heading__subHeading {
-      color: $white;
+      color: variables.$white;
     }
   }
 
   &__wrapper {
     margin-top: 48px;
     text-align: center;
+
+    &.-company {
+      margin-top: 0;
+
+      .heading {
+        font-size: 36px;
+        font-weight: 600;
+        color: variables.$color-secondary;
+
+        &::after {
+          bottom: -12px;
+        }
+      }
+    }
   }
 
   &__subHeading {
@@ -72,7 +86,7 @@
 
 .side-conversion {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 24px;
   display: inline-flex;
   flex-direction: column;
@@ -92,11 +106,11 @@
   width: 57%;
   width: 66px;
   height: 66px;
-  color: $white;
+  color: variables.$white;
   border-radius: 8px;
 
   &.-primary {
-    background-color: $--color-secondary;
+    background-color: variables.$color-secondary;
   }
 
   &.-secondary {
@@ -132,7 +146,7 @@
   padding: 6px 20px;
   font-size: 17px;
   font-weight: 600;
-  color: $white;
+  color: variables.$white;
   background-color: #000;
 
   svg {
@@ -152,7 +166,7 @@
   display: none;
 }
 
-@include mq(mobile) {
+@include variables.mq(variables.$mobile) {
   .side-conversion {
     display: none;
   }
@@ -171,6 +185,16 @@
 
     &__wrapper {
       margin-top: 32px;
+
+      &.-company {
+        .heading {
+          font-size: 30px;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
 
     &__subHeading {
@@ -198,7 +222,7 @@
     align-items: center;
     justify-content: center;
     padding: 2.66vw 0;
-    color: $white;
+    color: variables.$white;
 
     svg {
       width: 26%;
@@ -207,7 +231,7 @@
 
     &.-tel {
       width: 20%;
-      background-color: $--color-primary;
+      background-color: variables.$color-primary;
     }
 
     &.-contact {
@@ -217,7 +241,7 @@
 
     &.-mypage {
       width: 36%;
-      background-color: $--color-secondary;
+      background-color: variables.$color-secondary;
     }
   }
 

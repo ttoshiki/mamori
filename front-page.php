@@ -58,6 +58,7 @@ get_header();
 					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/vr_view-sp.jpg" media="(max-width: 480px)">
 					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/vr_view.webp" type="image/webp">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/vr_view.jpg" alt="VRビュー" class="home__vrViewImage">
+					<p class="home__vrViewCaution">※準備中</p>
 				</picture>
 				<section class="home__links">
 					<ul class="home__linksList">
@@ -195,7 +196,7 @@ get_header();
 							ご不明な点やご心配な点がございましたら、<br>
 							お気軽にお問い合わせください。
 						</p>
-						<address class="home__contactPhoneNumber">00-0000-0000</address>
+						<address class="home__contactPhoneNumber"><?php get_template_part('template-parts/phone-number') ?></address>
 						<span class="home__contactReceptionTime">受付時間：10:00~20:00</span>
 						<div class="home__contactButtonWrapper">
 							<a href="<?php echo home_url(); ?>" class="home__contactButton">お問い合わせフォーム</a>

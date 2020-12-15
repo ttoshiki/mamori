@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 .home {
   &__wrapper {
@@ -43,6 +43,13 @@
   &__vrViewImage {
     display: block;
     margin: 60px auto 0;
+    filter: brightness(0.6);
+    opacity: 0.7;
+  }
+
+  &__vrViewCaution {
+    margin-top: 6px;
+    text-align: center;
   }
 
   &__linksList {
@@ -55,7 +62,7 @@
 
   &__linksItem {
     width: 31.75%;
-    background-color: $--color-primary;
+    background-color: variables.$color-primary;
   }
 
   &__linksIcon {
@@ -68,7 +75,7 @@
     font-size: 56px;
     font-weight: 500;
     line-height: 0.9;
-    color: $white;
+    color: variables.$white;
     text-align: center;
   }
 
@@ -76,7 +83,7 @@
     display: block;
     margin: 8px auto 0;
     font-size: 17px;
-    color: $white;
+    color: variables.$white;
     text-align: center;
   }
 
@@ -130,11 +137,11 @@
 
   &__newsCategoryName {
     font-size: 10px;
-    color: $white;
-    background-color: $--color-primary;
+    color: variables.$white;
+    background-color: variables.$color-primary;
 
     &.-secondary {
-      background-color: $--color-secondary;
+      background-color: variables.$color-secondary;
     }
   }
 
@@ -180,7 +187,7 @@
   &__accessAddress {
     margin-top: 24px;
     font-size: 15px;
-    color: $white;
+    color: variables.$white;
   }
 
   &__accessAddressText {
@@ -197,7 +204,7 @@
 
   &__accessGoogleMapLink {
     position: relative;
-    color: $white;
+    color: variables.$white;
 
     &::after {
       position: absolute;
@@ -216,7 +223,7 @@
     margin-top: 40px;
 
     .subHeading {
-      color: $white;
+      color: variables.$white;
     }
   }
 
@@ -233,7 +240,7 @@
     display: block;
     margin-top: 8px;
     font-size: 15px;
-    color: $white;
+    color: variables.$white;
     text-align: center;
   }
 
@@ -245,10 +252,10 @@
   &__preventionHeading {
     margin: 0;
     font-size: 20px;
-    color: $white;
+    color: variables.$white;
     text-align: center;
     font-feature-settings: "palt";
-    text-shadow: $white 0px 0px 1px;
+    text-shadow: #fffbff 0px 0px 10px;
     letter-spacing: 1px;
   }
 
@@ -264,7 +271,7 @@
     display: inline-block;
     font-size: 13px;
     line-height: 1.2;
-    color: $white;
+    color: variables.$white;
     text-align: center;
   }
 
@@ -272,7 +279,7 @@
     margin-top: 32px;
     font-size: 70px;
     line-height: 1;
-    color: $--color-secondary;
+    color: variables.$color-secondary;
   }
 
   &__contactReceptionTime {
@@ -290,7 +297,7 @@
     padding: 12px 32px;
     font-size: 20px;
     font-weight: 600;
-    color: $white;
+    color: variables.$white;
     background: -webkit-linear-gradient(
       -45deg,
       rgba(0, 0, 0, 1) 0%,
@@ -322,7 +329,7 @@
   }
 }
 
-@include mq(mobile) {
+@include variables.mq(variables.$mobile) {
   .home {
     &__about {
       .button__wrapper {

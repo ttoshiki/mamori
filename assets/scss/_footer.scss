@@ -1,9 +1,9 @@
-@import "_variables";
+@use "variables";
 
 .footer {
   padding-top: 36px;
   margin-top: 64px;
-  background-color: $--color-primary;
+  background-color: variables.$color-primary;
 
   &__toTop {
     width: 72px;
@@ -47,7 +47,7 @@
 
   &__upperLinkItem {
     a {
-      color: $white;
+      color: variables.$white;
     }
 
     &:not(:first-child) {
@@ -65,25 +65,25 @@
     padding: 0 10px;
 
     a {
-      color: $white;
+      color: variables.$white;
     }
 
     &:not(:first-child)::before {
       margin-right: 10px;
-      color: $white;
+      color: variables.$white;
       content: "|";
     }
   }
 
   &__copyrightWrapper {
     padding: 6px 0;
-    color: $--color-secondary;
+    color: variables.$color-secondary;
     text-align: center;
     background-color: #000000;
   }
 }
 
-@include mq(mobile) {
+@include variables.mq(variables.$mobile) {
   .footer {
     padding-bottom: 45px;
 

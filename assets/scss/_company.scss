@@ -1,0 +1,152 @@
+@use "_variables";
+
+.company {
+  &__wrapper {
+    max-width: 512px;
+    padding: 100px 0 80px;
+    margin: 0 auto;
+  }
+
+  &__overview {
+    margin-top: 64px;
+
+    table {
+      margin-top: 32px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 2px solid #cacaca;
+    }
+
+    th {
+      min-width: 92px;
+      padding: 0 0 0 18px;
+      text-align: left;
+      background-color: #e1e1e1;
+    }
+
+    td {
+      padding: 4px 20px;
+      font-size: 13px;
+
+      &.-wide {
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  &__subHeading {
+    display: flex;
+    font-weight: 600;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 28px;
+      height: 26px;
+      content: "";
+      background-size: cover;
+    }
+
+    &::before {
+      margin-right: 10px;
+      background-image: url(assets/images/icons/icon_tree-left.svg);
+    }
+
+    &::after {
+      margin-left: 10px;
+      background-image: url(assets/images/icons/icon_tree-right.svg);
+    }
+  }
+
+  &__subHeading {
+    margin-top: 80px;
+  }
+
+  &__officerHeading {
+    padding-bottom: 4px;
+    margin: 32px 0 0;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__snsList {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__snsItem {
+    width: 24px;
+
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+
+  &__officerBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__officerCareer {
+    margin-left: 20px;
+    font-size: 13px;
+    font-feature-settings: "palt";
+
+    dl {
+      display: flex;
+      margin: 2px 0;
+    }
+
+    dt {
+      width: 74px;
+    }
+
+    dd {
+      margin-left: 0;
+    }
+  }
+
+  &__officerImage {
+    width: 36%;
+  }
+
+  &__officerWrapper {
+    &:not(:first-of-type) {
+      margin-top: 64px;
+    }
+  }
+
+  &__historyDetails {
+    margin-top: 44px;
+    font-feature-settings: "palt";
+
+    dl {
+      display: flex;
+      margin: 2px 0;
+    }
+
+    dt {
+      width: 88px;
+    }
+
+    dd {
+      margin-left: 4px;
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .company {
+    &__wrapper {
+      padding: 64px 0 80px;
+    }
+
+    &__subHeading {
+      justify-content: center;
+    }
+  }
+}

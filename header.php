@@ -36,7 +36,11 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="header" class="header">
-		<div class="header__logo"><a href="<?php echo home_url(); ?>"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?></a></div>
+		<?php if (is_front_page()){ echo '<h1'; } else { echo '<h2'; }; ?> class="header__logo">
+			<a href="<?php echo home_url(); ?>">
+				<?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?>
+			</a>
+		<?php if (is_front_page()){ echo '</h1>'; } else { echo '</h2>'; }; ?>
 		<nav class="header__hammenu -tab">
 			<span class="header__trigger" href="#" @click="toggleMenu" id="trigger">
 				<span></span>

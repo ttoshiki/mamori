@@ -1,4 +1,4 @@
-@import "_variables";
+@use "variables";
 
 .not-found {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  color: $--color-primary;
+  color: variables.$color-primary;
 }
 
 .error404 {
