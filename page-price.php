@@ -16,12 +16,9 @@ get_header();
 ?>
 
   <main class="site-main">
-		<div class="notFound__wrapper">
-			<h1 class="notFound__heading -en">404 Not Found</h1>
-			<p class="notFound__paragraph">お探しのページは<br class="-sp">見つかりませんでした。</p>
-			<span class="notFound__span -en">The page you’re looking for  can’t be found.</span>
-			<div class="notFound__logo"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?></div>
-		</div>
+		<div class="price__wrapper">
+
+    </div>
 	</main><!-- #main -->
 
 <?php

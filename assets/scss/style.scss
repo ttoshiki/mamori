@@ -16,6 +16,7 @@ Text Domain: Mamori
 @use "layout";
 @use "header";
 @use "footer";
-// @use "404";
+@use "_notFound";
 @use "home";
 @use "company";
+@use "about";

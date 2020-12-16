@@ -107,7 +107,7 @@
 		<nav class="header__nav -pc">
 			<ul class="header__navList">
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/about/'); ?>" class="header__navLink">
 						<span class="header__navLink -en">ABOUT</span>
 						<span class="header__navLink">Mamoriとは</span>
 					</a>

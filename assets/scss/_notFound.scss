@@ -1,0 +1,46 @@
+@use "variables";
+
+.notFound {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 400;
+    color: variables.$color-primary;
+  }
+
+  &__paragraph {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__span {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  &__logo {
+    width: 126px;
+    margin-top: 56px;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .notFound {
+    &__paragraph {
+      font-size: 15px;
+    }
+
+    &__span {
+      margin-top: 12px;
+    }
+  }
+}

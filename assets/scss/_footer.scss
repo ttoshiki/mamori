@@ -5,6 +5,10 @@
   margin-top: 64px;
   background-color: variables.$color-primary;
 
+  &.-confined {
+    margin-top: 0;
+  }
+
   &__toTop {
     width: 72px;
     margin: -72px auto 0;

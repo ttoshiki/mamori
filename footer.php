@@ -13,14 +13,17 @@
 
 </div><!-- #page -->
 
-<footer class="footer<?php if(is_front_page()) { echo ' home'; } ?>">
+<footer class="footer<?php
+  if(is_front_page()) { echo ' home'; }
+  elseif(is_page('about')) { echo ' -confined'; }
+ ?>">
   <div class="footer__toTop"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/to_top.svg'); ?></a></div>
     <div class="footer__upper">
       <div class="footer__logo"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/logo-light.svg'); ?></a></div>
       <nav class="footer__upperLinkNav">
         <ul class="footer__upperLinkList">
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">Mamoriとは</a>
+            <a href="<?php echo home_url('/about/'); ?>">Mamoriとは</a>
           </li>
           <li class="footer__upperLinkItem">
             <a href="<?php echo home_url(); ?>">サービス・設備</a>
