@@ -1289,6 +1289,14 @@ textarea {
     width: 37.34vw;
   }
 }
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
 /*
 Theme Name: Mamori
 Theme URI: http://underscores.me/
