@@ -26,7 +26,7 @@
             <a href="<?php echo home_url('/about/'); ?>">Mamoriとは</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">サービス・設備</a>
+            <a href="<?php echo home_url('/facility/'); ?>">サービス・設備</a>
           </li>
           <li class="footer__upperLinkItem">
             <a href="<?php echo home_url('/price/'); ?>">料金・ご利用の流れ</a>

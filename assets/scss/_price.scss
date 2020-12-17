@@ -5,39 +5,6 @@
     padding-bottom: 48px;
   }
 
-  &__subHeading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 48px 0 0;
-    color: variables.$white;
-    color: #000000;
-    text-align: center;
-
-    &.-bottom {
-      align-items: flex-end;
-    }
-
-    &.-light {
-      color: variables.$white;
-
-      polygon {
-        fill: variables.$white;
-      }
-    }
-
-    h2 {
-      margin: 0 16px 0;
-      margin-bottom: 0;
-      font-size: 25px;
-      line-height: 1.16;
-    }
-  }
-
-  &__subHeadingIcon {
-    width: 28px;
-  }
-
   &__list {
     margin: 40px 0 0;
 
@@ -396,15 +363,6 @@
   .price {
     &__wrapper {
       padding-bottom: 24px;
-    }
-
-    &__subHeading {
-      margin: 40px 0 0;
-
-      h2 {
-        margin: 0 8px;
-        font-size: 20px;
-      }
     }
 
     &__listTable {

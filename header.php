@@ -57,7 +57,7 @@
 							</a>
 						</li>
 						<li class="header__hammenuItem">
-							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+							<a href="<?php echo home_url('/facility/'); ?>" class="header__hammenuLink">
 								<span class="header__hammenuText -en">FACILITY</span>
 								<span class="header__hammenuText">施設・設備</span>
 							</a>
@@ -113,7 +113,7 @@
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/facility/'); ?>" class="header__navLink">
 						<span class="header__navLink -en">FACILITY</span>
 						<span class="header__navLink">施設・設備</span>
 					</a>

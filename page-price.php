@@ -21,10 +21,10 @@ get_header();
         <h1 class="heading -en">PRICE</h1>
         <span class="heading__subHeading">料金</span>
       </div>
-      <div class="price__subHeading -bottom">
-        <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
+      <div class="subHeadingHasIcons -bottom">
+        <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
         <h2>シェアオフィス<br>コワーキングスペース</h2>
-        <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
+        <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
       </div>
       <section class="price__list">
         <div class="price__tableWrapper -pc">
@@ -254,10 +254,10 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.webp" type="image/webp">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.png" alt="" class="price__usageBg">
         </picture>
-        <div class="price__subHeading -light">
-          <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
+        <div class="subHeadingHasIcons -light">
+          <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
           <h2>シェアオフィス<br>コワーキングスペース<br>ご利用案内</h2>
-          <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
+          <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
         </div>
         <div class="price__usageInner">
           <h3 class="price__usageHeading">月額会員について<span class="price__usageHeadingSpan">(フリーアドレス・固定席プラン共通)</span></h3>
@@ -405,10 +405,10 @@ get_header();
         </div>
       </section>
       <section class="price__flow">
-        <div class="price__subHeading">
-          <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
+        <div class="subHeadingHasIcons">
+          <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
           <h2>申し込みまでの流れ</h2>
-          <div class="price__subHeadingIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
+          <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
         </div>
         <h3 class="price__flowSubHeading">月額会員・時間会員共通</h3>
         <div>

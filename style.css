@@ -176,6 +176,34 @@ textarea {
   text-align: center;
 }
 
+.subHeadingHasIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 48px 0 0;
+  color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+.subHeadingHasIcons.-bottom {
+  align-items: flex-end;
+}
+.subHeadingHasIcons.-light {
+  color: #ffffff;
+}
+.subHeadingHasIcons.-light polygon {
+  fill: #ffffff;
+}
+.subHeadingHasIcons h2 {
+  margin: 0 16px 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  line-height: 1.16;
+}
+.subHeadingHasIconsIcon {
+  width: 28px;
+}
+
 .side-conversion {
   position: absolute;
   top: -50px;
@@ -285,6 +313,14 @@ textarea {
 
   .subHeading {
     font-size: 25px;
+  }
+
+  .subHeadingIcons {
+    margin: 40px 0 0;
+  }
+  .subHeadingIcons h2 {
+    margin: 0 8px;
+    font-size: 20px;
   }
 
   .bottom-conversion {
@@ -1293,33 +1329,6 @@ textarea {
 .price__wrapper {
   padding-bottom: 48px;
 }
-.price__subHeading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 48px 0 0;
-  color: #ffffff;
-  color: #000000;
-  text-align: center;
-}
-.price__subHeading.-bottom {
-  align-items: flex-end;
-}
-.price__subHeading.-light {
-  color: #ffffff;
-}
-.price__subHeading.-light polygon {
-  fill: #ffffff;
-}
-.price__subHeading h2 {
-  margin: 0 16px 0;
-  margin-bottom: 0;
-  font-size: 25px;
-  line-height: 1.16;
-}
-.price__subHeadingIcon {
-  width: 28px;
-}
 .price__list {
   margin: 40px 0 0;
 }
@@ -1610,13 +1619,6 @@ textarea {
 @media screen and (max-width: 480px) {
   .price__wrapper {
     padding-bottom: 24px;
-  }
-  .price__subHeading {
-    margin: 40px 0 0;
-  }
-  .price__subHeading h2 {
-    margin: 0 8px;
-    font-size: 20px;
   }
   .price__listTable {
     width: 94%;
