@@ -63,7 +63,7 @@
 							</a>
 						</li>
 						<li class="header__hammenuItem">
-							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+							<a href="<?php echo home_url('/price/'); ?>" class="header__hammenuLink">
 								<span class="header__hammenuText -en">PRICE</span>
 								<span class="header__hammenuText">料金</span>
 							</a>
@@ -119,7 +119,7 @@
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/price/'); ?>" class="header__navLink">
 						<span class="header__navLink -en">PRICE</span>
 						<span class="header__navLink">料金</span>
 					</a>

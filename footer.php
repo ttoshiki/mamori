@@ -29,7 +29,7 @@
             <a href="<?php echo home_url(); ?>">サービス・設備</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">料金・ご利用の流れ</a>
+            <a href="<?php echo home_url('/price/'); ?>">料金・ご利用の流れ</a>
           </li>
           <li class="footer__upperLinkItem">
             <a href="<?php echo home_url(); ?>">よくあるご質問</a>
