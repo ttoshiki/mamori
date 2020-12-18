@@ -463,8 +463,8 @@ get_header();
           </div>
         </div>
         <div class="price__links">
-          <a href="<?php echo home_url(); ?>" class="price__linkButton">見学のご予約はこちら</a>
-          <a href="<?php echo home_url(); ?>" class="price__linkButton">会員情報の登録はこちら</a>
+          <a href="<?php echo home_url(); ?>" class="link-button">見学のご予約はこちら</a>
+          <a href="<?php echo home_url(); ?>" class="link-button">会員情報の登録はこちら</a>
         </div>
       </section>
       <section class="price__footer">

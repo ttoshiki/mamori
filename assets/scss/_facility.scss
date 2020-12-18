@@ -1,0 +1,717 @@
+@use "variables";
+
+.facility {
+  &__wrapper {
+    padding-bottom: 80px;
+  }
+
+  &__floormap {
+    margin: 64px auto 0;
+  }
+
+  &__floormapImage {
+    display: block;
+    width: 94%;
+    max-width: 780px;
+    margin: 48px auto 0;
+  }
+
+  &__floormapParagraph {
+    margin: 32px auto 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &__vrView {
+    position: relative;
+  }
+
+  &__vrViewImage {
+    position: relative;
+    display: block;
+    max-width: 370px;
+    margin: 80px auto 0;
+    filter: brightness(0.3);
+  }
+
+  &__vrViewPreparation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    color: variables.$white;
+    letter-spacing: 4px;
+    content: "";
+    transform: translate(-50%, -50%);
+  }
+
+  &__photo {
+    position: relative;
+
+    .subHeadingHasIcons {
+      h2 {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__photoBg {
+    position: absolute;
+    top: -140px;
+    z-index: -1;
+    width: 100vw;
+    height: 106%;
+    object-fit: cover;
+  }
+
+  &__photoBlock {
+    position: relative;
+    width: 80%;
+    margin: 120px auto 0;
+
+    &:nth-child(even) {
+      .facility__photoDescription {
+        margin: 0 40px 0 auto;
+      }
+
+      .facility__photoImage {
+        left: 0;
+      }
+
+      .facility__photoNumber {
+        margin: 0 0 0 auto;
+      }
+
+      .facility__photoName {
+        margin: 0 0 0 180px;
+      }
+
+      .facility__photoParagraph {
+        width: 360px;
+        padding-right: 32px;
+        margin: 32px 0 0 auto;
+      }
+
+      .facility__preparation {
+        top: -80px;
+        left: 0;
+      }
+    }
+
+    &:first-child {
+      width: 83%;
+      max-width: 830px;
+
+      .facility__photoNumber {
+        background-color: variables.$color-secondary;
+      }
+
+      .facility__photoDescription {
+        max-width: 468px;
+      }
+
+      .facility__photoImage {
+        top: -64px;
+        right: 0;
+        width: 58%;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 86%;
+      max-width: 860px;
+      margin: 140px auto 0;
+
+      .facility__photoNumber {
+        background-color: variables.$color-primary;
+      }
+
+      .facility__photoDescription {
+        width: 57%;
+        max-width: 498px;
+      }
+
+      .facility__photoDescription {
+        max-width: 468px;
+      }
+
+      .facility__photoImage {
+        top: -64px;
+        left: -40px;
+        width: 60%;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 83%;
+      max-width: 830px;
+      margin: 258px auto 0;
+
+      .facility__photoNumber {
+        background-color: #95000e;
+      }
+
+      .facility__photoDescription {
+        width: 57%;
+        max-width: 498px;
+      }
+
+      .facility__photoDescription {
+        max-width: 468px;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 83%;
+      max-width: 830px;
+      margin: 180px auto 0;
+
+      .facility__photoNumber {
+        background-color: #fabf1a;
+      }
+
+      .facility__photoDescription {
+        width: 64%;
+        padding-bottom: 56px;
+        margin: 0 0 0 auto;
+      }
+
+      .facility__photoName {
+        margin: 0 0 0 254px;
+      }
+    }
+
+    &:nth-child(5) {
+      width: 83%;
+      max-width: 830px;
+      margin: 180px auto 0;
+
+      .facility__photoNumber {
+        background-color: #7c9b00;
+      }
+
+      .facility__photoDescription {
+        width: 60%;
+        padding-bottom: 40px;
+      }
+
+      .facility__photoName {
+        &::after {
+          bottom: 0;
+        }
+
+        &::before {
+          top: 0;
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      width: 83%;
+      max-width: 830px;
+      margin: 180px auto 0;
+
+      .facility__photoNumber {
+        background-color: #336228;
+      }
+
+      .facility__photoDescription {
+        width: 64%;
+        padding-bottom: 40px;
+      }
+
+      .facility__photoName {
+        margin: 0 0 0 270px;
+
+        &::after {
+          bottom: 0;
+        }
+
+        &::before {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__photoDescription {
+    padding-bottom: 32px;
+    background-color: variables.$white;
+  }
+
+  &__photoNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    font-size: 40px;
+    line-height: 1.2;
+    color: variables.$white;
+  }
+
+  &__photoName {
+    position: relative;
+    display: inline-block;
+    padding: 0 16px;
+    margin: 0 0 0 88px;
+    font-size: 25px;
+    text-align: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      content: "";
+    }
+
+    &::before {
+      top: -10px;
+      left: -18px;
+      border-top: solid 2px #000000;
+      border-left: solid 2px #000000;
+    }
+
+    &::after {
+      right: -18px;
+      bottom: -10px;
+      border-right: solid 2px #000000;
+      border-bottom: solid 2px #000000;
+    }
+  }
+
+  &__photoParagraph {
+    padding-left: 32px;
+    margin: 32px auto 0;
+  }
+
+  &__photoImage {
+    position: absolute;
+    max-width: initial;
+  }
+
+  &__preparation {
+    position: absolute;
+    top: -64px;
+    left: 394px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52.3%;
+    height: 270px;
+    background-color: #b2b2b2;
+
+    span {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__photoNameSpan {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  &__photo2d {
+    display: block;
+    margin: 80px auto 0;
+  }
+
+  &__about {
+    margin: 180px auto 0;
+  }
+
+  &__aboutHeading {
+    width: 57.4%;
+    max-width: 600px;
+    margin: 48px auto 28px;
+    font-size: 18px;
+    color: variables.$white;
+    text-align: center;
+
+    &.-environment {
+      background-color: variables.$color-primary;
+    }
+
+    &.-service {
+      background-color: variables.$color-secondary;
+    }
+  }
+
+  &__aboutList {
+    display: flex;
+    justify-content: space-between;
+    width: 57.4%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+
+    &.-environment {
+      color: variables.$color-primary;
+    }
+
+    &.-service {
+      color: variables.$color-secondary;
+    }
+  }
+
+  &__aboutItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__aboutIcon {
+    width: 88px;
+  }
+
+  &__aboutItemName {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__aboutItemSmall {
+    display: block;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  &__link {
+    margin: 80px auto 0;
+    text-align: center;
+  }
+}
+
+@include variables.mq(variables.$tablet) {
+  .facility {
+    &__photoBg {
+      height: 105%;
+    }
+    &__photoBlock {
+      margin: 220px auto 0;
+
+      &:nth-child(even) {
+        .facility__photoName {
+          margin: 0 0 0 26%;
+        }
+
+        .facility__photoParagraph {
+          width: 100%;
+          padding-right: 24px;
+          margin: 20px 0 0;
+        }
+      }
+
+      &:nth-child(odd) {
+        .facility__preparation {
+          left: 0;
+        }
+
+        .facility__photoDescription {
+          margin: 0 0 0 auto;
+        }
+      }
+
+      &:nth-child(even) {
+        .facility__preparation {
+          top: -188px;
+          right: -2px;
+          left: auto;
+        }
+      }
+
+      &:first-child {
+        width: 100%;
+        max-width: 375px;
+
+        .facility__photoImage {
+          top: -170px;
+          left: 0;
+          width: 89%;
+        }
+
+        .facility__photoDescription {
+          margin: 0 0 0 auto;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 100%;
+        max-width: 375px;
+        margin: 408px auto 0;
+
+        .facility__photoImage {
+          top: -382px;
+          left: 0;
+          width: 100%;
+        }
+
+        .facility__photoDescription {
+          width: 88%;
+          padding: 80px 0 30px;
+          margin: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        position: relative;
+        width: 100%;
+        max-width: 375px;
+        margin: 248px auto 0;
+
+        .facility__photoDescription {
+          width: 91%;
+          padding-bottom: 32px;
+        }
+
+        .facility__photoName {
+          margin: 0 0 0 33%;
+        }
+
+        .facility__preparation {
+          &::after {
+            content: "3";
+            background-color: #95000e;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        position: relative;
+        width: 100%;
+        max-width: 375px;
+        margin: 248px auto 0;
+
+        .facility__photoDescription {
+          width: 91%;
+          padding-bottom: 32px;
+        }
+
+        .facility__photoName {
+          margin: 0 0 0 32%;
+        }
+
+        .facility__preparation {
+          &::after {
+            right: auto;
+            left: -2px;
+            content: "0";
+            background-color: #fabf1a;
+          }
+        }
+
+        .facility__photoDescription {
+          margin: 0;
+        }
+      }
+
+      &:nth-child(5) {
+        position: relative;
+        width: 100%;
+        max-width: 375px;
+        margin: 248px auto 0;
+
+        .facility__photoDescription {
+          width: 91%;
+          padding: 48px 0 32px;
+        }
+
+        .facility__photoName {
+          margin: 0 0 0 17%;
+        }
+
+        .facility__preparation {
+          &::after {
+            content: "A";
+            background-color: #7c9b00;
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        position: relative;
+        width: 100%;
+        max-width: 375px;
+        margin: 248px auto 0;
+
+        .facility__photoDescription {
+          width: 91%;
+          padding: 48px 0 40px;
+        }
+
+        .facility__photoName {
+          margin: 0 0 0 17%;
+        }
+
+        .facility__preparation {
+          &::after {
+            right: auto;
+            left: -2px;
+            content: "B";
+            background-color: #336228;
+          }
+        }
+      }
+    }
+
+    &__photoImage {
+      position: absolute;
+      width: 89%;
+    }
+
+    &__photoNumber {
+      display: none;
+    }
+
+    &__photoDescription {
+      width: 88%;
+      padding: 60px 0 30px;
+    }
+
+    &__photoName {
+      padding: 0;
+      margin: 0 0 0 29%;
+      font-size: 22px;
+
+      &::before,
+      &::after {
+        width: 18px;
+        height: 18px;
+      }
+
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        bottom: -6px;
+      }
+    }
+
+    &__photoParagraph {
+      padding-left: 24px;
+      margin: 20px auto 0;
+      font-feature-settings: "palt";
+      line-height: 1.4;
+    }
+
+    &__preparation {
+      top: -186px;
+      width: 91%;
+      height: 207px;
+
+      span {
+        font-size: 16px;
+      }
+
+      &::after {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 20px;
+        color: variables.$white;
+        border: 2px solid variables.$white;
+        box-shadow: 0px 0px 3px #fff;
+      }
+    }
+
+    &__photo2d {
+      margin: 72px auto 0;
+    }
+
+    &__photoNameSpan {
+      display: inline-block;
+      font-size: 21px;
+    }
+
+    &__about {
+      margin: 140px auto 0;
+    }
+
+    &__aboutHeading {
+      width: 100%;
+      max-width: initial;
+    }
+
+    &__aboutList {
+      width: 94%;
+      max-width: initial;
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .facility {
+    &__wrapper {
+      padding-bottom: 40px;
+    }
+
+    &__floormap {
+      margin: 32px auto 0;
+
+      .subHeadingHasIcons {
+        margin: 32px auto 0;
+      }
+    }
+
+    &__floormapImage {
+      margin: 32px auto 0;
+    }
+
+    &__floormapParagraph {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    &__vrViewImage {
+      width: 76%;
+      margin: 40px auto 0;
+    }
+
+    &__photoBg {
+      top: -30vw;
+    }
+
+    &__about {
+      margin: 148px auto 0;
+    }
+
+    &__aboutHeading {
+      margin: 40px auto 28px;
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    &__aboutList {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__aboutItem {
+      width: 32%;
+      margin-bottom: 8px;
+    }
+
+    &__aboutIcon {
+      width: 80%;
+    }
+
+    &__aboutItemSmall {
+      white-space: nowrap;
+    }
+
+    &__link {
+      margin: 32px auto 0;
+    }
+  }
+}

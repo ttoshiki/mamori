@@ -195,6 +195,21 @@
   }
 }
 
+.link-button {
+  display: inline-block;
+  width: 284px;
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: variables.$white;
+  text-align: center;
+  background-color: #000000;
+
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+}
+
 .bottom-conversion {
   display: none;
 }
@@ -206,7 +221,6 @@
 
   .heading {
     font-size: 68px;
-    font-weight: 400;
     letter-spacing: 1px;
 
     &::after {
@@ -292,6 +306,12 @@
 
     &.-en {
       font-size: 17px;
+    }
+  }
+
+  .link-button {
+    &:not(:first-child) {
+      margin: 24px auto 0;
     }
   }
 }

@@ -202,7 +202,7 @@ function twpp_enqueue_styles()
 {
     wp_enqueue_style(
         'google-webfont-style',
-        '//fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet'
+        '//fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet'
     );
 }
 
