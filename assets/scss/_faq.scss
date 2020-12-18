@@ -1,0 +1,9 @@
+@use "variables";
+
+.faq {
+}
+
+@include variables.mq(variables.$mobile) {
+  .faq {
+  }
+}
