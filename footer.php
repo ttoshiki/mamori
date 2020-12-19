@@ -32,7 +32,7 @@
             <a href="<?php echo home_url('/price/'); ?>">料金・ご利用の流れ</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">よくあるご質問</a>
+            <a href="<?php echo home_url('/faq/'); ?>">よくあるご質問</a>
           </li>
         </ul>
         <ul class="footer__upperLinkList">

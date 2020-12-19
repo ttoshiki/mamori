@@ -69,7 +69,7 @@
 							</a>
 						</li>
 						<li class="header__hammenuItem">
-							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+							<a href="<?php echo home_url('/faq/'); ?>" class="header__hammenuLink">
 								<span class="header__hammenuText -en">Q&A</span>
 								<span class="header__hammenuText">よくあるご質問</span>
 							</a>
@@ -125,7 +125,7 @@
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/faq/'); ?>" class="header__navLink">
 						<span class="header__navLink -en">Q&A</span>
 						<span class="header__navLink">よくあるご質問</span>
 					</a>

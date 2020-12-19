@@ -2323,6 +2323,215 @@ textarea {
     font-size: 35px;
   }
 }
+.faq__wrapper {
+  padding-bottom: 80px;
+}
+.faq__pageLinks {
+  display: flex;
+  justify-content: center;
+  margin: 80px auto 0;
+}
+.faq__pageLink {
+  position: relative;
+  display: inline-block;
+  width: 206px;
+  padding: 8px 24px 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.faq__pageLink::after {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 10px;
+  height: 12px;
+  content: "";
+  background-image: url(assets/images/icons/icon_angle.svg);
+  background-size: cover;
+  -webkit-transform: translateY(-50%) rotate(90deg) scaleY(1.3);
+  transform: translateY(-50%) rotate(90deg) scaleY(1.3);
+}
+.faq__pageLink.-workspace {
+  background-color: #836c39;
+}
+.faq__pageLink.-corporateuse {
+  background-color: #1f2a66;
+}
+.faq__pageLink.-other {
+  background-color: #b2b2b2;
+}
+.faq__pageLink:not(:first-child) {
+  margin-left: 16px;
+}
+.faq__workspace, .faq__corporateUse, .faq__other {
+  width: 92%;
+  max-width: 656px;
+  margin: 80px auto 0;
+}
+.faq__corporateUse, .faq__other {
+  margin-top: 100px;
+}
+.faq__corporateUse .faq__questionWrapper {
+  background-color: #dddfe8;
+}
+.faq__other .faq__questionWrapper {
+  background-color: #ececec;
+}
+.faq__heading {
+  width: 91.46%;
+  font-size: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.faq__list {
+  padding-left: 32px;
+}
+.faq__item {
+  width: 91.46%;
+  margin-bottom: 24px;
+}
+.faq__questionWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #e6e2d7;
+}
+.faq__questionWrapper:hover {
+  cursor: pointer;
+}
+.faq__questionWrapper.isOpen .faq__questionAnswerInner {
+  display: flex;
+}
+.faq__itemQuestionLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.faq__questionIcon {
+  display: none;
+  align-items: center;
+  width: 20px;
+  min-width: 20px;
+  margin-right: 12px;
+}
+.faq__questionIcon svg {
+  width: 100%;
+}
+.faq__questionIcon.-minus {
+  display: none;
+}
+.faq__questionIcon.isShow {
+  display: flex;
+}
+.faq__question {
+  flex-grow: 1;
+  padding-left: 16px;
+  margin: 0;
+  font-size: 15px;
+}
+.faq__questionAnswer {
+  display: none;
+}
+.faq__questionAnswerInner {
+  display: flex;
+  align-items: flex-start;
+}
+.faq__answer {
+  padding-left: 16px;
+  margin-bottom: 0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.faq__itemAnswerLabel {
+  display: flex;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  margin-top: 8px;
+  font-size: 25px;
+}
+.faq__answerList {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.faq__answerList::before {
+  content: "・";
+}
+.faq__answerCaution {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.faq__answerCaution::before {
+  content: "※";
+}
+.faq__textLink {
+  position: relative;
+  font-weight: 600;
+  color: #000000;
+}
+.faq__textLink::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #808080;
+}
+
+@media screen and (max-width: 960px) {
+  .faq__pageLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__pageLink:not(:first-child) {
+    margin: 12px 0 0;
+  }
+  .faq__answer {
+    white-space: normal;
+  }
+  .faq__questionIcon {
+    margin: 0 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faq__wrapper {
+    padding-bottom: 32px;
+  }
+  .faq__pageLinks {
+    margin: 32px auto 0;
+  }
+  .faq__workspace, .faq__corporateUse, .faq__other {
+    width: 86%;
+  }
+  .faq__corporateUse, .faq__other {
+    margin-top: 80px;
+  }
+  .faq__heading {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .faq__list {
+    padding-left: 0;
+  }
+  .faq__item {
+    width: 100%;
+  }
+  .faq__questionWrapper, .faq__itemQuestionLabel {
+    height: 64px;
+  }
+  .faq__question {
+    padding: 12px 0 12px 16px;
+    line-height: 1.3;
+  }
+}
 /*
 Theme Name: Mamori
 Theme URI: http://underscores.me/
