@@ -1,0 +1,143 @@
+@use "variables";
+
+.archive {
+  &__wrapper {
+    padding-bottom: 64px;
+  }
+
+  &__categoryLinks {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 0;
+  }
+
+  &__categoryLinkWrapper {
+    padding: 0 12px;
+
+    &:not(:first-of-type) {
+      border-left: 1px solid #c4c4c4;
+    }
+
+    a {
+      font-size: 15px;
+      color: #888888;
+
+      &.-current {
+        font-weight: 600;
+        color: #000000;
+      }
+    }
+  }
+
+  &__article {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  &__articleSection {
+    margin-top: 80px;
+  }
+
+  &__item {
+    border-bottom: 2px solid #ececec;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  &__date {
+    min-width: 66px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+
+  &__categoryName {
+    padding: 2px 4px;
+    margin-left: 12px;
+    font-weight: 600;
+  }
+
+  &__link {
+    display: block;
+    padding-bottom: 4px;
+    margin: 8px auto 0;
+    font-size: 13px;
+    color: #000000;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__categoryName {
+    font-size: 10px;
+    color: variables.$white;
+    background-color: variables.$color-primary;
+
+    &.-secondary {
+      background-color: variables.$color-secondary;
+    }
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__paginateLinks {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0 0;
+  }
+
+  &__paginateLink {
+    padding: 0 12px;
+
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 17px;
+      font-weight: 600;
+      color: variables.$white;
+      background-color: #000000;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        width: 9px;
+        height: 12px;
+        content: "";
+        background-image: url(assets/images/icons/icon_angle.svg);
+        background-size: cover;
+      }
+    }
+
+    &.-prev a {
+      padding: 6px 32px 6px 48px;
+
+      &::after {
+        left: 28px;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    &.-next a {
+      padding: 6px 48px 6px 32px;
+
+      &::after {
+        right: 28px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .archive {
+  }
+}

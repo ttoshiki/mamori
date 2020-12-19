@@ -131,13 +131,13 @@
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/news/'); ?>" class="header__navLink">
 						<span class="header__navLink -en">NEWS</span>
 						<span class="header__navLink">お知らせ</span>
 					</a>
 				</li>
 				<li class="header__navItem">
-					<a href="<?php echo home_url(); ?>" class="header__navLink">
+					<a href="<?php echo home_url('/#access'); ?>" class="header__navLink">
 						<span class="header__navLink -en">ACCESS</span>
 						<span class="header__navLink">アクセス</span>
 					</a>

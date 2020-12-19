@@ -126,7 +126,7 @@ get_header();
 						</a>
 					</div>
 				</section>
-				<section class="home__access">
+				<section class="home__access" id="access">
 					<div class="heading__wrapper">
 						<h2 class="heading -light -en">ACCESS</h2>
 						<span class="heading__subHeading">アクセス</span>

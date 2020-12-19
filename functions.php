@@ -191,7 +191,7 @@ function official_pagination()
         'current' => max(1, get_query_var('paged')),
         'prev_text' => __('<'),
         'next_text' => __('>'),
-        'mid_size' => 2,
+        'mid_size' => 1,
         'total' => $wp_query->max_num_pages
     ));
 }

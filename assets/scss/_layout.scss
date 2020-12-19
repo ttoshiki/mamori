@@ -3,3 +3,40 @@
 .l-doubleCol {
   display: flex;
 }
+
+.l-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0;
+
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 0 6px;
+    font-size: 15px;
+    color: variables.$white;
+    background-color: #000000;
+
+    &.current {
+      color: #000000;
+      background-color: variables.$white;
+      border: 1px solid #000000;
+    }
+
+    &.prev,
+    &.next {
+      border-radius: 50%;
+    }
+
+    &.prev {
+      margin: 0 24px 0 0;
+    }
+
+    &.next {
+      margin: 0 0 0 24px;
+    }
+  }
+}
