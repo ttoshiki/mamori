@@ -413,6 +413,18 @@ textarea {
   margin: 0 0 0 24px;
 }
 
+@media screen and (max-width: 480px) {
+  .l-pagination .page-numbers {
+    margin: 0 10px;
+    font-size: 17px;
+  }
+  .l-pagination .page-numbers.next {
+    margin: 0 0 0 16px;
+  }
+  .l-pagination .page-numbers.prev {
+    margin: 0 16px 0 0;
+  }
+}
 .header {
   position: relative;
   display: flex;
@@ -707,7 +719,7 @@ textarea {
     margin-left: 8vw;
   }
   .footer__upperLinkItem {
-    font-size: 11px;
+    font-size: 2.94vw;
   }
   .footer__lowerLinkItem {
     font-size: 11px;
@@ -771,7 +783,8 @@ textarea {
   color: #000000;
 }
 .archive__article {
-  width: 500px;
+  width: 94%;
+  max-width: 500px;
   margin: 0 auto;
 }
 .archive__articleSection {
@@ -811,6 +824,9 @@ textarea {
 }
 .archive__categoryName.-secondary {
   background-color: #836c39;
+}
+.archive__categoryName.-tertiary {
+  background-color: #b2b2b2;
 }
 .archive__title {
   display: block;
@@ -861,6 +877,57 @@ textarea {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 480px) {
+  .archive__categoryLinks {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 4px;
+    margin: 48px auto 0;
+  }
+  .archive__categoryLinkWrapper {
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .archive__categoryLinkWrapper:nth-of-type(2) {
+    margin-right: 32%;
+  }
+  .archive__categoryLinkWrapper:first-of-type {
+    border-right: 1px solid #c4c4c4;
+  }
+  .archive__categoryLinkWrapper:not(:first-of-type) {
+    border-right: 1px solid #c4c4c4;
+    border-left: none;
+  }
+  .archive__categoryLinkWrapper a {
+    font-size: 18px;
+  }
+  .archive__articleSection {
+    margin-top: 48px;
+  }
+  .archive__article {
+    width: 90%;
+  }
+  .archive__date {
+    font-size: 14px;
+  }
+  .archive__categoryName {
+    margin-left: 6px;
+    font-size: 13px;
+  }
+  .archive__link {
+    font-size: 15px;
+  }
+  .archive__paginateLink a {
+    font-size: 20px;
+  }
+  .archive__paginateLink.-next {
+    margin: 20px 0 0;
+  }
+  .archive__paginateLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home__wrapper {
   padding-bottom: 32px;
 }

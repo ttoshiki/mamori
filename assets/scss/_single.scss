@@ -1,0 +1,9 @@
+@use "variables";
+
+.single {
+}
+
+@include variables.mq(variables.$mobile) {
+  .single {
+  }
+}

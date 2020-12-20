@@ -27,6 +27,12 @@ jQuery(function() {
     jQuery(this).toggleClass('-opened')
     jQuery(".header__trigger").toggleClass('active');
   });
+
+  // spメニューページ内リンク
+  jQuery(".header__hammenuList a").on("click", function() {
+    jQuery(".header__hammenuWrapper").css('display', 'none');
+    jQuery(".header__trigger").removeClass('-opened');
+  })
 })
 
 

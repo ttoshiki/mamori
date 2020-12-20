@@ -48,7 +48,7 @@ get_header();
 							<?php $categories = get_the_category(); ?>
 							<li id="post-<?php the_ID(); ?>" class="archive__item">
 								<time datetime="<?php echo get_the_date('Y.m.d'); ?>" class="archive__date"><?php echo get_the_date('Y.m.d'); ?></time>
-								<span class="archive__categoryName<?php if( $categories[0]->slug === 'important') { echo ' -secondary'; } elseif( $categories[0]->slug === 'event') { echo 'tertiary'; } ?>"><?php echo $categories[0]->name; ?></span>
+								<span class="archive__categoryName<?php if( $categories[0]->slug === 'important') { echo ' -secondary'; } elseif( $categories[0]->slug === 'event') { echo ' -tertiary'; } ?>"><?php echo $categories[0]->name; ?></span>
 								<a href="<?php the_permalink(); ?>" class="archive__link"><span class="archive__title"><?php echo get_the_title(); ?></span></a>
 							</li>
 						<?php endwhile; ?>

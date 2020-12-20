@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main class="site-main">
-		<div class="single">
+		<div class="single__wrapper">
       <section class="l-mainVisual">
         <h1 class="l-mainVisualHeading roboto" id="effect_01">NEWS</h1>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/news/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
@@ -46,12 +46,9 @@ get_header();
 					<a href="<?php echo home_url('/download/') ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/banner.jpg" alt="" class="single__banner">
 					</a>
-					<?php related_posts(); ?>
 				</div>
-				<aside class="l-aside">
-					<?php get_sidebar(); ?>
-				</aside>
 			</div>
+		</div>
 	</main><!-- #main -->
 
 <?php

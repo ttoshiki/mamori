@@ -75,13 +75,13 @@
 							</a>
 						</li>
 						<li class="header__hammenuItem">
-							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+							<a href="<?php echo home_url('/news/'); ?>" class="header__hammenuLink">
 								<span class="header__hammenuText -en">NEWS</span>
 								<span class="header__hammenuText">お知らせ</span>
 							</a>
 						</li>
 						<li class="header__hammenuItem">
-							<a href="<?php echo home_url(); ?>" class="header__hammenuLink">
+							<a href="<?php echo home_url('/#access'); ?>" class="header__hammenuLink">
 								<span class="header__hammenuText -en">ACCESS</span>
 								<span class="header__hammenuText">アクセス</span>
 							</a>
