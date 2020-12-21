@@ -324,24 +324,7 @@
   &__links {
     display: flex;
     justify-content: center;
-    margin: 88px auto 0;
-  }
-
-  &__footerLogo {
-    width: 156px;
-    margin: 108px auto 0;
-  }
-
-  &__footerPhoneNumber {
-    display: block;
-    margin: 12px 0 0;
-    font-size: 26px;
-    text-align: center;
-  }
-
-  &__footerReceptionTime {
-    display: block;
-    text-align: center;
+    margin: 88px auto 108px;
   }
 }
 
@@ -481,7 +464,7 @@
     }
 
     &__flow {
-      margin-top: 172px;
+      margin: 172px auto 96px;
     }
 
     &__flowSubHeading {
@@ -508,15 +491,6 @@
       flex-direction: column;
       align-items: center;
       margin: 64px auto 0;
-    }
-
-    &__footerLogo {
-      width: 29.34%;
-      margin: 96px auto 0;
-    }
-
-    &__footerPhoneNumber {
-      font-size: 35px;
     }
   }
 }

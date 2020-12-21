@@ -467,11 +467,7 @@ get_header();
           <a href="<?php echo home_url(); ?>" class="link-button">会員情報の登録はこちら</a>
         </div>
       </section>
-      <section class="price__footer">
-        <div class="price__footerLogo"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?></div>
-        <span class="price__footerPhoneNumber -en"><?php get_template_part('template-parts/phone-number'); ?></span>
-        <span class="price__footerReceptionTime">受付時間：10:00~20:00</span>
-      </section>
+      <?php get_template_part('template-parts/content-footer'); ?>
     </div>
 	</main><!-- #main -->
 

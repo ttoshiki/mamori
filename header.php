@@ -146,7 +146,7 @@
 			<div class="header__navConversion">
 				<ul class="header__navConversionList">
 					<li class="header__navConversionItem">
-						<a href="<?php echo home_url(); ?>" class="header__navConversionLink -contact">
+						<a href="<?php echo home_url('/contact/'); ?>" class="header__navConversionLink -contact">
 							<span class="header__navConversionText -en">CONTACT</span>
 							<span class="header__navConversionText">お問い合わせ</span>
 						</a>

@@ -37,13 +37,13 @@
         </ul>
         <ul class="footer__upperLinkList">
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">お知らせ</a>
+            <a href="<?php echo home_url('/news/'); ?>">お知らせ</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">アクセス</a>
+            <a href="<?php echo home_url('/#access'); ?>">アクセス</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">お問い合わせ</a>
+            <a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
           </li>
           <li class="footer__upperLinkItem">
             <a href="<?php echo home_url(); ?>">見学予約</a>

@@ -291,6 +291,195 @@ textarea {
   display: none;
 }
 
+.wp-block-image {
+  margin: 24px 0;
+}
+
+.form-caution {
+  display: block;
+  margin: 24px 0 16px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #a70000;
+}
+.form-item {
+  display: flex;
+  align-items: center;
+  background-color: #dcdcdc;
+  border: 1px solid #d6d6d6;
+  border-right: none;
+}
+.form-item:not(:first-of-type) {
+  border-top: none;
+}
+.form-item.email {
+  border-bottom: none;
+}
+.form-item.textarea {
+  height: 192px;
+}
+.form-item.-sp {
+  display: none;
+}
+.form-label {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 100%;
+  padding: 16px 12px;
+  font-weight: 600;
+}
+.form-label.email {
+  padding: 12px 12px 4px 12px;
+}
+.form-label.email-confirm {
+  padding: 4px 12px 18px 12px;
+}
+.form-label-double {
+  display: flex;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+.form-input-wrapper {
+  width: 76%;
+  height: 100%;
+  padding: 10px 36px 10px 24px;
+  background-color: #ffffff;
+}
+.form-input-wrapper.double-col {
+  display: flex;
+}
+.form-input-wrapper.double-col .form-input {
+  width: 50%;
+  margin-right: 24px;
+}
+.form-input-wrapper.double-col .form-input input {
+  max-width: 100%;
+}
+.form-input-wrapper.double-col .your-name {
+  margin-right: 0;
+}
+.form-input-wrapper.email {
+  padding: 4px 26px 8px 24px;
+}
+.form-input-wrapper.email-confirm {
+  padding: 8px 26px 6px 24px;
+}
+.form-input-wrapper.textarea {
+  padding: 8px 34px 0 24px;
+}
+.form-input-wrapper.double-line {
+  padding: 20px 36px 20px 24px;
+}
+.form-input {
+  display: flex;
+  align-items: center;
+}
+.form-input input {
+  max-width: 100%;
+}
+.form-input input:-moz-read-only,
+.form-input textarea:-moz-read-only {
+  background-color: #e8f0fe;
+}
+.form-input input:read-only,
+.form-input textarea:read-only {
+  background-color: #e8f0fe;
+}
+.form-input input,
+.form-input textarea,
+.form-input select {
+  width: 100%;
+  padding: 8px 1em;
+  background-color: #f2f2f2;
+  border: 1px solid #c5c5c5;
+}
+.form-input.email {
+  padding: 16px 0 0 0;
+}
+.form-input.email-confirm {
+  padding: 0 0 16px 0;
+  border-top: none;
+}
+.form-input.select {
+  position: relative;
+  width: 48%;
+}
+.form-input.select::after {
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  width: 11px;
+  height: 8px;
+  content: "";
+  background-image: url(assets/images/icons/icon_angle-dark.svg);
+  background-size: cover;
+}
+.form-submit-btn-wrapper {
+  margin: 48px auto 0;
+  text-align: center;
+}
+.form-submit-btn-wrapper .wpcf7-submit,
+.form-submit-btn-wrapper .wpcf7-confirm {
+  display: inline-block;
+  width: 256px;
+  padding: 12px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+.form-submit-btn-wrapper .wpcf7-submit:hover,
+.form-submit-btn-wrapper .wpcf7-confirm:hover {
+  cursor: pointer;
+}
+.form-submit-btn-wrapper .wpcf7-back {
+  display: inline-block;
+  width: 160px;
+  padding: 12px 0;
+  margin-right: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.form-submit-btn-wrapper .wpcf7-back:hover {
+  cursor: pointer;
+}
+
+.wpcf7-form-control-wrap {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 12px;
+  color: #a70000;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: #e8cb8b;
+}
+
+.content-footerLogo {
+  width: 156px;
+  margin: 0 auto;
+}
+.content-footerPhoneNumber {
+  display: block;
+  margin: 4px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+.content-footerReceptionTime {
+  display: block;
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
   .side-conversion {
     display: none;
@@ -376,6 +565,115 @@ textarea {
 
   .link-button:not(:first-child) {
     margin: 24px auto 0;
+  }
+
+  .content-footerLogo {
+    width: 29.34%;
+  }
+  .content-footerPhoneNumber {
+    font-size: 35px;
+  }
+
+  .form-caution {
+    width: 80%;
+    margin: 32px auto 24px;
+  }
+  .form-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+  }
+  .form-item.textarea {
+    height: auto;
+  }
+  .form-item.-pc {
+    display: none;
+  }
+  .form-item.-sp {
+    display: block;
+  }
+  .form-label {
+    padding: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .form-label.email {
+    padding: 0;
+  }
+  .form-label.email-confirm {
+    padding: 0;
+  }
+  .form-label-double {
+    background-color: transparent;
+  }
+  .form-input-wrapper {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  .form-input-wrapper.double-col {
+    flex-direction: column;
+  }
+  .form-input-wrapper.double-col .form-input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .form-input-wrapper.double-col .form-input.your-name {
+    margin-top: 8px;
+  }
+  .form-input-wrapper.double-line {
+    padding: 0;
+  }
+  .form-input-wrapper.textarea {
+    padding: 0;
+  }
+  .form-input-wrapper.email {
+    padding: 0;
+  }
+  .form-input-wrapper.email-confirm {
+    padding: 0;
+  }
+  .form-input.select {
+    width: 100%;
+  }
+  .form-input.select::after {
+    right: 11px;
+  }
+  .form-input.email {
+    padding: 0;
+  }
+  .form-input input,
+.form-input textarea,
+.form-input select {
+    padding: 8px 0.5em;
+  }
+  .form-input textarea {
+    height: 160px;
+  }
+  .form-submit-btn-wrapper {
+    margin: 24px auto 0;
+  }
+  .form-submit-btn-wrapper .wpcf7-submit {
+    width: 46%;
+    padding: 18px 0;
+    font-size: 18px;
+  }
+  .form-submit-btn-wrapper .wpcf7-back {
+    display: block;
+    width: 46%;
+    padding: 17px 0;
+    margin: 0 auto 24px;
+    font-size: 18px;
+  }
+
+  div.wpcf7 .ajax-loader {
+    display: block;
+    margin: 0 auto;
   }
 }
 .l-doubleCol {
@@ -592,7 +890,7 @@ textarea {
     margin-top: 4vw;
   }
   .header__hammenuInner {
-    margin: 8vh auto 0;
+    margin: 8vh auto;
   }
   .header__hammenuLink {
     display: inline-flex;
@@ -928,6 +1226,89 @@ textarea {
     align-items: center;
   }
 }
+.single__wrapper {
+  padding-bottom: 80px;
+}
+.single__main {
+  width: 94%;
+  max-width: 554px;
+  margin: 48px auto 0;
+}
+.single__title {
+  padding-bottom: 4px;
+  margin: 4px 0 0;
+  font-size: 18px;
+  border-bottom: 2px solid #ececec;
+}
+.single__meta {
+  margin-top: 40px;
+}
+.single__newsLinkWrapper {
+  margin: 80px auto 0;
+  text-align: center;
+}
+.single__newsLink {
+  position: relative;
+  display: inline-block;
+  padding: 6px 48px 6px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+}
+.single__newsLink::after {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  width: 9px;
+  height: 12px;
+  content: "";
+  background-image: url(assets/images/icons/icon_angle.svg);
+  background-size: cover;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.single__paginateLinks {
+  display: flex;
+  width: 94%;
+  max-width: 554px;
+  margin: 32px auto 0;
+}
+.single__paginateLinkWrapper a {
+  position: relative;
+  font-weight: 600;
+  color: #6f6f6f;
+}
+.single__paginateLinkWrapper.-prev .single__paginateLinkSign {
+  margin-right: 4px;
+}
+.single__paginateLinkWrapper.-next {
+  margin: 0 0 0 auto;
+}
+.single__paginateLinkWrapper.-next .single__paginateLinkSign {
+  margin-left: 4px;
+}
+.single__paginateLinkSign {
+  display: inline-flex;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #ffffff;
+  vertical-align: text-bottom;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .single__wrapper {
+    padding-bottom: 40px;
+  }
+  .single__meta {
+    margin: 24px auto 0;
+  }
+}
 .home__wrapper {
   padding-bottom: 32px;
 }
@@ -1042,6 +1423,9 @@ textarea {
 }
 .home__newsCategoryName.-secondary {
   background-color: #836c39;
+}
+.home__newsCategoryName.-tertiary {
+  background-color: #b2b2b2;
 }
 .home__newsTitle {
   display: block;
@@ -2380,21 +2764,7 @@ textarea {
 .price__links {
   display: flex;
   justify-content: center;
-  margin: 88px auto 0;
-}
-.price__footerLogo {
-  width: 156px;
-  margin: 108px auto 0;
-}
-.price__footerPhoneNumber {
-  display: block;
-  margin: 12px 0 0;
-  font-size: 26px;
-  text-align: center;
-}
-.price__footerReceptionTime {
-  display: block;
-  text-align: center;
+  margin: 88px auto 108px;
 }
 
 @media screen and (max-width: 480px) {
@@ -2503,7 +2873,7 @@ textarea {
     font-feature-settings: "palt";
   }
   .price__flow {
-    margin-top: 172px;
+    margin: 172px auto 96px;
   }
   .price__flowSubHeading {
     width: 94%;
@@ -2525,13 +2895,6 @@ textarea {
     flex-direction: column;
     align-items: center;
     margin: 64px auto 0;
-  }
-  .price__footerLogo {
-    width: 29.34%;
-    margin: 96px auto 0;
-  }
-  .price__footerPhoneNumber {
-    font-size: 35px;
   }
 }
 .faq__wrapper {
@@ -2741,6 +3104,34 @@ textarea {
   .faq__question {
     padding: 12px 0 12px 16px;
     line-height: 1.3;
+  }
+}
+.contact__wrapper {
+  padding-bottom: 24px;
+}
+.contact__form {
+  width: 96%;
+  max-width: 600px;
+  margin: 56px auto 80px;
+}
+.contact__formParagraph {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.contact__formParagraph a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .contact__form {
+    width: 100%;
+    margin: 16px auto 80px;
+  }
+  .contact__formParagraph {
+    padding: 0 16px;
+    font-size: 3.47vw;
+    text-align: center;
   }
 }
 /*

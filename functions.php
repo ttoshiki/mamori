@@ -7,6 +7,7 @@
  * @package Mamori
  */
 
+
 if (! defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
     define('_S_VERSION', '1.0.0');
@@ -165,6 +166,8 @@ function mamori_scripts()
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/home.js', array(), '', true);
     } elseif (is_page('faq')) {
         wp_enqueue_script('faq-script', get_template_directory_uri() . '/assets/js/faq.js', array(), '', true);
+    } elseif (is_page('contact')) {
+        wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/contact.js', array(), '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'mamori_scripts');
@@ -209,3 +212,30 @@ function twpp_enqueue_styles()
 }
 
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
+
+/**
+ * コンタクトフォームのメールアドレス確認バリデーション
+ */
+
+add_filter('wpcf7_validate_email', 'wpcf7_validate_email_filter_extend', 11, 2);
+add_filter('wpcf7_validate_email*', 'wpcf7_validate_email_filter_extend', 11, 2);
+function wpcf7_validate_email_filter_extend($result, $tag)
+{
+    $type = $tag['type'];
+    $name = $tag['name'];
+    $_POST[$name] = trim(strtr((string) $_POST[$name], "n", " "));
+    if ('email' == $type || 'email*' == $type) {
+        if (preg_match('/(.*)_confirm$/', $name, $matches)) { //確認用メルアド入力フォーム名を ○○○_confirm としています。
+            $target_name = $matches[1];
+            if ($_POST[$name] != $_POST[$target_name]) {
+                if (method_exists($result, 'invalidate')) {
+                    $result->invalidate($tag, "確認用のメールアドレスが一致していません");
+                } else {
+                    $result['valid'] = false;
+                    $result['reason'][$name] = '確認用のメールアドレスが一致していません';
+                }
+            }
+        }
+    }
+    return $result;
+}

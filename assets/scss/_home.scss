@@ -143,6 +143,10 @@
     &.-secondary {
       background-color: variables.$color-secondary;
     }
+
+    &.-tertiary {
+      background-color: #b2b2b2;
+    }
   }
 
   &__newsTitle {

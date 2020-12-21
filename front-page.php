@@ -47,7 +47,7 @@ get_header();
 						私たちはそんな空間を提供します。
 					</p>
 					<div class="button__wrapper">
-						<a href="<?php echo home_url(); ?>" class="button">
+						<a href="<?php echo home_url('/about/'); ?>" class="button">
 							<span class="button__text">Mamoriの哲学</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 10.96"><defs><style>.icon_angle-round{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle-round" points="1 1 4 3.24 7 5.48 4 7.72 1 9.96"/></svg>
 						</a>
@@ -63,16 +63,16 @@ get_header();
 				<section class="home__links">
 					<ul class="home__linksList">
 						<li class="home__linksItem">
-							<a href="<?php echo home_url(); ?>" class="home__linksLink">
+							<a href="<?php echo home_url('/facility/'); ?>" class="home__linksLink">
 								<div class="home__linksIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.6 68.6"><defs><style>.icon_24h365d-1{fill:#fff;stroke:#1f2a66;stroke-miterlimit:10;stroke-width:7px;}.icon_24h365d-2{fill:#9197b4;}</style></defs><circle class="icon_24h365d-1" cx="34.3" cy="34.3" r="30.8"/><path class="icon_24h365d-2" d="M58.85,31.33a1.15,1.15,0,0,0-.83-.24,1.1,1.1,0,0,0-.76.42l-2.17,2.73a21.11,21.11,0,0,0-7.88-15.38,21,21,0,0,0-29.4,3.35,1.13,1.13,0,0,0-.24.83,1.19,1.19,0,0,0,.42.76,1.13,1.13,0,0,0,.83.24,1.19,1.19,0,0,0,.76-.42A18.66,18.66,0,0,1,52.85,35.36l-3.69-2.93a1.12,1.12,0,0,0-.83-.24,1.13,1.13,0,0,0-.58,2l5.4,4.29a1.13,1.13,0,0,0,.7.25H54a1.14,1.14,0,0,0,.76-.42L59,32.92A1.14,1.14,0,0,0,58.85,31.33Z"/><path class="icon_24h365d-2" d="M49.58,44.45a1.13,1.13,0,0,0-.76.41A18.66,18.66,0,0,1,15.55,33.12l3.69,2.93a1.13,1.13,0,0,0,.83.24,1.1,1.1,0,0,0,.76-.42,1.13,1.13,0,0,0-.18-1.59L15.25,30a1.12,1.12,0,0,0-.83-.24,1.14,1.14,0,0,0-.75.42l-4.29,5.4a1.12,1.12,0,0,0,.18,1.58,1.08,1.08,0,0,0,.83.24,1.06,1.06,0,0,0,.75-.42l2.18-2.73a21.06,21.06,0,0,0,7.87,15.38,20.74,20.74,0,0,0,13,4.54A21.62,21.62,0,0,0,36.58,54a20.8,20.8,0,0,0,14-7.76,1.13,1.13,0,0,0-.18-1.59A1.11,1.11,0,0,0,49.58,44.45Z"/><path class="icon_24h365d-2" d="M28.32,29.16a13.39,13.39,0,0,0-1.88,1.4,5.33,5.33,0,0,0-1.53,2.28,5.1,5.1,0,0,0-.27,1.36,11,11,0,0,1,1.53-.05h3.69c.73,0,1.19,0,1.77.08V32.47a10.49,10.49,0,0,1-1.68.09H27.16a2.6,2.6,0,0,1,.52-.82,10,10,0,0,1,1.21-1,13.46,13.46,0,0,0,1.65-1.21,2.61,2.61,0,0,0,1-2C31.51,26,30.22,25,28.2,25a3.42,3.42,0,0,0-2.71,1.05,3.51,3.51,0,0,0-.78,1.86l1.95.22a2,2,0,0,1,.29-1,1.47,1.47,0,0,1,1.28-.6c.79,0,1.34.42,1.34,1S29.33,28.48,28.32,29.16Z"/><path class="icon_24h365d-2" d="M38.55,25.21H36.69a10.84,10.84,0,0,1-1,1.26l-2.5,3-1,1.11v1.64a12.39,12.39,0,0,1,1.39,0h3.07v.66a7,7,0,0,1-.09,1.32h1.92a6.76,6.76,0,0,1-.09-1.3v-.67h.31a10,10,0,0,1,1.14.07V30.56a7.37,7.37,0,0,1-1.14.08h-.31V27.06A16.92,16.92,0,0,1,38.55,25.21Zm-1.8,3.42v2H34.22l1.92-2.35c.28-.35.5-.63.67-.87C36.77,28,36.75,28.3,36.75,28.63Z"/><path class="icon_24h365d-2" d="M41.18,34.75h1.18a4.59,4.59,0,0,1,0-.81V32.88h1.85v1.06a5.76,5.76,0,0,1,0,.81H45.3a6.34,6.34,0,0,1,0-.81V31a5.83,5.83,0,0,1,0-.82H44.12a5.83,5.83,0,0,1,0,.82v.91H42.31V31a5,5,0,0,1,0-.82H41.18a6,6,0,0,1,0,.82v2.94A5.59,5.59,0,0,1,41.18,34.75Z"/><path class="icon_24h365d-2" d="M26.59,41.87a1.19,1.19,0,0,1-.85-.3.84.84,0,0,1-.27-.52l-1.27.23a2.21,2.21,0,0,0,.42.87,2.46,2.46,0,0,0,1.95.72,2.66,2.66,0,0,0,1.9-.61,1.52,1.52,0,0,0,.44-1.06,1.4,1.4,0,0,0-.34-1,1.62,1.62,0,0,0-1-.5,1.47,1.47,0,0,0,.87-.47,1.46,1.46,0,0,0-.08-1.92,2.4,2.4,0,0,0-1.71-.58,2.4,2.4,0,0,0-1.77.62,1.9,1.9,0,0,0-.5.9l1.28.21a.87.87,0,0,1,.93-.72c.6,0,.9.23.9.7a.69.69,0,0,1-.33.62,1.47,1.47,0,0,1-.79.17,5.06,5.06,0,0,1-.68-.05v1.06a7.51,7.51,0,0,1,.87,0c.72,0,1.09.28,1.09.82S27.22,41.87,26.59,41.87Z"/><path class="icon_24h365d-2" d="M30.12,37.84a4.31,4.31,0,0,0-.48,2.07,3.5,3.5,0,0,0,.66,2.24,2.2,2.2,0,0,0,1.74.72,2.33,2.33,0,0,0,1.68-.62,2,2,0,0,0,.56-1.4,1.85,1.85,0,0,0-2-2,2,2,0,0,0-1,.21,1.39,1.39,0,0,0-.48.38,2.65,2.65,0,0,1,.24-1,1.13,1.13,0,0,1,1.05-.72.84.84,0,0,1,.91.67l1.17-.27a1.89,1.89,0,0,0-.68-1,2.32,2.32,0,0,0-1.4-.39A2.19,2.19,0,0,0,30.12,37.84Zm1.91,2a1,1,0,0,1,1.08,1,1.13,1.13,0,0,1-.14.58,1.11,1.11,0,0,1-.95.47,1,1,0,0,1-1.11-1A1,1,0,0,1,32,39.83Z"/><path class="icon_24h365d-2" d="M37.54,41.86a1,1,0,0,1-.82-.33,1,1,0,0,1-.21-.41l-1.21.22a2.24,2.24,0,0,0,.51.9,2.33,2.33,0,0,0,1.76.64,2,2,0,0,0,2.27-2.12,1.88,1.88,0,0,0-.52-1.4,2,2,0,0,0-1.47-.56,1.9,1.9,0,0,0-1.21.38c0-.08,0-.24,0-.3l.09-1h1.68a8.66,8.66,0,0,1,1.08.06V36.83a7.68,7.68,0,0,1-1.09.05H36.55c-.4,0-.55,0-.81,0,0,.44,0,.49,0,.77l-.17,1.85c0,.3,0,.41-.1.75l1.12.1a.81.81,0,0,1,.21-.31,1.21,1.21,0,0,1,.81-.28,1,1,0,0,1,1.06,1.05A1,1,0,0,1,37.54,41.86Z"/><path class="icon_24h365d-2" d="M40.94,43.28H42V43h2.12v.24H45.2c0-.24,0-.47,0-.8V38.9c0-.17,0-.4,0-.66a5.41,5.41,0,0,1-.63,0h-3a6,6,0,0,1-.65,0c0,.24,0,.45,0,.66v3.58C41,42.77,41,43,40.94,43.28ZM42,39.23h2.12v.91H42Zm0,1.85h2.12v1H42Z"/></svg></div>
-								<div class="home__linksText">
+								<d class="home__linksText">
 									<h2 class="home__linksHeading -en">FACILITY</h2>
 									<span class="home__linksSubHeading">施設・設備</span>
-								</div>
+								</d>
 							</a>
 						</li>
 						<li class="home__linksItem">
-							<a href="<?php echo home_url(); ?>" class="home__linksLink">
+							<a href="<?php echo home_url('/price/'); ?>" class="home__linksLink">
 								<div class="home__linksIcon "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.6 68.6"><defs><style>.icon_price-1{fill:#fff;stroke:#1f2a66;stroke-miterlimit:10;stroke-width:7px;}.icon_price-2{fill:#9197b4;}</style></defs><circle class="icon_price-1" cx="34.3" cy="34.3" r="30.8"/><path class="icon_price-2" d="M56,37.91a.87.87,0,0,0-.45-.13H42.36l0,.21A8.36,8.36,0,0,1,42,39.11l-.11.33H53l-6.88,5.05H15.6l6.88-5.05H27l-.11-.33A8.36,8.36,0,0,1,26.64,38l0-.21H22.2a.89.89,0,0,0-.49.16l-9.06,6.65a1.46,1.46,0,0,0-.37.39.77.77,0,0,0,.05.76l2.25,3.81a.84.84,0,0,0,.71.41H45.16a.86.86,0,0,0,.53-.16l9.66-7.17a.78.78,0,0,0,.32-.49l.71-3.36A.84.84,0,0,0,56,37.91ZM45.26,46.15l-.7,2.15H15.77l-1.28-2.15Zm9.05-5.58-.2.91-7.32,5.43.36-1.08Z"/><polygon class="icon_price-2" points="34.38 22.65 32.9 24.71 31.43 22.65 30.46 22.65 32.21 25.08 30.83 25.08 30.83 25.75 32.49 25.75 32.49 26.12 30.83 26.12 30.83 26.79 32.49 26.79 32.49 28.84 33.31 28.84 33.31 26.79 34.98 26.79 34.98 26.12 33.31 26.12 33.31 25.75 34.98 25.75 34.98 25.08 33.59 25.08 35.34 22.65 34.38 22.65"/><polygon class="icon_price-2" points="41.63 30.18 41.63 30.85 43.29 30.85 43.29 32.9 44.11 32.9 44.11 30.85 45.78 30.85 45.78 30.18 44.11 30.18 44.11 29.82 45.78 29.82 45.78 29.15 44.4 29.15 46.14 26.72 45.18 26.72 43.7 28.78 42.23 26.72 41.26 26.72 43.01 29.15 41.63 29.15 41.63 29.82 43.29 29.82 43.29 30.18 41.63 30.18"/><path class="icon_price-2" d="M36.69,28.69l0,.21.21.06a8.37,8.37,0,0,1,1.08.43l.31.15,0-.35a5.45,5.45,0,1,1,5.41,6.07,6.2,6.2,0,0,1-1-.1l-.34-.07,0,.35a8.74,8.74,0,0,1,.08,1.14v.23l.22,0a7.4,7.4,0,0,0,1,.08,7.11,7.11,0,1,0-7-8.23Z"/><path class="icon_price-2" d="M28.31,31.16l.18.16.16-.18a7.5,7.5,0,0,1,.83-.77l.24-.19-.24-.2A5.44,5.44,0,1,1,38,23.79l.13.34.27-.24a9.11,9.11,0,0,1,.92-.72l.18-.11-.09-.2a7.1,7.1,0,1,0-11.08,8.3Z"/><path class="icon_price-2" d="M27.37,36.57a7.11,7.11,0,1,0,7.11-7.11A7.12,7.12,0,0,0,27.37,36.57Zm1.66,0A5.45,5.45,0,1,1,34.48,42,5.46,5.46,0,0,1,29,36.57Z"/><polygon class="icon_price-2" points="32.26 36.74 32.26 37.41 33.92 37.41 33.92 37.78 32.26 37.78 32.26 38.45 33.92 38.45 33.92 40.5 34.74 40.5 34.74 38.45 36.41 38.45 36.41 37.78 34.74 37.78 34.74 37.41 36.41 37.41 36.41 36.74 35.03 36.74 36.77 34.31 35.81 34.31 34.33 36.37 32.86 34.31 31.89 34.31 33.64 36.74 32.26 36.74"/></svg></div>
 								<div class="home__linksText">
 									<h2 class="home__linksHeading -en">PRICE</h2>
@@ -81,7 +81,7 @@ get_header();
 							</a>
 						</li>
 						<li class="home__linksItem">
-							<a href="<?php echo home_url(); ?>" class="home__linksLink">
+							<a href="<?php echo home_url('/faq/'); ?>" class="home__linksLink">
 								<div class="home__linksIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.6 68.6"><defs><style>.icon_question-1{fill:#fff;stroke:#1f2a66;stroke-miterlimit:10;stroke-width:7px;}.icon_question-2{fill:#9197b4;}</style></defs><circle class="icon_question-1" cx="34.7" cy="34.05" r="30.8"/><path class="icon_question-2" d="M42.7,19.55h-16a1.5,1.5,0,0,0-1.5,1.5v7.5h3v-6h13v6.57L34,32.71a1.51,1.51,0,0,0-.83,1.34v8h3V35l7.18-3.58a1.51,1.51,0,0,0,.82-1.34v-9A1.5,1.5,0,0,0,42.7,19.55Z"/><rect class="icon_question-2" x="33.2" y="45.55" width="3" height="3"/></svg></div>
 								<div class="home__linksText">
 									<h2 class="home__linksHeading -en">Q&A</h2>
@@ -109,7 +109,7 @@ get_header();
 								<?php $categories = get_the_category(); ?>
 								<li id="post-<?php the_ID(); ?>" class="home__newsItem">
 									<time datetime="<?php echo get_the_date('Y.m.d'); ?>" class="home__newsDate"><?php echo get_the_date('Y.m.d'); ?></time>
-									<span class="home__newsCategoryName<?php if( $categories[0]->slug !== 'event') { echo ' -secondary'; } ?>"><?php echo $categories[0]->name; ?></span>
+									<span class="home__newsCategoryName<?php if( $categories[0]->slug === 'important') { echo ' -secondary'; } elseif( $categories[0]->slug === 'event') { echo ' -tertiary'; } ?>"><?php echo $categories[0]->name; ?></span>
 									<a href="<?php the_permalink(); ?>" class="home__newsLink"><span class="home__newsTitle"><?php echo get_the_title(); ?></span></a>
 								</li>
 							<?php endwhile; ?>
@@ -120,7 +120,7 @@ get_header();
 						</ul>
 					</article>
 					<div class="button__wrapper">
-						<a href="<?php echo home_url(); ?>" class="button">
+						<a href="<?php echo home_url('/news/'); ?>" class="button">
 							<span class="button__text">お知らせ一覧</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 10.96"><defs><style>.icon_angle-round{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle-round" points="1 1 4 3.24 7 5.48 4 7.72 1 9.96"/></svg>
 						</a>
@@ -199,7 +199,7 @@ get_header();
 						<address class="home__contactPhoneNumber"><?php get_template_part('template-parts/phone-number') ?></address>
 						<span class="home__contactReceptionTime">受付時間：10:00~20:00</span>
 						<div class="home__contactButtonWrapper">
-							<a href="<?php echo home_url(); ?>" class="home__contactButton">お問い合わせフォーム</a>
+							<a href="<?php echo home_url('/contact/'); ?>" class="home__contactButton">お問い合わせフォーム</a>
 						</div>
 					</div>
 				</section>

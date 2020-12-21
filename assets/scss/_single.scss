@@ -1,9 +1,104 @@
 @use "variables";
 
 .single {
+  &__wrapper {
+    padding-bottom: 80px;
+  }
+
+  &__main {
+    width: 94%;
+    max-width: 554px;
+    margin: 48px auto 0;
+  }
+
+  &__title {
+    padding-bottom: 4px;
+    margin: 4px 0 0;
+    font-size: 18px;
+    border-bottom: 2px solid #ececec;
+  }
+
+  &__meta {
+    margin-top: 40px;
+  }
+
+  &__newsLinkWrapper {
+    margin: 80px auto 0;
+    text-align: center;
+  }
+
+  &__newsLink {
+    position: relative;
+    display: inline-block;
+    padding: 6px 48px 6px 32px;
+    font-size: 17px;
+    font-weight: 600;
+    color: variables.$white;
+    background-color: #000000;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      width: 9px;
+      height: 12px;
+      content: "";
+      background-image: url(assets/images/icons/icon_angle.svg);
+      background-size: cover;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__paginateLinks {
+    display: flex;
+    width: 94%;
+    max-width: 554px;
+    margin: 32px auto 0;
+  }
+
+  &__paginateLinkWrapper {
+    a {
+      position: relative;
+      font-weight: 600;
+      color: #6f6f6f;
+    }
+
+    &.-prev {
+      .single__paginateLinkSign {
+        margin-right: 4px;
+      }
+    }
+
+    &.-next {
+      margin: 0 0 0 auto;
+      .single__paginateLinkSign {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__paginateLinkSign {
+    display: inline-flex;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: variables.$white;
+    vertical-align: text-bottom;
+    background-color: #000000;
+    border-radius: 50%;
+  }
 }
 
 @include variables.mq(variables.$mobile) {
   .single {
+    &__wrapper {
+      padding-bottom: 40px;
+    }
+
+    &__meta {
+      margin: 24px auto 0;
+    }
   }
 }

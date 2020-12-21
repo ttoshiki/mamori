@@ -17,36 +17,40 @@ get_header();
 
 	<main class="site-main">
 		<div class="single__wrapper">
-      <section class="l-mainVisual">
-        <h1 class="l-mainVisualHeading roboto" id="effect_01">NEWS</h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/news/mv.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/news/mv@2x.jpg 2x" alt="" class="l-mainVisualBg">
+      <div class="heading__wrapper">
+        <h1 class="heading -en">NEWS</h1>
+        <span class="heading__subHeading">お知らせ</span>
+			</div>
+			<section class="single__main">
+				<?php if (have_posts()): ?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class('single__article'); ?>>
+							<?php while (have_posts()) : the_post(); ?>
+								<?php $categories = get_the_category(); ?>
+								<time datetime="<?php echo get_the_date('Y.m.d'); ?>" class="archive__date"><?php echo get_the_date('Y.m.d'); ?></time>
+								<span class="archive__categoryName<?php if( $categories[0]->slug === 'important') { echo ' -secondary'; } elseif( $categories[0]->slug === 'event') { echo ' -tertiary'; } ?>"><?php echo $categories[0]->name; ?></span>
+								<h1 class="single__title"><?php echo get_the_title(); ?></h1>
+								<div class="single__meta">
+									<div class="single__content"><?php the_content(); ?></div>
+								</div>
+								<?php endwhile; ?>
+								<?php else: ?>
+						</article>
+				<?php endif; ?>
 			</section>
-			<div class="l-doubleCol">
-				<div class="single__main">
-					<?php if (have_posts()): ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class('single__article'); ?>>
-								<?php while (have_posts()) : the_post(); ?>
-									<?php get_template_part('template-parts/breadcrumb'); ?>
-									<span class="single__cat roboto"><?php the_category(' '); ?></span><time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="single__date roboto"><?php echo get_post_time('Y.m.d'); ?></time>
-									<h3 class="single__title"><?php echo get_the_title(); ?></h3>
-										<?php
-											if ( has_post_thumbnail() ) {
-												the_post_thumbnail();
-											} else { ?>
-												<img src="" alt="no-image" width="240" height="240">
-										<?php } ?>
-										<div class="single__meta">
-											<p class="single__content"><?php the_content(); ?></p>
-										</div>
-									<?php endwhile; ?>
-									<?php else: ?>
-							</article>
-						<!-- 投稿が無い場合の処理 -->
-					<?php endif; ?>
-					<a href="<?php echo home_url('/download/') ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/banner.jpg" alt="" class="single__banner">
-					</a>
-				</div>
+			<div class="single__newsLinkWrapper">
+				<a href="<?php echo home_url('/news/'); ?>" class="single__newsLink">お知らせ一覧</a>
+			</div>
+			<div class="single__paginateLinks">
+				<?php if (get_previous_post()):?>
+					<div class="single__paginateLinkWrapper -prev">
+						<span class="single__paginateLinkSign">&lt;</span><?php previous_post('%', '前の記事', 'no'); ?>
+					</div>
+				<?php endif; ?>
+				<?php if (get_next_post()):?>
+					<div class="single__paginateLinkWrapper -next">
+						<?php next_post('%', '次の記事', 'no');; ?><span class="single__paginateLinkSign">&gt;</span>
+					</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</main><!-- #main -->
