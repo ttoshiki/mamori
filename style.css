@@ -103,6 +103,13 @@ textarea {
     font-size: 16px;
   }
 }
+body.fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .-en {
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -226,6 +233,7 @@ textarea {
   width: 66px;
   height: 66px;
   color: #ffffff;
+  border: none;
   border-radius: 8px;
 }
 .side-conversion-link.-primary {
@@ -239,6 +247,9 @@ textarea {
 }
 .side-conversion-link:not(:first-child) {
   margin-top: 8px;
+}
+.side-conversion-link:hover {
+  cursor: pointer;
 }
 
 .side-conversion-text {
@@ -295,12 +306,28 @@ textarea {
   margin: 24px 0;
 }
 
+.site-main .form-input input:-moz-read-only,
+.site-main .form-input textarea:-moz-read-only {
+  background-color: #f2f2f2;
+}
+
+.site-main .form-input input:read-only,
+.site-main .form-input textarea:read-only {
+  background-color: #f2f2f2;
+}
+
 .form-caution {
   display: block;
   margin: 24px 0 16px 12px;
   font-size: 13px;
   font-weight: 600;
   color: #a70000;
+}
+.form-required-label {
+  padding: 0 4px;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 .form-item {
   display: flex;
@@ -315,15 +342,20 @@ textarea {
 .form-item.email {
   border-bottom: none;
 }
-.form-item.textarea {
-  height: 192px;
+.form-item.question textarea {
+  height: 102px;
 }
 .form-item.-sp {
   display: none;
 }
+.form-item.fixed {
+  height: 42px;
+  font-weight: 600;
+}
 .form-label {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-width: 180px;
   height: 100%;
   padding: 16px 12px;
@@ -371,6 +403,21 @@ textarea {
 .form-input-wrapper.double-line {
   padding: 20px 36px 20px 24px;
 }
+.form-input-wrapper.checkbox {
+  padding: 26px 12px 26px 24px;
+}
+.form-items {
+  font-weight: 600;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+}
+.form-items:not(:first-of-type) {
+  margin-top: 12px;
+}
+.form-items .form-input-label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
 .form-input {
   display: flex;
   align-items: center;
@@ -390,9 +437,13 @@ textarea {
 .form-input textarea,
 .form-input select {
   width: 100%;
-  padding: 8px 1em;
+  padding: 8px 0.5em;
   background-color: #f2f2f2;
   border: 1px solid #c5c5c5;
+}
+.form-input input[type=checkbox] {
+  width: auto;
+  margin-right: 4px;
 }
 .form-input.email {
   padding: 16px 0 0 0;
@@ -464,6 +515,15 @@ textarea {
   border-color: #e8cb8b;
 }
 
+span.wpcf7-list-item.first {
+  margin-left: 0;
+}
+span.wpcf7-list-item label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
 .content-footerLogo {
   width: 156px;
   margin: 0 auto;
@@ -478,6 +538,96 @@ textarea {
 .content-footerReceptionTime {
   display: block;
   text-align: center;
+}
+
+.join-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.modal-close-button:hover {
+  cursor: pointer;
+}
+.modal-close-button span {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.modal-close-button span:first-child {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal-close-button span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-body {
+  padding: 48px 56px 32px;
+}
+
+.modal-paragraph {
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.modal-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto 0;
+}
+.modal-input input {
+  margin-right: 6px;
+}
+
+.join-submit {
+  display: flex;
+  justify-content: center;
+  width: 256px;
+  padding: 16px 0;
+  margin: 24px auto 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+.join-submit-icon {
+  width: 16px;
 }
 
 @media screen and (max-width: 480px) {
@@ -578,6 +728,9 @@ textarea {
     width: 80%;
     margin: 32px auto 24px;
   }
+  .form-required-label {
+    margin-left: 6px;
+  }
   .form-wrapper {
     width: 80%;
     margin: 0 auto;
@@ -597,7 +750,11 @@ textarea {
   .form-item.-sp {
     display: block;
   }
+  .form-item.fixed {
+    height: auto;
+  }
   .form-label {
+    justify-content: flex-start;
     padding: 0;
     margin-bottom: 8px;
     font-size: 16px;
@@ -638,6 +795,9 @@ textarea {
   .form-input-wrapper.email-confirm {
     padding: 0;
   }
+  .form-input-wrapper.checkbox {
+    padding: 0;
+  }
   .form-input.select {
     width: 100%;
   }
@@ -669,6 +829,11 @@ textarea {
     padding: 17px 0;
     margin: 0 auto 24px;
     font-size: 18px;
+  }
+
+  span.wpcf7-list-item {
+    display: block;
+    margin: 4px 0;
   }
 
   div.wpcf7 .ajax-loader {
@@ -3134,6 +3299,13 @@ textarea {
     text-align: center;
   }
 }
+.opendays__wrapper {
+  padding-bottom: 24px;
+}
+.opendays__wrapper .wp-block-contact-form-7-contact-form-selector {
+  margin-top: 48px;
+}
+
 /*
 Theme Name: Mamori
 Theme URI: http://underscores.me/

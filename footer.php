@@ -46,7 +46,7 @@
             <a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
           </li>
           <li class="footer__upperLinkItem">
-            <a href="<?php echo home_url(); ?>">見学予約</a>
+            <a href="<?php echo home_url('/opendays/'); ?>">見学予約</a>
           </li>
         </ul>
       </nav>

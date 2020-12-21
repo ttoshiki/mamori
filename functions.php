@@ -164,10 +164,11 @@ function mamori_scripts()
 
     if (is_front_page()) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/home.js', array(), '', true);
+        wp_enqueue_script('modal-script', get_template_directory_uri() . '/assets/js/modal.js', array(), '', true);
     } elseif (is_page('faq')) {
         wp_enqueue_script('faq-script', get_template_directory_uri() . '/assets/js/faq.js', array(), '', true);
-    } elseif (is_page('contact')) {
-        wp_enqueue_script('contact-script', get_template_directory_uri() . '/assets/js/contact.js', array(), '', true);
+    } elseif (is_page('opendays')) {
+        wp_enqueue_script('opendays-script', get_template_directory_uri() . '/assets/js/opendays.js', array(), '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'mamori_scripts');
