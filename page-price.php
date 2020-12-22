@@ -112,6 +112,7 @@ get_header();
               </tr>
             </tbody>
           </table>
+          <span class="price__listSmallCaution">※価格は全て税抜です</span>
         </div>
         <div class="price__tableWrapper -sp">
           <table class="price__listTable -monthly">
@@ -240,7 +241,7 @@ get_header();
               <td>
                 1,000円／時間<br>
                 ビジター招待OK
-                <span class="price__caution">※月2回の書類転送</span>
+                <span class="price__caution">※2名個室のみご利用可能</span>
               </td>
             </tr>
           </table>
@@ -271,7 +272,7 @@ get_header();
               <li class="price__usageNecessaryItem">クレジットカード</li>
               <li class="price__usageNecessaryItem">入退館用ICカード</li>
             </ul>
-            <p class="price__usageParagraph">ご来館前に<a href="" class="price__usageLink">WEBからの会員登録</a>を<br class="-sp">済ませいただけるとスムーズです。</p>
+            <p class="price__usageParagraph">ご来館前に<button type="button" class="price__usageLink open-join-modal">WEBからの会員登録</button>を<br class="-sp">お済ませいただけるとスムーズです。</p>
           </div>
           <div class="price__usageBlock">
             <h4 class="price__usageSubHeading">【手続き可能日時】</h4>
@@ -296,23 +297,19 @@ get_header();
             <h4 class="price__usageSubHeading">【ご契約条件】</h4>
             <ul class="price__usageList">
               <li class="price__usageItem">料金：各プランによって10,000円〜（税別）／月　※前払い</li>
-              <li class="price__usageItem">
-                申込後のキャンセル、返金は不可<br>
+              <li class="price__usageItem">申込後のキャンセル、返金は不可<br>
                 （退会の場合もすでに支払った料金の返金はなし）
               </li>
               <li class="price__usageItem">利用開始日から日割りで料金が発生（当月の日割り料金と翌月1か月分が即時決済）</li>
-              <li class="price__usageItem">
-                時間会員からの変更の場合、申込前にご利用された料金は<br class="-pc">
+              <li class="price__usageItem">時間会員からの変更の場合、申込前にご利用された料金は<br class="-pc">
                 時間会員でのご利用分として翌月に請求されます。
               </li>
-              <li class="price__usageItem">
-                フリーアドレスプランにお申し込みの場合は、<br>
+              <li class="price__usageItem">フリーアドレスプランにお申し込みの場合は、<br>
                 席の確保をお約束するものではございません。
               </li>
               <li class="price__usageItem">天候やイベント、その他事情により一部席の制限や休館する場合がございます。</li>
               <li class="price__usageItem">ご利用時間はご自身で記録をお願いします。</li>
-              <li class="price__usageItem">
-                時間会員からの変更は、申込当日から適用されます。<br class="-pc">明日以降の日から月額会員へ変更をご希望の場合は、変更してのご利用を<br class="-pc">ご希望される日にあらためてお手続きをお願いします。<br>
+              <li class="price__usageItem">時間会員からの変更は、申込当日から適用されます。<br class="-pc">明日以降の日から月額会員へ変更をご希望の場合は、変更してのご利用を<br class="-pc">ご希望される日にあらためてお手続きをお願いします。<br>
                 （手続き可能日時にお越しください）
               </li>
               <li class="price__usageItem">プラン変更・もしくは解約のお手続きがなければ自動更新になります</li>
@@ -322,12 +319,10 @@ get_header();
           <div class="price__usageBlock">
             <h4 class="price__usageSubHeading">【退会をご希望の場合】</h4>
             <ul class="price__usageList">
-              <li class="price__usageItem">
-                月末で時間会員へ変更を行うには、その月の10日の手続き可能時間中までに<br class="-pc">
+              <li class="price__usageItem">月末で時間会員へ変更を行うには、その月の10日の手続き可能時間中までに<br class="-pc">
                 お手続きが必要です。その時間を超えますと自動的に1ヶ月更新されます。
               </li>
-              <li class="price__usageItem">
-                時間会員への変更をご希望の場合は、こちらの<a href="<?php echo home_url('/contact/'); ?>" class="price__usageLink">お問い合わせフォーム</a>から<br class="-pc">
+              <li class="price__usageItem">時間会員への変更をご希望の場合は、こちらの<a href="<?php echo home_url('/contact/'); ?>" class="price__usageLink">お問い合わせフォーム</a>から<br class="-pc">
                 以下の情報をお知らせください。<br>
                 <strong>【お名前】【退会ご希望月】</strong><br>
                 「受け付けた旨」の事務局からの返信メールを受信されたらお手続きは完了です。
@@ -347,7 +342,7 @@ get_header();
               <li class="price__usageNeccessaryItem">クレジットカード</li>
               <li class="price__usageNeccessaryItem">入退館用ICカード</li>
             </ul>
-            <p class="price__usageParagraph">ご来館前に<a href="" class="price__usageLink">WEBからの会員登録</a>を<br class="-sp">お済ませいただけるとスムーズです。</p>
+            <p class="price__usageParagraph">ご来館前に<button type="button" class="price__usageLink open-join-modal">WEBからの会員登録</button>を<br class="-sp">お済ませいただけるとスムーズです。</p>
           </div>
           <div class="price__usageBlock">
             <h4 class="price__usageSubHeading">【手続き可能日時】</h4>
@@ -370,12 +365,10 @@ get_header();
             <h4 class="price__usageSubHeading">【ご契約条件】</h4>
             <ul class="price__usageList">
               <li class="price__usageItem">料金：基本の月額費用はかかりません。利用した分のみ請求されます。</li>
-              <li class="price__usageItem">
-                毎月末に当月分のご利用料金を確定し、その翌月に、<br class="-pc">
+              <li class="price__usageItem">毎月末に当月分のご利用料金を確定し、その翌月に、<br class="-pc">
                 ご登録いただいたクレジットカードから引き落としとなります。
               </li>
-              <li class="price__usageItem">
-                ご利用いただけるお席は、フリーアドレス会員と同様の<br class="-pc">
+              <li class="price__usageItem">ご利用いただけるお席は、フリーアドレス会員と同様の<br class="-pc">
                 オープンスペースのみとなります。
               </li>
               <li class="price__usageItem">天候やイベント、その他事情により一部席の制限や休館する場合がございます。</li>
@@ -396,8 +389,7 @@ get_header();
           <div class="price__usageBlock">
             <h4 class="price__usageSubHeading">【時間会員プランの廃止について】</h4>
             <ul class="price__usageList">
-              <li class="price__usageItem">
-                月額会員の増加により、ワークスペースにて十分なお席が確保できなくなった場合、<br class="-pc">
+              <li class="price__usageItem">月額会員の増加により、ワークスペースにて十分なお席が確保できなくなった場合、<br class="-pc">
                 時間会員プランを廃止することもございます。その際は事前に会員宛に通知いたします。
               </li>
             </ul>
@@ -419,7 +411,7 @@ get_header();
             </div>
             <div class="price__flowStepText">
               <p class="price__flowParagraph">
-                お電話もしくは<a href="<?php echo home_url(); ?>" class="price__usageLink">見学予約フォーム</a>より<br>
+                お電話もしくは<a href="<?php echo home_url('/opendays/'); ?>" class="price__usageLink">見学予約フォーム</a>より<br>
                 内覧も歓迎いたします。<br>
                 ご利用前にゆっくり御覧ください。
               </p>
@@ -432,7 +424,7 @@ get_header();
             </div>
             <div class="price__flowStepText">
               <p class="price__flowParagraph">
-                <a href="<?php echo home_url(); ?>" class="price__usageLink">こちらのフォーム</a>より<br>
+                <button type="button" class="price__usageLink open-join-modal">こちらのフォーム</button>より<br>
                 事前に会員情報のご登録をお願いします。
               </p>
             </div>
@@ -463,11 +455,12 @@ get_header();
           </div>
         </div>
         <div class="price__links">
-          <a href="<?php echo home_url(); ?>" class="link-button">見学のご予約はこちら</a>
-          <a href="<?php echo home_url(); ?>" class="link-button">会員情報の登録はこちら</a>
+          <a href="<?php echo home_url('/opendays/'); ?>" class="link-button">見学のご予約はこちら</a>
+          <button type="button" class="link-button open-join-modal">会員情報の登録はこちら</button>
         </div>
       </section>
       <?php get_template_part('template-parts/content-footer'); ?>
+      <?php get_template_part('template-parts/join-modal'); ?>
     </div>
 	</main><!-- #main -->
 

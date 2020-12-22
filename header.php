@@ -154,7 +154,7 @@
 						</a>
 					</li>
 					<li class="header__navConversionItem">
-						<a href="<?php echo home_url(); ?>" class="header__navConversionLink -mypage">
+						<a href="<?php echo home_url('/preparation/'); ?>" class="header__navConversionLink -mypage">
 							<span class="header__navConversionText -en">MYPAGE</span>
 							<span class="header__navConversionText">マイページ</span>
 						</a>

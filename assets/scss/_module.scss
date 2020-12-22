@@ -216,6 +216,11 @@ body.fixed {
   color: variables.$white;
   text-align: center;
   background-color: #000000;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:not(:first-child) {
     margin-left: 24px;
@@ -508,7 +513,7 @@ span.wpcf7-list-item {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 50;
   display: none;
   width: 100vw;
   height: 100vh;
@@ -521,6 +526,7 @@ span.wpcf7-list-item {
   top: 50%;
   left: 50%;
   width: 60%;
+  max-width: 640px;
   background-color: white;
   transform: translate(-50%, -50%);
 }
@@ -917,6 +923,10 @@ span.wpcf7-list-item {
         font-size: 18px;
       }
 
+      .wpcf7-confirm {
+        width: 46%;
+      }
+
       .wpcf7-back {
         display: block;
         width: 46%;
@@ -935,5 +945,29 @@ span.wpcf7-list-item {
   div.wpcf7 .ajax-loader {
     display: block;
     margin: 0 auto;
+  }
+
+  .modal-body {
+    padding: 48px 24px 32px;
+  }
+
+  .modal-content {
+    width: 86%;
+  }
+
+  .modal-paragraph {
+    font-size: 4vw;
+  }
+
+  .join-submit {
+    width: 100%;
+  }
+
+  .join-form-label {
+    padding: 0 0 0 30px;
+
+    &::before {
+      margin-right: 6px;
+    }
   }
 }

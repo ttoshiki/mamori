@@ -168,8 +168,15 @@
 
   &__usageLink {
     position: relative;
+    padding: 0;
     font-weight: 600;
     color: #000000;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &::after {
       position: absolute;

@@ -293,6 +293,10 @@ body.fixed {
   color: #ffffff;
   text-align: center;
   background-color: #000000;
+  border: none;
+}
+.link-button:hover {
+  cursor: pointer;
 }
 .link-button:not(:first-child) {
   margin-left: 24px;
@@ -544,7 +548,7 @@ span.wpcf7-list-item label {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 50;
   display: none;
   width: 100vw;
   height: 100vh;
@@ -557,6 +561,7 @@ span.wpcf7-list-item label {
   top: 50%;
   left: 50%;
   width: 60%;
+  max-width: 640px;
   background-color: white;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -897,6 +902,9 @@ span.wpcf7-list-item label {
     padding: 18px 0;
     font-size: 18px;
   }
+  .form-submit-btn-wrapper .wpcf7-confirm {
+    width: 46%;
+  }
   .form-submit-btn-wrapper .wpcf7-back {
     display: block;
     width: 46%;
@@ -913,6 +921,29 @@ span.wpcf7-list-item label {
   div.wpcf7 .ajax-loader {
     display: block;
     margin: 0 auto;
+  }
+
+  .modal-body {
+    padding: 48px 24px 32px;
+  }
+
+  .modal-content {
+    width: 86%;
+  }
+
+  .modal-paragraph {
+    font-size: 4vw;
+  }
+
+  .join-submit {
+    width: 100%;
+  }
+
+  .join-form-label {
+    padding: 0 0 0 30px;
+  }
+  .join-form-label::before {
+    margin-right: 6px;
   }
 }
 .l-doubleCol {
@@ -974,8 +1005,14 @@ span.wpcf7-list-item label {
   align-items: center;
   justify-content: center;
   width: 128px;
-  padding: 12px 0 8px;
   margin: 0;
+}
+.header__logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
   background-color: #ffffff;
 }
 .header__logo svg {
@@ -1004,6 +1041,7 @@ span.wpcf7-list-item label {
 }
 .header__navLink.-en {
   font-size: 22px;
+  line-height: 1.3;
 }
 .header__navConversion {
   display: flex;
@@ -1051,7 +1089,10 @@ span.wpcf7-list-item label {
     width: 20%;
     min-width: 72px;
     max-width: 128px;
-    padding: 12px 0 8px;
+    padding: 0;
+  }
+  .header__logo a {
+    padding: 12px 0;
   }
   .header__logo svg {
     display: block;
@@ -1548,6 +1589,25 @@ span.wpcf7-list-item label {
     margin: 24px auto 0;
   }
 }
+.page__title {
+  font-size: 32px;
+  color: #1f2a66;
+}
+.page__wrapper {
+  max-width: 1000px;
+  min-height: 60vh;
+  padding: 64px 48px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .page__title {
+    font-size: 24px;
+  }
+  .page__wrapper {
+    padding: 40px 16px;
+  }
+}
 .home__wrapper {
   padding-bottom: 32px;
 }
@@ -1606,6 +1666,7 @@ span.wpcf7-list-item label {
 .home__linksHeading {
   margin: 0 auto;
   font-size: 56px;
+  font-size: min(7.33vw, 56px);
   font-weight: 500;
   line-height: 0.9;
   color: #ffffff;
@@ -1813,7 +1874,7 @@ span.wpcf7-list-item label {
     margin: 24px auto 0;
   }
   .home__aboutFeature {
-    width: 28%;
+    width: 27%;
   }
   .home__linksList {
     flex-direction: column;
@@ -1889,7 +1950,7 @@ span.wpcf7-list-item label {
     font-size: 14px;
   }
   .home__prevention {
-    padding: 24px 0;
+    padding: 24px 0 12px;
   }
   .home__preventionHeading {
     line-height: 1.2;
@@ -2023,6 +2084,11 @@ span.wpcf7-list-item label {
 .company__historyDetails dd {
   margin-left: 4px;
 }
+.company__officerLicense {
+  display: block;
+  margin-top: 24px;
+  font-size: 12px;
+}
 
 @media screen and (max-width: 480px) {
   .company__wrapper {
@@ -2100,7 +2166,7 @@ span.wpcf7-list-item label {
   position: relative;
   width: 80%;
   max-width: 542px;
-  padding: 80px 20px;
+  padding: 56px 20px 88px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -2154,7 +2220,7 @@ span.wpcf7-list-item label {
   }
   .about__description {
     width: 90%;
-    padding: 56px 6px;
+    padding: 48px 6px 56px;
     -webkit-font-feature-settings: "palt";
     font-feature-settings: "palt";
     background-color: rgba(255, 255, 255, 0.9);
@@ -2164,6 +2230,12 @@ span.wpcf7-list-item label {
   }
   .about__description-bottom {
     bottom: 14px;
+  }
+  .about__descriptionFrame.-top {
+    top: 16px;
+  }
+  .about__descriptionFrame.-bottom {
+    bottom: 16px;
   }
   .about__descriptionParagraph {
     font-size: 3.74vw;
@@ -2354,7 +2426,7 @@ span.wpcf7-list-item label {
   padding-bottom: 40px;
 }
 .facility__photoBlock:nth-child(6) .facility__photoName {
-  margin: 0 0 0 270px;
+  margin: -8px 0 0 240px;
 }
 .facility__photoBlock:nth-child(6) .facility__photoName::after {
   bottom: 0;
@@ -2442,8 +2514,10 @@ span.wpcf7-list-item label {
   max-width: 600px;
   margin: 48px auto 28px;
   font-size: 18px;
+  font-weight: 400;
   color: #ffffff;
   text-align: center;
+  letter-spacing: 1px;
 }
 .facility__aboutHeading.-environment {
   background-color: #1f2a66;
@@ -2875,8 +2949,14 @@ span.wpcf7-list-item label {
 }
 .price__usageLink {
   position: relative;
+  padding: 0;
   font-weight: 600;
   color: #000000;
+  background-color: transparent;
+  border: none;
+}
+.price__usageLink:hover {
+  cursor: pointer;
 }
 .price__usageLink::after {
   position: absolute;

@@ -16,20 +16,21 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<div class="page__wrapper">
+			<h1 class="page__title"><?php the_title(); ?></h1>
+			<?php
+			while ( have_posts() ) :
+				the_post();
+				the_content();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-			the_content();
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
+			endwhile; // End of the loop.
+			?>
+		</div>
 	</main><!-- #main -->
 
 <?php

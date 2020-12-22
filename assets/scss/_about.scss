@@ -17,7 +17,7 @@
     position: relative;
     width: 80%;
     max-width: 542px;
-    padding: 80px 20px;
+    padding: 56px 20px 88px;
     margin: 0 auto;
     background-color: rgba($color: variables.$white, $alpha: 0.7);
   }
@@ -84,7 +84,7 @@
 
     &__description {
       width: 90%;
-      padding: 56px 6px;
+      padding: 48px 6px 56px;
       font-feature-settings: "palt";
       background-color: rgba($color: variables.$white, $alpha: 0.9);
 
@@ -94,6 +94,16 @@
 
       &-bottom {
         bottom: 14px;
+      }
+    }
+
+    &__descriptionFrame {
+      &.-top {
+        top: 16px;
+      }
+
+      &.-bottom {
+        bottom: 16px;
       }
     }
 

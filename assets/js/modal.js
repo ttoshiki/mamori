@@ -2,7 +2,7 @@
 
 jQuery(function(){
 	let scrollPosition;
-	jQuery(".side-conversion-link.-primary").on("click", function() {
+	jQuery(".open-join-modal").on("click", function() {
 		scrollPosition = jQuery(window).scrollTop();
     jQuery('body').addClass('fixed').css({'top': -scrollPosition});
     jQuery('.join-modal').fadeIn(200)

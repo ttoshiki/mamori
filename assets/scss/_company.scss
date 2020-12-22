@@ -137,6 +137,12 @@
       margin-left: 4px;
     }
   }
+
+  &__officerLicense {
+    display: block;
+    margin-top: 24px;
+    font-size: 12px;
+  }
 }
 
 @include variables.mq(variables.$mobile) {

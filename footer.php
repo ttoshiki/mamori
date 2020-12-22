@@ -17,9 +17,9 @@
   if(is_front_page()) { echo ' home'; }
   elseif(is_page('about')) { echo ' -confined'; }
  ?>">
-  <div class="footer__toTop"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/to_top.svg'); ?></a></div>
+  <div class="footer__toTop"><a href="#header"><?php echo file_get_contents(get_template_directory() . '/assets/images/to_top.svg'); ?></a></div>
     <div class="footer__upper">
-      <div class="footer__logo"><a href=""><?php echo file_get_contents(get_template_directory() . '/assets/images/logo-light.svg'); ?></a></div>
+      <div class="footer__logo"><a href="<?php echo home_url(); ?>"><?php echo file_get_contents(get_template_directory() . '/assets/images/logo-light.svg'); ?></a></div>
       <nav class="footer__upperLinkNav">
         <ul class="footer__upperLinkList">
           <li class="footer__upperLinkItem">
@@ -61,7 +61,7 @@
           <a href="<?php echo home_url(); ?>">利用規約</a>
         </li>
         <li class="footer__lowerLinkItem">
-          <a href="<?php echo home_url(); ?>">個人情報保護方針</a>
+          <a href="<?php echo home_url('/privacy/'); ?>">個人情報保護方針</a>
         </li>
       </ul>
     </nav>

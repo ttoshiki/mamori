@@ -1,0 +1,27 @@
+@use "variables";
+
+.page {
+  &__title {
+    font-size: 32px;
+    color: variables.$color-primary;
+  }
+
+  &__wrapper {
+    max-width: 1000px;
+    min-height: 60vh;
+    padding: 64px 48px;
+    margin: 0 auto;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .page {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__wrapper {
+      padding: 40px 16px;
+    }
+  }
+}

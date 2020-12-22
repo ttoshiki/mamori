@@ -148,7 +148,7 @@ get_header();
                 <dt>2017年9月</dt>
                 <dd>株式会社ナマケモノ設立</dd>
               </dl>
-              <span class="comapny__officerLicense">取得資格：東京商工会議所　販売士１級登録講師、食品衛生者、防火管理者</span>
+              <span class="company__officerLicense">取得資格：東京商工会議所　販売士１級登録講師、食品衛生者、防火管理者</span>
             </div>
           </div>
         </div>

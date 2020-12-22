@@ -73,6 +73,7 @@
   &__linksHeading {
     margin: 0 auto;
     font-size: 56px;
+    font-size: min(7.33vw, 56px);
     font-weight: 500;
     line-height: 0.9;
     color: variables.$white;
@@ -347,7 +348,7 @@
     }
 
     &__aboutFeature {
-      width: 28%;
+      width: 27%;
     }
 
     &__linksList {
@@ -444,7 +445,7 @@
     }
 
     &__prevention {
-      padding: 24px 0;
+      padding: 24px 0 12px;
     }
 
     &__preventionHeading {

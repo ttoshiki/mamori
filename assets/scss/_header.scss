@@ -12,9 +12,16 @@
     align-items: center;
     justify-content: center;
     width: 128px;
-    padding: 12px 0 8px;
     margin: 0;
-    background-color: variables.$white;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 16px 0;
+      background-color: variables.$white;
+    }
 
     svg {
       width: 100px;
@@ -49,6 +56,7 @@
 
     &.-en {
       font-size: 22px;
+      line-height: 1.3;
     }
   }
 
@@ -107,7 +115,11 @@
       width: 20%;
       min-width: 72px;
       max-width: 128px;
-      padding: 12px 0 8px;
+      padding: 0;
+
+      a {
+        padding: 12px 0;
+      }
 
       svg {
         display: block;

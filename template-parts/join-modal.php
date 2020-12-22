@@ -6,8 +6,8 @@
     </div>
     <div class="modal-body">
       <p class="modal-paragraph">
-        会員登録をご希望の方は、Mamoriの個人情報保護方針をご一読いただき、<br>
-        同意のうえ、下記ボタンより入会フォームにお進みください。
+        会員登録をご希望の方は、Mamoriの<br class="-sp">個人情報保護方針をご一読いただき、<br>
+        同意のうえ、下記ボタンより<br class="-sp">入会フォームにお進みください。
       </p>
       <div class="modal-input">
         <input type="checkbox" name="agreedCheckbox" id="modal-check">
