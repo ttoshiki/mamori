@@ -562,6 +562,10 @@ span.wpcf7-list-item label {
   transform: translate(-50%, -50%);
 }
 
+.modal-check {
+  font-size: 15px;
+}
+
 .modal-close-button {
   position: absolute;
   top: -48px;
@@ -612,6 +616,47 @@ span.wpcf7-list-item label {
 .modal-input input {
   margin-right: 6px;
 }
+.modal-input input[type=checkbox] {
+  display: none;
+}
+.modal-input input[type=checkbox]:checked + .join-form-label::after {
+  opacity: 1;
+}
+
+.join-form-label {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: auto;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+.join-form-label::before {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  content: "";
+  background: #000000;
+}
+.join-form-label::after {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: block;
+  width: 5px;
+  height: 9px;
+  margin-top: -7px;
+  content: "";
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 .join-submit {
   display: flex;
@@ -624,10 +669,39 @@ span.wpcf7-list-item label {
   color: #ffffff;
   background-color: #000000;
   border: none;
+  opacity: 1;
+}
+.join-submit:hover {
+  cursor: pointer;
+}
+.join-submit:disabled {
+  opacity: 0.2;
+}
+.join-submit:disabled:hover {
+  cursor: default;
 }
 
 .join-submit-icon {
   width: 16px;
+}
+
+.modal-link {
+  position: relative;
+  font-weight: 600;
+  color: #000000;
+}
+.modal-link::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #808080;
+}
+
+.join-submit-inner {
+  margin-right: 6px;
 }
 
 @media screen and (max-width: 480px) {
