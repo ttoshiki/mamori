@@ -32,6 +32,15 @@ jQuery(function() {
   jQuery(".header__hammenuList a").on("click", function() {
     jQuery(".header__hammenuWrapper").css('display', 'none');
     jQuery(".header__trigger").removeClass('-opened');
+    jQuery(".header__trigger").toggleClass('active');
+  })
+
+  // spメニューモーダルボタン
+  jQuery(".header__hammenuConversion .open-join-modal").on("click", function() {
+    console.log('hoge')
+    jQuery(".header__hammenuWrapper").css('display', 'none');
+    jQuery(".header__trigger").removeClass('-opened');
+    jQuery(".header__trigger").toggleClass('active');
   })
 })
 

@@ -238,7 +238,7 @@
   }
 
   &__accessTrainImage {
-    max-width: 114px;
+    max-width: 148px;
   }
 
   &__accessTrainText {
@@ -283,6 +283,7 @@
   &__contactPhoneNumber {
     margin-top: 32px;
     font-size: 70px;
+    font-weight: 500;
     line-height: 1;
     color: variables.$color-secondary;
   }

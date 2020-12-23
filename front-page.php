@@ -196,7 +196,7 @@ get_header();
 							ご不明な点やご心配な点がございましたら、<br>
 							お気軽にお問い合わせください。
 						</p>
-						<address class="home__contactPhoneNumber"><?php get_template_part('template-parts/phone-number') ?></address>
+						<address class="home__contactPhoneNumber -en"><?php get_template_part('template-parts/phone-number') ?></address>
 						<span class="home__contactReceptionTime">受付時間：10:00~20:00</span>
 						<div class="home__contactButtonWrapper">
 							<a href="<?php echo home_url('/contact/'); ?>" class="home__contactButton">お問い合わせフォーム</a>

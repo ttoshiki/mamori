@@ -470,6 +470,11 @@ body.fixed {
   background-image: url(assets/images/icons/icon_angle-dark.svg);
   background-size: cover;
 }
+.form-input-caution {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
 .form-submit-btn-wrapper {
   margin: 48px auto 0;
   text-align: center;
@@ -1170,7 +1175,7 @@ span.wpcf7-list-item label {
     margin-top: 4vw;
   }
   .header__hammenuInner {
-    margin: 8vh auto;
+    margin: 7vh auto;
   }
   .header__hammenuLink {
     display: inline-flex;
@@ -1207,6 +1212,7 @@ span.wpcf7-list-item label {
     flex-direction: column;
     justify-content: center;
     height: 30px;
+    font-size: 3.2vw;
     font-weight: 600;
   }
 }
@@ -1802,7 +1808,7 @@ span.wpcf7-list-item label {
   text-align: center;
 }
 .home__accessTrainImage {
-  max-width: 114px;
+  max-width: 148px;
 }
 .home__accessTrainText {
   display: block;
@@ -1842,6 +1848,7 @@ span.wpcf7-list-item label {
 .home__contactPhoneNumber {
   margin-top: 32px;
   font-size: 70px;
+  font-weight: 500;
   line-height: 1;
   color: #836c39;
 }
@@ -2065,6 +2072,7 @@ span.wpcf7-list-item label {
 }
 .company__officerImage {
   width: 36%;
+  min-width: 184px;
 }
 .company__officerWrapper:not(:first-of-type) {
   margin-top: 64px;
@@ -2136,6 +2144,7 @@ span.wpcf7-list-item label {
   }
   .company__officerImage {
     width: 44.27%;
+    min-width: initial;
     margin: 8px auto 0;
   }
   .company__officerCareer {
@@ -3458,6 +3467,11 @@ span.wpcf7-list-item label {
 }
 .opendays__wrapper .wp-block-contact-form-7-contact-form-selector {
   margin-top: 48px;
+}
+
+.booking__wrapper #booking-package input[type=text] {
+  pointer-events: none;
+  border: none;
 }
 
 /*

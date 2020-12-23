@@ -58,7 +58,7 @@
           <a href="<?php echo home_url('/company/'); ?>">運営会社</a>
         </li>
         <li class="footer__lowerLinkItem">
-          <a href="<?php echo home_url(); ?>">利用規約</a>
+          <a href="<?php echo home_url('/terms/'); ?>">利用規約</a>
         </li>
         <li class="footer__lowerLinkItem">
           <a href="<?php echo home_url('/privacy/'); ?>">個人情報保護方針</a>

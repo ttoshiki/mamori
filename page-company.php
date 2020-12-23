@@ -69,17 +69,17 @@ get_header();
           <h3 class="company__officerHeading">代表取締役　江藤 智</h3>
           <ul class="company__snsList">
             <li class="company__snsItem">
-              <a href="" target="_blank" noopener>
+              <a href="https://twitter.com/Satoshi9ball" target="_blank" noopener>
                 <div><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_twitter.svg'); ?></div>
               </a>
             </li>
             <li class="company__snsItem">
-              <a href="" target="_blank" noopener>
+              <a href="https://www.facebook.com/satoshi.etoh" target="_blank" noopener>
                 <div><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_facebook.svg'); ?></div>
               </a>
             </li>
             <li class="company__snsItem">
-              <a href="" target="_blank" noopener>
+              <a href="https://www.instagram.com/satoshi.etoh/" target="_blank" noopener>
                 <div><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_instagram.svg'); ?></div>
               </a>
             </li>
@@ -115,12 +115,12 @@ get_header();
           <h3 class="company__officerHeading">取締役　江藤 有紀</h3>
           <ul class="company__snsList">
             <li class="company__snsItem">
-              <a href="" target="_blank" noopener>
+              <a href="https://twitter.com/hatarakimonoyo" target="_blank" noopener>
                 <div><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_twitter.svg'); ?></div>
               </a>
             </li>
             <li class="company__snsItem">
-              <a href="" target="_blank" noopener>
+              <a href="https://www.facebook.com/namakemono.yuki" target="_blank" noopener>
                 <div><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_facebook.svg'); ?></div>
               </a>
             </li>
@@ -129,11 +129,11 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/officer_02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/company/officer_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/company/officer_02@2x.jpg 2x" alt="代表取締役　江藤 智" class="company__officerImage">
             <div class="company__officerCareer">
               <dl>
-                <dt>2018年3月</dt>
+                <dt>2008年3月</dt>
                 <dd>明治大学卒業</dd>
               </dl>
               <dl>
-                <dt>2018年4月</dt>
+                <dt>2008年4月</dt>
                 <dd>株式会社メトロプロパティーズ入社</dd>
               </dl>
               <dl>

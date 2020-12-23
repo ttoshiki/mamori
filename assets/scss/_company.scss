@@ -112,6 +112,7 @@
 
   &__officerImage {
     width: 36%;
+    min-width: 184px;
   }
 
   &__officerWrapper {
@@ -208,6 +209,7 @@
 
     &__officerImage {
       width: 44.27%;
+      min-width: initial;
       margin: 8px auto 0;
     }
 

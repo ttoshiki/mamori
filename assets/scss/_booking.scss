@@ -1,0 +1,17 @@
+@use "variables";
+
+.booking {
+  &__wrapper {
+    #booking-package {
+      input[type="text"] {
+        pointer-events: none;
+        border: none;
+      }
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .booking {
+  }
+}

@@ -38,11 +38,19 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="header" class="header">
-		<?php if (is_front_page()){ echo '<h1'; } else { echo '<h2'; }; ?> class="header__logo">
+		<?php if (is_front_page()) {
+    echo '<h1';
+} else {
+    echo '<h2';
+}; ?> class="header__logo">
 			<a href="<?php echo home_url(); ?>">
 				<?php echo file_get_contents(get_template_directory() . '/assets/images/logo.svg'); ?>
 			</a>
-		<?php if (is_front_page()){ echo '</h1>'; } else { echo '</h2>'; }; ?>
+		<?php if (is_front_page()) {
+    echo '</h1>';
+} else {
+    echo '</h2>';
+}; ?>
 		<nav class="header__hammenu -tab">
 			<span class="header__trigger" href="#" @click="toggleMenu" id="trigger">
 				<span></span>
@@ -90,15 +98,15 @@
 						</li>
 					</ul>
 					<div class="header__hammenuConversion">
-						<a href="<?php echo home_url(); ?>" class="side-conversion-link -primary">
+						<button type="button" class="side-conversion-link -primary open-join-modal">
 							<span class="side-conversion-text">入会する</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
-						</a>
-						<a href="<?php echo home_url(); ?>" class="side-conversion-link -secondary">
+						</button>
+						<a href="<?php echo home_url('/opendays/'); ?>" class="side-conversion-link -secondary">
 							<span class="side-conversion-text">見学に<br>ついて</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
 						</a>
-						<a href="<?php echo home_url(); ?>" class="side-conversion-link -secondary">
+						<a href="<?php echo home_url('/preparation/'); ?>" class="side-conversion-link -secondary">
 							<span class="side-conversion-text">資料<br><span class="side-conversion-text -comp">ダウンロード</span></span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.52 14.18"><defs><style>.icon_angle{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style></defs><polyline class="icon_angle" points="0.56 0.83 5.15 3.96 9.74 7.09 5.15 10.22 0.56 13.35"/></svg>
 						</a>
