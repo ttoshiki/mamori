@@ -1,0 +1,503 @@
+@use "variables";
+
+.price {
+  &__wrapper {
+    padding-bottom: 48px;
+  }
+
+  &__list {
+    margin: 40px 0 0;
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    tr {
+      &.-confined {
+        td {
+          padding: 8px 10px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    th {
+      color: variables.$white;
+      background-color: variables.$color-primary;
+
+      &.-times,
+      &.-monthly {
+        padding: 12px 0;
+        font-size: 20px;
+        color: #000000;
+      }
+
+      &.-times {
+        background-color: #d2d4e0;
+        border: 1px solid #a0a2ab;
+      }
+
+      &.-monthly {
+        background-color: #d0c7b4;
+        border: 1px solid #d0c7b4;
+      }
+    }
+
+    td {
+      padding: 32px 8px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.3;
+      text-align: center;
+      border: 1px solid #c3c3c3;
+
+      &.-free {
+        font-size: 25px;
+        color: variables.$color-secondary;
+      }
+    }
+  }
+
+  &__listSpan {
+    display: block;
+    margin-top: 12px;
+  }
+
+  &__listCaution,
+  &__listTime {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__listCaution {
+    margin-top: 8px;
+
+    &.-topNoMargin {
+      margin: 0 0 8px;
+    }
+  }
+
+  &__listSmallCaution {
+    display: block;
+    width: 686px;
+    margin: 6px auto 0;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  &__spaceUsage {
+    position: relative;
+    margin: 140px auto 0;
+  }
+
+  &__usageInner {
+    max-width: 712px;
+    padding: 0 40px 64px;
+    margin: 48px auto 0;
+    background-color: variables.$white;
+
+    &.-time {
+      margin-top: 64px;
+    }
+  }
+
+  &__usageBg {
+    position: absolute;
+    top: -64px;
+    z-index: -10;
+    width: 100vw;
+    height: 3064px;
+    object-fit: cover;
+  }
+
+  &__usageHeading {
+    width: 88%;
+    padding: 8px 0;
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  &__usageHeadingSpan {
+    font-size: 15px;
+    font-weight: 40;
+  }
+
+  &__usageLead {
+    text-align: center;
+  }
+
+  &__usageBlock {
+    &:first-of-type {
+      margin-top: 64px;
+    }
+
+    &:not(:first-of-type) {
+      padding-top: 24px;
+      margin-top: 32px;
+      border-top: 2px solid #cfcfcf;
+    }
+  }
+
+  &__usageSubHeading {
+    margin: 0;
+    font-size: 18px;
+    font-feature-settings: "palt";
+  }
+
+  &__usageNecessaryList {
+    padding-left: 0;
+    margin: 6px 0 0 24px;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: disc;
+  }
+
+  &__usageNecessaryItem {
+    margin-top: 2px;
+  }
+
+  &__usageParagraph {
+    margin: 8px 0;
+    font-size: 15px;
+  }
+
+  &__usageLink {
+    position: relative;
+    padding: 0;
+    font-weight: 600;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: "";
+      background-color: #c0c0c0;
+    }
+  }
+
+  &__caution {
+    display: inline-block;
+    padding-left: 1em;
+    font-size: 13px;
+    text-indent: -1em;
+  }
+
+  &__usageList {
+    margin: 4px 0 0;
+  }
+
+  &__usageItem {
+    padding-left: 1em;
+    margin: 2px 0;
+    font-size: 15px;
+    text-indent: -1em;
+    font-feature-settings: "palt";
+
+    &::before {
+      content: "■";
+    }
+  }
+
+  &__usageStrong {
+    display: block;
+    margin: 4px 0 0 20px;
+  }
+
+  &__flow {
+    margin-top: 280px;
+  }
+
+  &__flowSubHeading {
+    max-width: 584px;
+    padding: 8px 0;
+    margin: 48px auto 0;
+    font-size: 20px;
+    text-align: center;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+  }
+
+  &__flowSteps {
+    position: relative;
+    display: flex;
+    max-width: 524px;
+    margin: 0 auto;
+
+    &:first-of-type {
+      z-index: 30;
+      margin-top: 48px;
+    }
+
+    &:nth-of-type(2) {
+      z-index: 20;
+    }
+
+    &:nth-of-type(3) {
+      z-index: 10;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(2n) {
+      .price__flowStepFigure {
+        background-color: variables.$color-primary;
+
+        &::after {
+          border-color: variables.$color-primary transparent transparent
+            transparent;
+        }
+      }
+
+      .price__flowStepNumber {
+        &::after {
+          background-color: #8f94b2;
+        }
+      }
+    }
+  }
+
+  &__flowStepFigure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    padding: 12px 12px 0;
+    color: variables.$white;
+    background-color: variables.$color-secondary;
+
+    &::after {
+      position: absolute;
+      bottom: -40px;
+      width: 0;
+      height: 0;
+      content: "";
+      border-color: variables.$color-secondary transparent transparent
+        transparent;
+      border-style: solid;
+      border-width: 40px 85px 0 85px;
+    }
+  }
+
+  &__flowStepNumber {
+    position: relative;
+    font-size: 20px;
+
+    &::after {
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 160%;
+      height: 2px;
+      content: "";
+      background-color: #c1b59c;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__flowStepContents {
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__flowStepCaution {
+    font-size: 15px;
+  }
+
+  &__flowParagraph {
+    margin-left: 24px;
+    font-size: 15px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin: 88px auto 108px;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .price {
+    &__wrapper {
+      padding-bottom: 24px;
+    }
+
+    &__listTable {
+      width: 94%;
+
+      th {
+        padding: 4px 0;
+      }
+
+      &.-monthly {
+        th {
+          background-color: #a89874;
+          border: 1px solid #938565;
+        }
+
+        .price__listTablePlanName {
+          padding: 8px 0;
+          background-color: variables.$color-secondary;
+          border: 1px solid #725e31;
+        }
+      }
+
+      &.-time {
+        margin: 48px auto 0;
+
+        th {
+          background-color: #626a94;
+          border: 1px solid #555c81;
+        }
+
+        .price__listTablePlanName {
+          padding: 8px 0;
+          background-color: variables.$color-primary;
+          border: 1px solid #1b2459;
+        }
+
+        td {
+          padding: 4vw 0.5vw;
+        }
+      }
+    }
+
+    &__listTablePlanName {
+      font-size: 17px;
+    }
+
+    &__list {
+      margin: 24px 0 0;
+
+      td {
+        padding: 2.14vw 0.5vw;
+        font-size: 3.74vw;
+
+        &.-free {
+          padding: 8px 0;
+          font-size: 17px;
+          color: #000000;
+        }
+      }
+    }
+
+    &__caution {
+      display: block;
+      padding-left: 0;
+      font-size: 3.46vw;
+      font-weight: 400;
+      text-indent: 0;
+
+      &.-hasTopMargin {
+        margin-top: 12px;
+      }
+    }
+
+    &__listSmallCaution {
+      width: 94%;
+      margin: 4px auto 0;
+      font-size: 10px;
+    }
+
+    &__spaceUsage {
+      margin: 108px auto 0;
+    }
+
+    &__usageBg {
+      top: -48px;
+      height: 106%;
+    }
+
+    &__usageInner {
+      width: 94%;
+      padding: 0 16px 40px;
+      margin: 24px auto 0;
+    }
+
+    &__usageHeading {
+      font-size: 17px;
+    }
+
+    &__usageHeadingSpan {
+      display: block;
+      font-size: 13px;
+    }
+
+    &__usageBlock {
+      &:first-of-type {
+        margin-top: 32px;
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 24px;
+      }
+    }
+
+    &__usageSubHeading {
+      text-align: center;
+    }
+
+    &__usageNecessaryItem {
+      font-size: 14px;
+    }
+
+    &__usageParagraph {
+      margin: 6px 0;
+      font-size: 14px;
+      font-feature-settings: "palt";
+    }
+
+    &__caution {
+      font-feature-settings: "palt";
+    }
+
+    &__flow {
+      margin: 172px auto 96px;
+    }
+
+    &__flowSubHeading {
+      width: 94%;
+      margin: 24px auto 0;
+      font-size: 16px;
+    }
+
+    &__flowSteps {
+      flex-direction: column;
+      align-items: center;
+
+      &:first-of-type {
+        margin-top: 32px;
+      }
+    }
+
+    &__flowParagraph {
+      margin: 48px auto 0;
+      text-align: center;
+    }
+
+    &__links {
+      flex-direction: column;
+      align-items: center;
+      margin: 64px auto 0;
+    }
+  }
+}

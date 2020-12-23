@@ -10,11 +10,22 @@ License URI: LICENSE
 Text Domain: Mamori
 */
 
-@import "variables";
-@import "base";
-@import "module";
-@import "layout";
-@import "header";
-@import "footer";
-@import "404";
-@import "home";
+@use "variables";
+@use "base";
+@use "module";
+@use "layout";
+@use "header";
+@use "footer";
+@use "_notFound";
+@use "_archive";
+@use "_single";
+@use "_page";
+@use "home";
+@use "company";
+@use "about";
+@use "facility";
+@use "price";
+@use "faq";
+@use "contact";
+@use "opendays";
+@use "booking";

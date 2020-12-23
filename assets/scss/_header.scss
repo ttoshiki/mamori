@@ -1,9 +1,264 @@
-@import "_variables";
+@use "variables";
 
 .header {
+  position: relative;
+  display: flex;
+  background-color: variables.$color-primary;
+
+  &__logo {
+    position: absolute;
+    left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    margin: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 16px 0;
+      background-color: variables.$white;
+    }
+
+    svg {
+      width: 100px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2.4vw 0 220px;
+  }
+
+  &__navList {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  &__navItem {
+    &:not(:first-child) {
+      margin-left: 7%;
+    }
+  }
+
+  &__navLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: variables.$white;
+
+    &.-en {
+      font-size: 22px;
+      line-height: 1.3;
+    }
+  }
+
+  &__navConversion {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navConversionList {
+    display: flex;
+  }
+
+  &__navConversionItem {
+    margin-left: 12px;
+  }
+
+  &__navConversionLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84px;
+    padding: 3px 0;
+    border-radius: 8px;
+
+    &.-en {
+      font-size: 13px;
+    }
+
+    &.-contact {
+      color: #000000;
+      background-color: variables.$white;
+    }
+
+    &.-mypage {
+      color: variables.$white;
+      background-color: variables.$color-secondary;
+    }
+  }
+
+  &__navConversionText {
+    font-size: 10px;
+
+    &.-en {
+      font-size: 13px;
+    }
+  }
 }
 
-@include mq(mobile) {
+@include variables.mq(variables.$tablet) {
   .header {
+    width: 100%;
+    height: 51px;
+
+    &__logo {
+      left: 0;
+      width: 20%;
+      min-width: 72px;
+      max-width: 128px;
+      padding: 0;
+
+      a {
+        padding: 12px 0;
+      }
+
+      svg {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__hammenu {
+      position: absolute;
+      right: 0;
+    }
+
+    &__trigger,
+    &__trigger span {
+      box-sizing: border-box;
+      display: inline-block;
+      transition: all 0.4s;
+    }
+
+    &__trigger {
+      position: relative;
+      z-index: 200;
+      width: 50px;
+      height: 50px;
+    }
+
+    &__trigger span {
+      position: absolute;
+      left: 50%;
+      width: 26px;
+      height: 2px;
+      background-color: variables.$white;
+
+      &:first-of-type {
+        transform: translate(-50%, 16px);
+      }
+
+      &:nth-of-type(2) {
+        top: 49%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-of-type(3) {
+        transform: translate(-50%, 32px);
+      }
+    }
+
+    &__trigger.active span:nth-of-type(1) {
+      background-color: variables.$white;
+      -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+      transform: translate(-12px, 26px) rotate(-45deg);
+    }
+
+    &__trigger.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    &__trigger.active span:nth-of-type(3) {
+      background-color: variables.$white;
+      -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+      transform: translate(-12px, 26px) rotate(45deg);
+    }
+
+    &__hammenuWrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      min-height: 560px;
+      overflow-y: scroll;
+      background-color: rgba($color: variables.$color-primary, $alpha: 0.9);
+
+      .header__hammenuItem {
+        text-align: center;
+        letter-spacing: 3px;
+
+        &:not(:first-child) {
+          margin-top: 4vw;
+        }
+      }
+    }
+
+    &__hammenuInner {
+      margin: 7vh auto;
+    }
+
+    &__hammenuLink {
+      display: inline-flex;
+      flex-direction: column;
+      color: variables.$white;
+    }
+
+    &__hammenuText {
+      font-size: 12px;
+
+      &.-en {
+        font-size: 30px;
+      }
+    }
+
+    &__hammenuConversion {
+      display: flex;
+      justify-content: center;
+      margin: 10vw 0 0;
+
+      .side-conversion-link {
+        width: 20vw;
+        height: 20vw;
+
+        &:not(:first-child) {
+          margin: 0 0 0 20px;
+        }
+
+        &.-secondary {
+          color: variables.$color-primary;
+          background-color: variables.$white;
+
+          .icon_angle {
+            stroke: variables.$color-primary;
+          }
+        }
+      }
+
+      .side-conversion-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        font-size: 3.2vw;
+        font-weight: 600;
+      }
+    }
   }
 }

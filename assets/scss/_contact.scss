@@ -1,0 +1,37 @@
+@use "variables";
+
+.contact {
+  &__wrapper {
+    padding-bottom: 24px;
+  }
+  &__form {
+    width: 96%;
+    max-width: 600px;
+    margin: 56px auto 80px;
+  }
+
+  &__formParagraph {
+    font-size: 13px;
+    line-height: 1.7;
+
+    a {
+      color: #000000;
+      text-decoration: underline;
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .contact {
+    &__form {
+      width: 100%;
+      margin: 16px auto 80px;
+    }
+
+    &__formParagraph {
+      padding: 0 16px;
+      font-size: 3.47vw;
+      text-align: center;
+    }
+  }
+}

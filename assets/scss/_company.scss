@@ -1,0 +1,234 @@
+@use "_variables";
+
+.company {
+  &__wrapper {
+    max-width: 512px;
+    padding: 100px 0 80px;
+    margin: 0 auto;
+  }
+
+  &__overview {
+    margin-top: 64px;
+
+    table {
+      margin-top: 32px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 2px solid #cacaca;
+    }
+
+    th {
+      min-width: 92px;
+      padding: 0 0 0 18px;
+      text-align: left;
+      background-color: #e1e1e1;
+    }
+
+    td {
+      padding: 4px 20px;
+      font-size: 13px;
+
+      &.-wide {
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  &__subHeading {
+    display: flex;
+    font-weight: 600;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 28px;
+      height: 26px;
+      content: "";
+      background-size: cover;
+    }
+
+    &::before {
+      margin-right: 10px;
+      background-image: url(assets/images/icons/icon_tree-left.svg);
+    }
+
+    &::after {
+      margin-left: 10px;
+      background-image: url(assets/images/icons/icon_tree-right.svg);
+    }
+  }
+
+  &__subHeading {
+    margin-top: 80px;
+  }
+
+  &__officerHeading {
+    padding-bottom: 4px;
+    margin: 32px 0 0;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__snsList {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__snsItem {
+    width: 24px;
+
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+
+  &__officerBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__officerCareer {
+    margin-left: 20px;
+    font-size: 13px;
+    font-feature-settings: "palt";
+
+    dl {
+      display: flex;
+      margin: 2px 0;
+    }
+
+    dt {
+      width: 74px;
+    }
+
+    dd {
+      margin-left: 0;
+    }
+  }
+
+  &__officerImage {
+    width: 36%;
+    min-width: 184px;
+  }
+
+  &__officerWrapper {
+    &:not(:first-of-type) {
+      margin-top: 64px;
+    }
+  }
+
+  &__historyDetails {
+    margin-top: 44px;
+    font-feature-settings: "palt";
+
+    dl {
+      display: flex;
+      margin: 2px 0;
+    }
+
+    dt {
+      width: 88px;
+    }
+
+    dd {
+      margin-left: 4px;
+    }
+  }
+
+  &__officerLicense {
+    display: block;
+    margin-top: 24px;
+    font-size: 12px;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .company {
+    &__wrapper {
+      padding: 64px 0 40px;
+    }
+
+    &__subHeading {
+      justify-content: center;
+    }
+
+    &__subHeading {
+      margin-top: 64px;
+    }
+
+    &__overview {
+      table {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &:not(:last-child) {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+
+      th,
+      td {
+        text-align: center;
+        border: 1px solid #cacaca;
+      }
+
+      th {
+        padding: 4px 0;
+      }
+
+      td {
+        border-top: none;
+
+        &.-wide {
+          padding: 8px 10px;
+        }
+      }
+    }
+
+    &__officerHeading {
+      width: 80%;
+      margin: 32px auto 0;
+      font-size: 16px;
+    }
+
+    &__officerBlock {
+      flex-direction: column;
+    }
+
+    &__officerImage {
+      width: 44.27%;
+      min-width: initial;
+      margin: 8px auto 0;
+    }
+
+    &__officerCareer {
+      width: 80%;
+      margin: 24px auto 0;
+
+      dl {
+        flex-direction: column;
+        margin: 6px 0;
+      }
+    }
+
+    &__historyDetails {
+      dl {
+        flex-direction: column;
+        width: 80%;
+        margin: 12px auto;
+      }
+    }
+  }
+}

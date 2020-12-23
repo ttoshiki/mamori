@@ -1,3 +1,5 @@
+@use "variables";
+
 *,
 *::after,
 *::before {
@@ -49,6 +51,10 @@ textarea {
   appearance: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -63,15 +69,25 @@ textarea {
   clip-path: inset(50%);
 }
 
+.-tab {
+  display: none;
+}
+
 .-sp {
   display: none;
 }
 
-@include mq(mobile) {
+@include variables.mq(variables.$tablet) {
   .-pc {
     display: none;
   }
 
+  .-tab {
+    display: block;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
   .-sp {
     display: block;
   }

@@ -1,0 +1,16 @@
+@use "variables";
+
+.opendays {
+  &__wrapper {
+    padding-bottom: 24px;
+
+    .wp-block-contact-form-7-contact-form-selector {
+      margin-top: 48px;
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .opendays {
+  }
+}

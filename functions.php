@@ -7,6 +7,7 @@
  * @package Mamori
  */
 
+
 if (! defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
     define('_S_VERSION', '1.0.0');
@@ -161,6 +162,17 @@ function mamori_scripts()
 
     wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/js/main.js', array(), '', true);
 
+    if (is_front_page()) {
+        wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/home.js', array(), '', true);
+    } elseif (is_page('faq')) {
+        wp_enqueue_script('faq-script', get_template_directory_uri() . '/assets/js/faq.js', array(), '', true);
+    } elseif (is_page('opendays')) {
+        wp_enqueue_script('opendays-script', get_template_directory_uri() . '/assets/js/opendays.js', array(), '', true);
+    }
+
+    if (is_front_page() || is_page('price')) {
+        wp_enqueue_script('modal-script', get_template_directory_uri() . '/assets/js/modal.js', array(), '', true);
+    }
 }
 add_action('wp_enqueue_scripts', 'mamori_scripts');
 
@@ -186,7 +198,48 @@ function official_pagination()
         'current' => max(1, get_query_var('paged')),
         'prev_text' => __('<'),
         'next_text' => __('>'),
-        'mid_size' => 2,
+        'mid_size' => 1,
         'total' => $wp_query->max_num_pages
     ));
+}
+
+/**
+ * Google Fonts
+ */
+
+function twpp_enqueue_styles()
+{
+    wp_enqueue_style(
+        'google-webfont-style',
+        '//fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
+
+/**
+ * コンタクトフォームのメールアドレス確認バリデーション
+ */
+
+add_filter('wpcf7_validate_email', 'wpcf7_validate_email_filter_extend', 11, 2);
+add_filter('wpcf7_validate_email*', 'wpcf7_validate_email_filter_extend', 11, 2);
+function wpcf7_validate_email_filter_extend($result, $tag)
+{
+    $type = $tag['type'];
+    $name = $tag['name'];
+    $_POST[$name] = trim(strtr((string) $_POST[$name], "n", " "));
+    if ('email' == $type || 'email*' == $type) {
+        if (preg_match('/(.*)_confirm$/', $name, $matches)) { //確認用メルアド入力フォーム名を ○○○_confirm としています。
+            $target_name = $matches[1];
+            if ($_POST[$name] != $_POST[$target_name]) {
+                if (method_exists($result, 'invalidate')) {
+                    $result->invalidate($tag, "確認用のメールアドレスが一致していません");
+                } else {
+                    $result['valid'] = false;
+                    $result['reason'][$name] = '確認用のメールアドレスが一致していません';
+                }
+            }
+        }
+    }
+    return $result;
 }
