@@ -47,6 +47,7 @@
 
   &__photo {
     position: relative;
+    padding-bottom: 40px;
 
     .subHeadingHasIcons {
       h2 {
@@ -66,12 +67,13 @@
 
   &__photoBlock {
     position: relative;
-    width: 80%;
+    width: 86%;
+    max-width: 860px;
     margin: 120px auto 0;
 
     &:nth-child(even) {
       .facility__photoDescription {
-        margin: 0 40px 0 auto;
+        margin: 0 0 0 auto;
       }
 
       .facility__photoImage {
@@ -99,9 +101,6 @@
     }
 
     &:first-child {
-      width: 83%;
-      max-width: 830px;
-
       .facility__photoNumber {
         background-color: variables.$color-secondary;
       }
@@ -118,12 +117,14 @@
     }
 
     &:nth-child(2) {
-      width: 86%;
-      max-width: 860px;
-      margin: 140px auto 0;
+      margin: 206px auto 0;
 
       .facility__photoNumber {
         background-color: variables.$color-primary;
+      }
+
+      .facility__photoParagraph {
+        width: 340px;
       }
 
       .facility__photoDescription {
@@ -133,18 +134,17 @@
 
       .facility__photoDescription {
         max-width: 468px;
+        padding-bottom: 48px;
       }
 
       .facility__photoImage {
-        top: -64px;
-        left: -40px;
+        top: -96px;
+        left: 0;
         width: 60%;
       }
     }
 
     &:nth-child(3) {
-      width: 83%;
-      max-width: 830px;
       margin: 258px auto 0;
 
       .facility__photoNumber {
@@ -157,33 +157,17 @@
       }
 
       .facility__photoDescription {
-        max-width: 468px;
+        max-width: 488px;
+        padding-right: 18%;
+      }
+
+      .facility__photoImage {
+        top: -180px;
+        right: -40px;
       }
     }
 
     &:nth-child(4) {
-      width: 83%;
-      max-width: 830px;
-      margin: 180px auto 0;
-
-      .facility__photoNumber {
-        background-color: #fabf1a;
-      }
-
-      .facility__photoDescription {
-        width: 64%;
-        padding-bottom: 56px;
-        margin: 0 0 0 auto;
-      }
-
-      .facility__photoName {
-        margin: 0 0 0 254px;
-      }
-    }
-
-    &:nth-child(5) {
-      width: 83%;
-      max-width: 830px;
       margin: 180px auto 0;
 
       .facility__photoNumber {
@@ -191,8 +175,38 @@
       }
 
       .facility__photoDescription {
+        width: 64%;
+        padding-bottom: 48px;
+        margin: 0 0 0 auto;
+      }
+
+      .facility__photoName {
+        margin: 0 0 0 254px;
+      }
+
+      .facility__photoImage {
+        top: -80px;
+      }
+    }
+
+    &:nth-child(5) {
+      margin: 180px auto 0;
+
+      .facility__photoNumber {
+        background-color: #7c9b00;
+      }
+
+      .facility__photoName {
+        margin: 0 0 0 108px;
+      }
+
+      .facility__photoDescription {
         width: 60%;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
+      }
+
+      .facility__photoParagraph {
+        margin: 16px auto 0;
       }
 
       .facility__photoName {
@@ -204,11 +218,14 @@
           top: 0;
         }
       }
+
+      .facility__photoImage {
+        top: -74px;
+        right: 0;
+      }
     }
 
     &:nth-child(6) {
-      width: 83%;
-      max-width: 830px;
       margin: 180px auto 0;
 
       .facility__photoNumber {
@@ -217,7 +234,7 @@
 
       .facility__photoDescription {
         width: 64%;
-        padding-bottom: 40px;
+        padding-bottom: 72px;
       }
 
       .facility__photoName {
@@ -230,6 +247,10 @@
         &::before {
           top: 0;
         }
+      }
+
+      .facility__photoImage {
+        top: -54px;
       }
     }
   }
@@ -280,6 +301,11 @@
     }
   }
 
+  &__photoNameSpan {
+    font-size: 17px;
+    line-height: 1;
+  }
+
   &__photoParagraph {
     padding-left: 32px;
     margin: 32px auto 0;
@@ -312,6 +338,24 @@
     display: block;
     font-size: 17px;
     font-weight: 600;
+  }
+
+  &__photoToCorporation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 526px;
+    height: 176px;
+    padding-top: 48px;
+    margin: 24px auto 0;
+    background-image: url(assets/images/facility/message_to_corporation-bg.png);
+    background-size: cover;
+  }
+
+  &__photoToCorporationParagraph {
+    font-size: 14px;
+    color: variables.$white;
+    text-align: center;
   }
 
   &__photo2d {
@@ -390,15 +434,20 @@
 
 @include variables.mq(variables.$tablet) {
   .facility {
+    &__photo {
+      padding-bottom: 0;
+    }
+
     &__photoBg {
       height: 105%;
     }
+
     &__photoBlock {
       margin: 220px auto 0;
 
       &:nth-child(even) {
         .facility__photoName {
-          margin: 0 0 0 26%;
+          margin: 0 0 0 30%;
         }
 
         .facility__photoParagraph {
@@ -444,17 +493,18 @@
       &:nth-child(2) {
         width: 100%;
         max-width: 375px;
-        margin: 408px auto 0;
+        margin: 248px auto 0;
 
         .facility__photoImage {
-          top: -382px;
-          left: 0;
-          width: 100%;
+          top: -182px;
+          right: 0;
+          left: auto;
+          width: 90%;
         }
 
         .facility__photoDescription {
           width: 88%;
-          padding: 80px 0 30px;
+          padding: 72px 0 40px;
           margin: 0;
         }
       }
@@ -463,10 +513,11 @@
         position: relative;
         width: 100%;
         max-width: 375px;
-        margin: 248px auto 0;
+        margin: 448px auto 0;
 
         .facility__photoDescription {
-          width: 91%;
+          width: 87%;
+          padding-right: 10%;
           padding-bottom: 32px;
         }
 
@@ -479,6 +530,13 @@
             content: "3";
             background-color: #95000e;
           }
+        }
+
+        .facility__photoImage {
+          top: -392px;
+          right: 0;
+          left: auto;
+          width: 100%;
         }
       }
 
@@ -494,7 +552,7 @@
         }
 
         .facility__photoName {
-          margin: 0 0 0 32%;
+          margin: 0 0 0 20%;
         }
 
         .facility__preparation {
@@ -508,6 +566,13 @@
 
         .facility__photoDescription {
           margin: 0;
+        }
+
+        .facility__photoImage {
+          top: -182px;
+          right: 0;
+          left: auto;
+          width: 92%;
         }
       }
 
@@ -523,7 +588,7 @@
         }
 
         .facility__photoName {
-          margin: 0 0 0 17%;
+          margin: 0 0 0 22%;
         }
 
         .facility__preparation {
@@ -531,6 +596,13 @@
             content: "A";
             background-color: #7c9b00;
           }
+        }
+
+        .facility__photoImage {
+          top: -182px;
+          right: auto;
+          left: 0;
+          width: 92%;
         }
       }
 
@@ -543,10 +615,11 @@
         .facility__photoDescription {
           width: 91%;
           padding: 48px 0 40px;
+          margin: 0;
         }
 
         .facility__photoName {
-          margin: 0 0 0 17%;
+          margin: 0 0 0 21%;
         }
 
         .facility__preparation {
@@ -556,6 +629,13 @@
             content: "B";
             background-color: #336228;
           }
+        }
+
+        .facility__photoImage {
+          top: -182px;
+          right: 0;
+          left: auto;
+          width: 92%;
         }
       }
     }
@@ -578,6 +658,7 @@
       padding: 0;
       margin: 0 0 0 29%;
       font-size: 22px;
+      letter-spacing: 1px;
 
       &::before,
       &::after {
@@ -601,32 +682,6 @@
       line-height: 1.4;
     }
 
-    &__preparation {
-      top: -186px;
-      width: 91%;
-      height: 207px;
-
-      span {
-        font-size: 16px;
-      }
-
-      &::after {
-        position: absolute;
-        top: -2px;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        height: 34px;
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 20px;
-        color: variables.$white;
-        border: 2px solid variables.$white;
-        box-shadow: 0px 0px 3px #fff;
-      }
-    }
-
     &__photo2d {
       margin: 72px auto 0;
     }
@@ -634,6 +689,17 @@
     &__photoNameSpan {
       display: inline-block;
       font-size: 21px;
+    }
+
+    &__photoToCorporation {
+      width: 90%;
+      max-width: 360px;
+      height: min(51.3vw, 204px);
+      background-image: url(assets/images/facility/message_to_corporation-bg-sp.png);
+    }
+
+    &__photoToCorporationParagraph {
+      font-size: min(3.74vw, 14px);
     }
 
     &__about {
