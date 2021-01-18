@@ -119,8 +119,7 @@ get_header();
               <h3 class="facility__photoName">TYPE／A1<br class="-pc"><span class="facility__photoNameSpan">（8席）</span></h3>
               <p class="facility__photoParagraph">
                 ニュアンスのある曲線が特徴的なテーブルはMamoriのためだけに作られた1点もの。<br>
-                大きな樹木の下でご自由にお過ごしください。<br>
-                すべての会員さまがご利用いただけます。
+                大きな樹木の下でご自由にお過ごしください。
               </p>
             </div>
           </div>
