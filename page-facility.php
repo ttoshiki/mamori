@@ -64,7 +64,7 @@ get_header();
                 明るく軽やかな空間。<br>
                 大切なお客さまを迎える応接室としても<br>
                 ご利用ください。<br>
-                （月額会員は利用料無料 ／ 目隠しも可能）<br>
+                （月額会員は利用料無料）<br>
               </p>
             </div>
             <picture>
@@ -88,7 +88,7 @@ get_header();
                 ちょっとした打ち合わせやWeb会議に<br>
                 ぴったりの2名個室は、シンプルながら<br>
                 圧迫感のない上部ガラス張り。<br>
-                （月額会員は利用料無料 / 目隠しも可能)
+                （月額会員は利用料無料)
               </p>
             </div>
           </div>
@@ -102,9 +102,9 @@ get_header();
             </div>
             <picture>
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03-sp.webp" media="(max-width: 960px)" type="image/webp">
-					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03-sp.jpg" media="(max-width: 960px)">
+					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03-sp.png" media="(max-width: 960px)">
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03.jpg" alt="" class="facility__photoImage">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03.png" alt="" class="facility__photoImage">
             </picture>
           </div>
           <div class="facility__photoBlock">
