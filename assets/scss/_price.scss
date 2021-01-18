@@ -9,6 +9,8 @@
     margin: 40px 0 0;
 
     table {
+      width: 80%;
+      max-width: 600px;
       margin: 0 auto;
       border-collapse: collapse;
     }
@@ -55,8 +57,17 @@
   }
 
   &__free {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 1;
     color: variables.$color-secondary;
+  }
+
+  &__freeArrow {
+    color: variables.$black;
+  }
+
+  &__freeSmall {
+    font-size: 16px;
   }
 
   &__listSpan {
@@ -81,7 +92,7 @@
 
   &__listSmallCaution {
     display: block;
-    width: 686px;
+    width: 600px;
     margin: 6px auto 0;
     font-size: 14px;
     text-align: right;
@@ -335,6 +346,30 @@
   }
 }
 
+@include variables.mq(variables.$tablet) {
+  .price {
+    &__list {
+      table {
+        width: 94%;
+      }
+    }
+
+    &__listTable {
+      &.-monthly {
+        .price__listTablePlanName {
+          padding: 8px 0;
+          background-color: variables.$color-secondary;
+          border: 1px solid #725e31;
+        }
+      }
+    }
+
+    &__freeSmall {
+      font-size: 15px;
+    }
+  }
+}
+
 @include variables.mq(variables.$mobile) {
   .price {
     &__wrapper {
@@ -350,14 +385,7 @@
 
       &.-monthly {
         th {
-          background-color: #a89874;
           border: 1px solid #938565;
-        }
-
-        .price__listTablePlanName {
-          padding: 8px 0;
-          background-color: variables.$color-secondary;
-          border: 1px solid #725e31;
         }
       }
 
@@ -471,7 +499,7 @@
     }
 
     &__flow {
-      margin: 172px auto 96px;
+      margin: 120px auto 96px;
     }
 
     &__flowSubHeading {

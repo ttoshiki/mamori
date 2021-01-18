@@ -2613,7 +2613,7 @@ span.wpcf7-list-item label {
     height: 105%;
   }
   .facility__photoBlock {
-    margin: 220px auto 0;
+    margin: 200px auto 0;
   }
   .facility__photoBlock:nth-child(even) .facility__photoName {
     margin: 0 0 0 30%;
@@ -2882,6 +2882,8 @@ span.wpcf7-list-item label {
   margin: 40px 0 0;
 }
 .price__list table {
+  width: 80%;
+  max-width: 600px;
   margin: 0 auto;
   border-collapse: collapse;
 }
@@ -2915,8 +2917,15 @@ span.wpcf7-list-item label {
   border: 1px solid #c3c3c3;
 }
 .price__free {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 1;
   color: #836c39;
+}
+.price__freeArrow {
+  color: #333333;
+}
+.price__freeSmall {
+  font-size: 16px;
 }
 .price__listSpan {
   display: block;
@@ -2935,7 +2944,7 @@ span.wpcf7-list-item label {
 }
 .price__listSmallCaution {
   display: block;
-  width: 686px;
+  width: 600px;
   margin: 6px auto 0;
   font-size: 14px;
   text-align: right;
@@ -3145,6 +3154,19 @@ span.wpcf7-list-item label {
   margin: 88px auto 108px;
 }
 
+@media screen and (max-width: 960px) {
+  .price__list table {
+    width: 94%;
+  }
+  .price__listTable.-monthly .price__listTablePlanName {
+    padding: 8px 0;
+    background-color: #836c39;
+    border: 1px solid #725e31;
+  }
+  .price__freeSmall {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 480px) {
   .price__wrapper {
     padding-bottom: 24px;
@@ -3156,13 +3178,7 @@ span.wpcf7-list-item label {
     padding: 4px 0;
   }
   .price__listTable.-monthly th {
-    background-color: #a89874;
     border: 1px solid #938565;
-  }
-  .price__listTable.-monthly .price__listTablePlanName {
-    padding: 8px 0;
-    background-color: #836c39;
-    border: 1px solid #725e31;
   }
   .price__listTable.-time {
     margin: 48px auto 0;
@@ -3251,7 +3267,7 @@ span.wpcf7-list-item label {
     font-feature-settings: "palt";
   }
   .price__flow {
-    margin: 172px auto 96px;
+    margin: 120px auto 96px;
   }
   .price__flowSubHeading {
     width: 94%;

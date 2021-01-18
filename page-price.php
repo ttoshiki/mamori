@@ -38,38 +38,26 @@ get_header();
                 <td colspan="2" scope="rowgroup">固定席</td>
               </tr>
               <tr class="-confined">
-                <td>タイプA<br>(5席)</td>
+                <td>タイプA<br>(半個室以外)</td>
                 <td>タイプB<br>(半個室／4席)</td>
               </tr>
-              <tr>
+              <tr class="-confined">
                 <th>入会金</th>
-                <td colspan="3">10,000円→<span class="price__free">オープンキャンペーンのため無料</span></td>
+                <td colspan="3"><span class="price__free"><span class="price__freeSmall">オープンキャンペーンのため</span><br><span class="price__freeSmall">10,000円</span> <span class="price__freeArrow">→</span> 無料</span></td>
               </tr>
               <tr>
-                <th rowspan="3">利用<br>時間</th>
+                <th>利用<br>時間</th>
                 <td>
-                  フルタイム会員<br>20,000円／月
+                  フルタイム会員<br>25,000円／月
                   <span class="price__listTime">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>30,000円／月
                   <span class="price__listTime -oneday">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>50,000円／月
                   <span class="price__listTime -oneday">(24時間)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  平日会員<br>10,000円／月
-                  <span class="price__listTime -oneday">(平日9:00~18:00)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  ナイト＆ホリデー<br>会員<br>10,000円／月
-                  <span class="price__listTime -oneday">(平日18:00~23:00)<br>(土日祝10:00~23:00)</span>
                 </td>
               </tr>
               <tr>
@@ -100,7 +88,7 @@ get_header();
           </table>
           <span class="price__listSmallCaution">※価格は全て税抜です</span>
         </div>
-        <div class="price__tableWrapper -sp">
+        <div class="price__tableWrapper -tab">
           <table class="price__listTable -monthly">
             <thead>
               <tr>
@@ -116,42 +104,30 @@ get_header();
                 <td colspan="2">固定席</td>
               </tr>
               <tr>
-                <td>タイプA<br>(5席)</td>
+                <td>タイプA<br>(半個室以外)</td>
                 <td>タイプB<br>(半個室4席)</td>
               </tr>
               <tr>
                 <th colspan="3">入会金</th>
               </tr>
               <tr>
-                <td colspan="3">10,000円→<span class="price__free">オープンキャンペーンのため無料</span></td>
+                <td colspan="3"><span class="price__free"><span class="price__freeSmall">オープンキャンペーンのため</span><br><span class="price__freeSmall">10,000円</span> <span class="price__freeArrow">→</span> 無料</span></td>
               </tr>
               <tr>
                 <th colspan="3">利用時間</th>
               </tr>
               <tr>
                 <td>
-                  フルタイム会員<br>20,000円／月
+                  フルタイム会員<br>25,000円／月
                   <span class="price__caution">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>30,000円／月
                   <span class="price__caution">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>50,000円／月
                   <span class="price__caution">(24時間)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  平日会員<br>10,000円／月
-                  <span class="price__caution">(平日9:00~18:00)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  ナイト＆ホリデー<br>会員<br>10,000円／月
-                  <span class="price__caution">(平日<br>18:00~23:00)<br>(土日祝<br>10:00~23:00)</span>
                 </td>
               </tr>
               <tr>
@@ -185,53 +161,6 @@ get_header();
             </tbody>
           </table>
           <span class="price__listSmallCaution">※価格は全て税抜です</span>
-          <table class="price__listTable -time">
-            <tr>
-              <th class="price__listTablePlanName">時間会員</th>
-            </tr>
-            <tr>
-              <th>プラン</th>
-            </tr>
-            <tr>
-              <td>初回来店時に<br>鍵設定が必要です</td>
-            </tr>
-            <tr>
-             <th>入会金</th>
-            </tr>
-            <tr>
-              <td>10,000円→<span class="price__free">オープンキャンペーンのため無料</span></td>
-            </tr>
-            <tr>
-              <th>利用時間</th>
-            </tr>
-            <tr>
-              <td>
-                250／30分<br>
-                1日上限3,000円
-              </td>
-            </tr>
-            <tr>
-              <th>住所利用・法人登記サービス</th>
-            </tr>
-            <tr>
-              <td>
-                6,000円／月
-                <span class="price__caution">※月2回の書類転送</span>
-                <span class="price__caution -hasTopMargin">(ポスト利用は2,000円／月)</span>
-              </td>
-            </tr>
-            <tr>
-              <th>ミーティングルーム</th>
-            </tr>
-            <tr>
-              <td>
-                1,000円／時間<br>
-                ビジター招待OK
-                <span class="price__caution">※2名個室のみご利用可能</span>
-              </td>
-            </tr>
-          </table>
-          <span class="price__listSmallCaution">※価格は全て税抜です</span>
         </div>
       </section>
       <section class="price__spaceUsage">
@@ -239,7 +168,7 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg-sp.webp" media="(max-width: 480px)" type="image/webp">
 					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg-sp.png" media="(max-width: 480px)">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.png" alt="" class="price__usageBg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.jpg" alt="" class="price__usageBg">
         </picture>
         <div class="subHeadingHasIcons -light">
           <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
