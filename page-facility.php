@@ -64,7 +64,7 @@ get_header();
                 明るく軽やかな空間。<br>
                 大切なお客さまを迎える応接室としても<br>
                 ご利用ください。<br>
-                （月額会員は利用料無料 ／ 目隠しも可能）<br>
+                （月額会員は利用料無料）<br>
               </p>
             </div>
             <picture>
@@ -79,72 +79,84 @@ get_header();
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_02-sp.webp" media="(max-width: 960px)" type="image/webp">
 					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_02-sp.jpg" media="(max-width: 960px)">
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_02.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_02.png" alt="" class="facility__photoImage">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_02.jpg" alt="" class="facility__photoImage">
             </picture>
             <div class="facility__photoDescription">
               <span class="facility__photoNumber -en">2</span>
-              <h3 class="facility__photoName">メインフロア</h3>
+              <h3 class="facility__photoName">2人用個室</h3>
               <p class="facility__photoParagraph">
-                深い森をイメージしたメインフロアは、<br class="-sp">静寂に包まれた癒しと集中の空間。<br class="-tab">一般的なカフェと比較して、ひとりひとりのスペースを２倍近く取っているため周りの人の目を気にせず集中することができます。<br class="-tab">丸太のパーテーションで区切られた半個室やオープンスペースなど、お好みに合わせたお席をお選びください。
+                ちょっとした打ち合わせやWeb会議に<br>
+                ぴったりの2名個室は、シンプルながら<br>
+                圧迫感のない上部ガラス張り。<br>
+                （月額会員は利用料無料)
               </p>
             </div>
           </div>
           <div class="facility__photoBlock">
             <div class="facility__photoDescription">
               <span class="facility__photoNumber -en">3</span>
-              <h3 class="facility__photoName">2人用個室</h3>
+              <h3 class="facility__photoName">メインフロア</h3>
               <p class="facility__photoParagraph">
-                ちょっとした打ち合わせやWeb会議に<br>
-                ぴったりの2名個室は、シンプルながら<br>
-                圧迫感のない上部ガラス張り。<br>
-                （月額会員は利用料無料 / 目隠しも可能)
+                深い森をイメージしたメインフロアは、<br class="-sp">静寂に包まれた癒しと集中の空間。<br class="-tab">一般的なカフェと比較して、ひとりひとりのスペースを２倍近く取っているため周りの人の目を気にせず集中することができます。<br class="-tab">丸太のパーテーションで区切られた半個室やオープンスペースなど、お好みに合わせたお席をお選びください。
               </p>
             </div>
-            <div class="facility__preparation">
-              <span>準備中</span>
-            </div>
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03-sp.webp" media="(max-width: 960px)" type="image/webp">
+					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03-sp.png" media="(max-width: 960px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_03.png" alt="" class="facility__photoImage">
+            </picture>
           </div>
           <div class="facility__photoBlock">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_04-sp.webp" media="(max-width: 960px)" type="image/webp">
+					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_04-sp.jpg" media="(max-width: 960px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_04.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_04.jpg" alt="" class="facility__photoImage">
+            </picture>
             <div class="facility__photoDescription">
-              <span class="facility__photoNumber -en">0</span>
-              <h3 class="facility__photoName">オープン席</h3>
+              <span class="facility__photoNumber -en">A1</span>
+              <h3 class="facility__photoName">TYPE／A1<br class="-pc"><span class="facility__photoNameSpan">（8席）</span></h3>
               <p class="facility__photoParagraph">
                 ニュアンスのある曲線が特徴的なテーブルはMamoriのためだけに作られた1点もの。<br>
                 大きな樹木の下でご自由にお過ごしください。<br>
                 すべての会員さまがご利用いただけます。
               </p>
             </div>
-            <div class="facility__preparation">
-              <span>準備中</span>
-            </div>
           </div>
           <div class="facility__photoBlock">
             <div class="facility__photoDescription">
-              <span class="facility__photoNumber -en">A</span>
-              <h3 class="facility__photoName">固定席<span class="facility__photoNameSpan">（Aタイプ/5席）</span></h3>
+              <span class="facility__photoNumber -en">A2</span>
+              <h3 class="facility__photoName">TYPE／A2<br class="-pc"><span class="facility__photoNameSpan">（5席）</span></h3>
               <p class="facility__photoParagraph">
                 ニュアンスのある丸太と樹木で<br>
                 緩やかに区切られたお席です。<br>
                 深緑の中で集中したい方にオススメ。
               </p>
             </div>
-            <div class="facility__preparation">
-              <span>準備中</span>
-            </div>
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_05-sp.webp" media="(max-width: 960px)" type="image/webp">
+					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_05-sp.jpg" media="(max-width: 960px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_05.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_05.jpg" alt="" class="facility__photoImage">
+            </picture>
           </div>
           <div class="facility__photoBlock">
-            <div class="facility__preparation">
-              <span>準備中</span>
-            </div>
             <div class="facility__photoDescription">
               <span class="facility__photoNumber -en">B</span>
-              <h3 class="facility__photoName">固定席<span class="facility__photoNameSpan">（Bタイプ/4席）</span></h3>
+              <h3 class="facility__photoName">TYPE／B<br class="-pc"><span class="facility__photoNameSpan">（4席）</span></h3>
               <p class="facility__photoParagraph">
                 Mamoriで最もお籠り感のあるお席です。<br>
                 1人用ブースながら圧迫感のない空間。<br>
                 ハーマンミラー社のチェアをご用意しました。
               </p>
             </div>
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_06-sp.webp" media="(max-width: 960px)" type="image/webp">
+					    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_06-sp.jpg" media="(max-width: 960px)">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_06.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/photo_06.jpg" alt="" class="facility__photoImage">
+            </picture>
           </div>
         </div>
         <picture>
@@ -153,6 +165,13 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/facility/2d.webp" type="image/webp">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facility/2d.png" alt="" class="facility__photo2d">
         </picture>
+        <div class="facility__photoToCorporation">
+          <p class="facility__photoToCorporationParagraph">
+            法人さまの複数席契約も可能です。<br class="-tab">柔軟にプランをご提案いたしますので、<br>
+            お電話またはフォームより<br class="-tab">お問い合わせくださいませ。<br>
+            現地を見学いただきながらの相談も可能です。
+          </p>
+        </div>
       </section>
       <section class="facility__about">
         <div class="subHeadingHasIcons">
