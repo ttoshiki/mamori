@@ -111,7 +111,6 @@ get_header();
               <p class="facility__photoParagraph">
                 ニュアンスのある曲線が特徴的なテーブルはMamoriのためだけに作られた1点もの。<br>
                 大きな樹木の下でご自由にお過ごしください。<br>
-                すべての会員さまがご利用いただけます。
               </p>
             </div>
             <div class="facility__preparation">

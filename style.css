@@ -1000,6 +1000,7 @@ span.wpcf7-list-item label {
 }
 .header {
   position: relative;
+  z-index: 50;
   display: flex;
   background-color: #1f2a66;
 }
@@ -1617,11 +1618,38 @@ span.wpcf7-list-item label {
 .home__wrapper {
   padding-bottom: 32px;
 }
+.home__mainVisual {
+  position: relative;
+  width: 100%;
+  height: 56.2vw;
+}
+.home__mainVideo {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.home__mainImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home__mainVideoSkip {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  z-index: 50;
+  padding: 6px 24px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: none;
+}
+.home__mainVideoSkip:hover {
+  cursor: pointer;
+}
 .home__contentsWrapper {
   position: relative;
-}
-.home__mainVisualImage {
-  margin-top: -1px;
 }
 .home__about .button__wrapper {
   margin-top: 24px;

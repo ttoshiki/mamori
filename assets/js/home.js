@@ -22,6 +22,22 @@ jQuery(function() {
     fixSidebar()
   })
 
+  function mainVideoFadeout() {
+    jQuery('.home__mainVideoSkip').fadeOut(500)
+    jQuery('.home__mainVideo').fadeOut(1000)
+    setTimeout(() => {
+      jQuery('.home__mainVideo').remove()
+    }, 1000);
+  }
+
+  setTimeout(() => {
+    mainVideoFadeout()
+  }, 8200);
+
+  jQuery('.home__mainVideoSkip').on('click', function() {
+    mainVideoFadeout()
+  })
+
 })
 
 
