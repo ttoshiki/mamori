@@ -1000,6 +1000,7 @@ span.wpcf7-list-item label {
 }
 .header {
   position: relative;
+  z-index: 50;
   display: flex;
   background-color: #1f2a66;
 }
@@ -1617,11 +1618,55 @@ span.wpcf7-list-item label {
 .home__wrapper {
   padding-bottom: 32px;
 }
+.home__mainVisual {
+  position: relative;
+  width: 100%;
+  height: 56.2vw;
+  background-color: #333333;
+}
+.home__loader {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  z-index: 100;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+.home__mainVideo {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.home__mainImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home__mainVideoSkip {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  z-index: 50;
+  padding: 6px 24px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: none;
+}
+.home__mainVideoSkip:hover {
+  cursor: pointer;
+}
 .home__contentsWrapper {
   position: relative;
-}
-.home__mainVisualImage {
-  margin-top: -1px;
 }
 .home__about .button__wrapper {
   margin-top: 24px;
@@ -1872,7 +1917,40 @@ span.wpcf7-list-item label {
   cursor: pointer;
 }
 
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 480px) {
+  .home__loader {
+    top: calc(50% - 6px);
+    left: calc(50% - 12px);
+    width: 24px;
+    height: 24px;
+  }
+  .home__mainVideoSkip {
+    bottom: 3vw;
+    left: 3vw;
+    padding: 2px 12px;
+    font-size: 4vw;
+  }
   .home__about .button__wrapper {
     margin-top: 32px;
   }

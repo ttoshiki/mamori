@@ -2,6 +2,7 @@
 
 .header {
   position: relative;
+  z-index: 50;
   display: flex;
   background-color: variables.$color-primary;
 

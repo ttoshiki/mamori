@@ -18,12 +18,10 @@ get_header();
 	<main class="site-main">
 		<div class="home__wrapper">
 			<section class="home__mainVisual">
-				<picture>
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/main_visual-sp.webp" media="(max-width: 480px)" type="image/webp">
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/main_visual-sp.jpg" media="(max-width: 480px)">
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/main_visual.webp" type="image/webp">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/main_visual.jpg" alt="Mamoriメインビジュアル" class="home__mainVisualImage">
-				</picture>
+				<span class="home__loader"></span>
+				<video playsinline muted class="home__mainVideo">
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/main.mp4" type="video/mp4">
+				</video>
 			</section>
 			<div class="home__contentsWrapper">
 				<section class="home__about">
@@ -99,17 +97,21 @@ get_header();
 					<article class="home__newsArticle">
 						<ul class="home__newsList">
 							<?php
-								$args = array(
-									'post_type' => 'post',
-									'posts_per_page' => 5,
-								);
-								$the_query = new WP_Query($args); if ($the_query->have_posts()):
-							?>
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'posts_per_page' => 5,
+                                );
+                                $the_query = new WP_Query($args); if ($the_query->have_posts()):
+                            ?>
 							<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
 								<?php $categories = get_the_category(); ?>
 								<li id="post-<?php the_ID(); ?>" class="home__newsItem">
 									<time datetime="<?php echo get_the_date('Y.m.d'); ?>" class="home__newsDate"><?php echo get_the_date('Y.m.d'); ?></time>
-									<span class="home__newsCategoryName<?php if( $categories[0]->slug === 'important') { echo ' -secondary'; } elseif( $categories[0]->slug === 'event') { echo ' -tertiary'; } ?>"><?php echo $categories[0]->name; ?></span>
+									<span class="home__newsCategoryName<?php if ($categories[0]->slug === 'important') {
+                                echo ' -secondary';
+                            } elseif ($categories[0]->slug === 'event') {
+                                echo ' -tertiary';
+                            } ?>"><?php echo $categories[0]->name; ?></span>
 									<a href="<?php the_permalink(); ?>" class="home__newsLink"><span class="home__newsTitle"><?php echo get_the_title(); ?></span></a>
 								</li>
 							<?php endwhile; ?>
