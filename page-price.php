@@ -32,58 +32,36 @@ get_header();
             <thead></thead>
             <tbody>
               <th rowspan="3" scope="colgroup">プラン</th>
-              <th class="-times">時間会員</th>
               <th colspan="3" class="-monthly">月額会員</th>
               <tr class="-confined">
-                <td rowspan="2">初回来店時に<br>鍵設定が必要です</td>
                 <td rowspan="2">フリーアドレス</td>
                 <td colspan="2" scope="rowgroup">固定席</td>
               </tr>
               <tr class="-confined">
-                <td>タイプA<br>(5席)</td>
+                <td>タイプA<br>(半個室以外)</td>
                 <td>タイプB<br>(半個室／4席)</td>
               </tr>
-              <tr>
+              <tr class="-confined">
                 <th>入会金</th>
-                <td colspan="4" class="-free">無　料</td>
+                <td colspan="3"><span class="price__free"><span class="price__freeSmall">オープンキャンペーンのため</span><br><span class="price__freeSmall">10,000円</span> <span class="price__freeArrow">→</span> 無料</span></td>
               </tr>
               <tr>
-                <th rowspan="3">利用<br>時間</th>
-                <td rowspan="3">
-                  250円／30分<br><span class="price__listSpan">1日上限<br>3,000円</span>
-                </td>
+                <th>利用<br>時間</th>
                 <td>
-                  フルタイム会員<br>20,000円／月
+                  フルタイム会員<br>25,000円／月
                   <span class="price__listTime">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>30,000円／月
                   <span class="price__listTime -oneday">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>50,000円／月
                   <span class="price__listTime -oneday">(24時間)</span>
                 </td>
               </tr>
               <tr>
-                <td>
-                  平日会員<br>10,000円／月
-                  <span class="price__listTime -oneday">(平日9:00~18:00)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  ナイト＆ホリデー<br>会員<br>10,000円／月
-                  <span class="price__listTime -oneday">(平日18:00~23:00)<br>(土日祝10:00~23:00)</span>
-                </td>
-              </tr>
-              <tr>
                 <th>住所利用・<br>法人登記<br>サービス</th>
-                <td>
-                  6,000円／月
-                  <span class="price__listCaution -topNoMargin">※月2回の書類転送</span>
-                  <span class="price__listTime">(ポスト利用は<br>2,000円／月)</span>
-                </td>
                 <td>
                   3,000円／月
                   <span class="price__listCaution -topNoMargin">※月2回の書類転送</span>
@@ -98,10 +76,6 @@ get_header();
               <tr>
                 <th>ミーティング<br>ルーム</th>
                 <td>
-                  1,000円／時間<br>ビジター招待OK
-                  <span class="price__listCaution">※2名個室のみ<br>ご利用可能</span>
-                </td>
-                <td>
                   追加料金なし<br>ビジター招待OK
                   <span class="price__listCaution">(月15時間まで無料)<br>※以降1,000円／時間</span>
                 </td>
@@ -114,7 +88,7 @@ get_header();
           </table>
           <span class="price__listSmallCaution">※価格は全て税抜です</span>
         </div>
-        <div class="price__tableWrapper -sp">
+        <div class="price__tableWrapper -tab">
           <table class="price__listTable -monthly">
             <thead>
               <tr>
@@ -130,42 +104,30 @@ get_header();
                 <td colspan="2">固定席</td>
               </tr>
               <tr>
-                <td>タイプA<br>(5席)</td>
+                <td>タイプA<br>(半個室以外)</td>
                 <td>タイプB<br>(半個室4席)</td>
               </tr>
               <tr>
                 <th colspan="3">入会金</th>
               </tr>
               <tr>
-                <td colspan="3" class="-free">無料</td>
+                <td colspan="3"><span class="price__free"><span class="price__freeSmall">オープンキャンペーンのため</span><br><span class="price__freeSmall">10,000円</span> <span class="price__freeArrow">→</span> 無料</span></td>
               </tr>
               <tr>
                 <th colspan="3">利用時間</th>
               </tr>
               <tr>
                 <td>
-                  フルタイム会員<br>20,000円／月
+                  フルタイム会員<br>25,000円／月
                   <span class="price__caution">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>30,000円／月
                   <span class="price__caution">(24時間)</span>
                 </td>
-                <td rowspan="3">
+                <td>
                   フルタイム会員<br>50,000円／月
                   <span class="price__caution">(24時間)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  平日会員<br>10,000円／月
-                  <span class="price__caution">(平日9:00~18:00)</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  ナイト＆ホリデー<br>会員<br>10,000円／月
-                  <span class="price__caution">(平日<br>18:00~23:00)<br>(土日祝<br>10:00~23:00)</span>
                 </td>
               </tr>
               <tr>
@@ -199,53 +161,6 @@ get_header();
             </tbody>
           </table>
           <span class="price__listSmallCaution">※価格は全て税抜です</span>
-          <table class="price__listTable -time">
-            <tr>
-              <th class="price__listTablePlanName">時間会員</th>
-            </tr>
-            <tr>
-              <th>プラン</th>
-            </tr>
-            <tr>
-              <td>初回来店時に<br>鍵設定が必要です</td>
-            </tr>
-            <tr>
-             <th>入会金</th>
-            </tr>
-            <tr>
-              <td class="-free">無料</td>
-            </tr>
-            <tr>
-              <th>利用時間</th>
-            </tr>
-            <tr>
-              <td>
-                250／30分<br>
-                1日上限3,000円
-              </td>
-            </tr>
-            <tr>
-              <th>住所利用・法人登記サービス</th>
-            </tr>
-            <tr>
-              <td>
-                6,000円／月
-                <span class="price__caution">※月2回の書類転送</span>
-                <span class="price__caution -hasTopMargin">(ポスト利用は2,000円／月)</span>
-              </td>
-            </tr>
-            <tr>
-              <th>ミーティングルーム</th>
-            </tr>
-            <tr>
-              <td>
-                1,000円／時間<br>
-                ビジター招待OK
-                <span class="price__caution">※2名個室のみご利用可能</span>
-              </td>
-            </tr>
-          </table>
-          <span class="price__listSmallCaution">※価格は全て税抜です</span>
         </div>
       </section>
       <section class="price__spaceUsage">
@@ -253,7 +168,7 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg-sp.webp" media="(max-width: 480px)" type="image/webp">
 					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg-sp.png" media="(max-width: 480px)">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.png" alt="" class="price__usageBg">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/price/usage_bg.jpg" alt="" class="price__usageBg">
         </picture>
         <div class="subHeadingHasIcons -light">
           <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-left.svg'); ?></div>
@@ -330,71 +245,6 @@ get_header();
             </ul>
           </div>
         </div>
-        <div class="price__usageInner -time">
-          <h3 class="price__usageHeading">時間会員について<span class="price__usageHeadingSpan -sp">(フリーアドレス・固定席プラン共通)</span></h3>
-          <p class="price__usageLead">
-            時間会員とは、Mamori営業時間中1日の<br class="-sp">上限請求額を3,000円とし、<br class="-pc">
-            使った時間数だけの金額でご利用いただけるプランです。
-          </p>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【申し込みに必要なもの】</h4>
-            <ul class="price__usageNecessaryList">
-              <li class="price__usageNeccessaryItem">クレジットカード</li>
-              <li class="price__usageNeccessaryItem">入退館用ICカード</li>
-            </ul>
-            <p class="price__usageParagraph">ご来館前に<button type="button" class="price__usageLink open-join-modal">WEBからの会員登録</button>を<br class="-sp">お済ませいただけるとスムーズです。</p>
-          </div>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【手続き可能日時】</h4>
-            <p class="price__usageParagraph">
-              ご見学・お手続き可能時間に承ります。<br>
-            </p>
-            <span class="price__caution">
-              ※オープン直後はスタッフ常駐日時が変則的になります。<br>
-              詳しくは「NEWS(お知らせ)」にてご確認ください
-            </span>
-          </div>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【手続き方法】</h4>
-            <p class="price__usageParagraph">
-              ICカードにドアのセキュリティ設定が必要なため、<br>
-              現地でスタッフ受付が必要です。
-            </p>
-          </div>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【ご契約条件】</h4>
-            <ul class="price__usageList">
-              <li class="price__usageItem">料金：基本の月額費用はかかりません。利用した分のみ請求されます。</li>
-              <li class="price__usageItem">毎月末に当月分のご利用料金を確定し、その翌月に、<br class="-pc">
-                ご登録いただいたクレジットカードから引き落としとなります。
-              </li>
-              <li class="price__usageItem">ご利用いただけるお席は、フリーアドレス会員と同様の<br class="-pc">
-                オープンスペースのみとなります。
-              </li>
-              <li class="price__usageItem">天候やイベント、その他事情により一部席の制限や休館する場合がございます。</li>
-              <li class="price__usageItem">ご利用時間はご自身で記録をお願いします。</li>
-              <li class="price__usageItem">プラン変更・もしくは解約のお手続きがなければ自動更新になります</li>
-            </ul>
-          </div>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【退会をご希望の場合】</h4>
-            <ul class="price__usageList">
-              <li class="price__usageItem">
-                <a href="<?php echo home_url('/contact/'); ?>" class="price__usageLink">お問い合わせフォーム</a>から以下の情報をお知らせください。
-                <strong class="price__usageStrong">【お名前】</strong>
-                「受け付けた旨」の事務局からの返信メールを受信されたらお手続きは完了です。
-              </li>
-            </ul>
-          </div>
-          <div class="price__usageBlock">
-            <h4 class="price__usageSubHeading">【時間会員プランの廃止について】</h4>
-            <ul class="price__usageList">
-              <li class="price__usageItem">月額会員の増加により、ワークスペースにて十分なお席が確保できなくなった場合、<br class="-pc">
-                時間会員プランを廃止することもございます。その際は事前に会員宛に通知いたします。
-              </li>
-            </ul>
-          </div>
-        </div>
       </section>
       <section class="price__flow">
         <div class="subHeadingHasIcons">
@@ -402,7 +252,6 @@ get_header();
           <h2>申し込みまでの流れ</h2>
           <div class="subHeadingHasIconsIcon"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_tree-right.svg'); ?></div>
         </div>
-        <h3 class="price__flowSubHeading">月額会員・時間会員共通</h3>
         <div>
           <div class="price__flowSteps">
             <div class="price__flowStepFigure">
