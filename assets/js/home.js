@@ -37,7 +37,7 @@ jQuery(function() {
     video.play()
     jQuery('.home__mainVisual').append('<button type="button" class="home__mainVideoSkip -en">SKIP</button>')
     setTimeout(() => {
-      jQuery('.home__mainVisual').append('<img src="/test-site/wp-content/themes/mamori/assets/images/home/main.jpg" alt="" class="home__mainImage">')
+      jQuery('.home__mainVisual').append('<img src="/wp-content/themes/mamori/assets/images/home/main.jpg" alt="" class="home__mainImage">')
     }, 500);
     setTimeout(() => {
       mainVideoFadeout()
