@@ -13,6 +13,7 @@
 
 </div><!-- #page -->
 
+<?php get_template_part('template-parts/bottom-conversion') ?>
 <footer class="footer<?php
   if(is_front_page()) { echo ' home'; }
   elseif(is_page('about')) { echo ' -confined'; }

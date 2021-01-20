@@ -162,9 +162,9 @@
 						</a>
 					</li>
 					<li class="header__navConversionItem">
-						<a href="<?php echo home_url('/preparation/'); ?>" class="header__navConversionLink -mypage">
-							<span class="header__navConversionText -en">MYPAGE</span>
-							<span class="header__navConversionText">マイページ</span>
+						<a href="<?php echo home_url('/preparation/'); ?>" class="header__navConversionLink -reserve">
+							<span class="header__navConversionText -large">ミーティングルーム予約</span>
+							<span class="header__navConversionText">会員様向け</span>
 						</a>
 					</li>
 				</ul>

@@ -778,23 +778,36 @@ span.wpcf7-list-item label {
     margin-right: 4px;
   }
   .bottom-conversion-link.-tel {
-    width: 20%;
+    width: 23%;
     background-color: #1f2a66;
   }
   .bottom-conversion-link.-contact {
-    width: 44%;
+    flex-direction: column;
+    width: 28%;
     background-color: #b2b2b2;
   }
-  .bottom-conversion-link.-mypage {
-    width: 36%;
+  .bottom-conversion-link.-reserve {
+    flex-direction: column;
+    width: 49%;
     background-color: #836c39;
+  }
+  .bottom-conversion-link.-reserve .bottom-conversion-text {
+    font-size: 3.76vw;
+  }
+  .bottom-conversion-link.-reserve .bottom-conversion-text.-caution {
+    font-size: 10px;
   }
 
   .bottom-conversion-text {
     font-size: 10px;
+    font-weight: 600;
   }
   .bottom-conversion-text.-en {
     font-size: 17px;
+    font-weight: 500;
+  }
+  .bottom-conversion-text.-caution {
+    font-size: 10px;
   }
 
   .link-button:not(:first-child) {
@@ -1036,7 +1049,7 @@ span.wpcf7-list-item label {
   justify-content: center;
 }
 .header__navItem:not(:first-child) {
-  margin-left: 7%;
+  margin-left: 6.2%;
 }
 .header__navLink {
   display: flex;
@@ -1064,17 +1077,25 @@ span.wpcf7-list-item label {
   flex-direction: column;
   align-items: center;
   width: 84px;
-  padding: 3px 0;
+  padding: 4px 0;
+  font-weight: 600;
   border-radius: 8px;
 }
 .header__navConversionLink.-en {
   font-size: 13px;
+  font-weight: 500;
 }
 .header__navConversionLink.-contact {
   color: #000000;
   background-color: #ffffff;
 }
-.header__navConversionLink.-mypage {
+.header__navConversionLink.-reserve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 42px;
+  padding: 0 6px;
   color: #ffffff;
   background-color: #836c39;
 }
@@ -1083,6 +1104,9 @@ span.wpcf7-list-item label {
 }
 .header__navConversionText.-en {
   font-size: 13px;
+}
+.header__navConversionText.-large {
+  font-size: 11px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1288,7 +1312,7 @@ span.wpcf7-list-item label {
 
 @media screen and (max-width: 480px) {
   .footer.home {
-    padding-bottom: 45px;
+    padding-bottom: 60px;
   }
   .footer__logo {
     width: 28.03%;
@@ -1656,7 +1680,7 @@ span.wpcf7-list-item label {
   position: absolute;
   bottom: 32px;
   left: 32px;
-  z-index: 50;
+  z-index: 40;
   padding: 6px 24px;
   font-size: 20px;
   background-color: #ffffff;

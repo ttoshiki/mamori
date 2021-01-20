@@ -206,7 +206,6 @@ get_header();
 					</div>
 				</section>
 				<?php get_template_part('template-parts/side-conversion') ?>
-				<?php get_template_part('template-parts/bottom-conversion') ?>
 			</div>
 			<?php get_template_part('template-parts/join-modal') ?>
 		</div>
