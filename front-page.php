@@ -97,21 +97,21 @@ get_header();
 					<article class="home__newsArticle">
 						<ul class="home__newsList">
 							<?php
-                                $args = array(
-                                    'post_type' => 'post',
-                                    'posts_per_page' => 5,
-                                );
-                                $the_query = new WP_Query($args); if ($the_query->have_posts()):
-                            ?>
+								$args = array(
+										'post_type' => 'post',
+										'posts_per_page' => 5,
+								);
+								$the_query = new WP_Query($args); if ($the_query->have_posts()):
+							?>
 							<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
 								<?php $categories = get_the_category(); ?>
 								<li id="post-<?php the_ID(); ?>" class="home__newsItem">
 									<time datetime="<?php echo get_the_date('Y.m.d'); ?>" class="home__newsDate"><?php echo get_the_date('Y.m.d'); ?></time>
 									<span class="home__newsCategoryName<?php if ($categories[0]->slug === 'important') {
-                                echo ' -secondary';
-                            } elseif ($categories[0]->slug === 'event') {
-                                echo ' -tertiary';
-                            } ?>"><?php echo $categories[0]->name; ?></span>
+										echo ' -secondary';
+										} elseif ($categories[0]->slug === 'event') {
+											echo ' -tertiary';
+										} ?>"><?php echo $categories[0]->name; ?></span>
 									<a href="<?php the_permalink(); ?>" class="home__newsLink"><span class="home__newsTitle"><?php echo get_the_title(); ?></span></a>
 								</li>
 							<?php endwhile; ?>
