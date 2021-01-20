@@ -18,11 +18,10 @@ get_header();
 	<main class="site-main">
 		<div class="home__wrapper">
 			<section class="home__mainVisual">
-				<video autoplay muted class="home__mainVideo">
+				<span class="home__loader"></span>
+				<video playsinline muted class="home__mainVideo">
 					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/main.mp4" type="video/mp4">
 				</video>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/main.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/main.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/main@2x.jpg 2x" alt="" class="home__mainImage">
-				<button type="button" class="home__mainVideoSkip -en">SKIP</button>
 			</section>
 			<div class="home__contentsWrapper">
 				<section class="home__about">

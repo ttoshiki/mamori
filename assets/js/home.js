@@ -22,6 +22,8 @@ jQuery(function() {
     fixSidebar()
   })
 
+  const video = document.querySelector('video')
+
   function mainVideoFadeout() {
     jQuery('.home__mainVideoSkip').fadeOut(500)
     jQuery('.home__mainVideo').fadeOut(1000)
@@ -30,13 +32,21 @@ jQuery(function() {
     }, 1000);
   }
 
-  setTimeout(() => {
-    mainVideoFadeout()
-  }, 8200);
-
-  jQuery('.home__mainVideoSkip').on('click', function() {
-    mainVideoFadeout()
+  video.addEventListener('canplay', function() {
+    jQuery('.home__loader').remove()
+    video.play()
+    jQuery('.home__mainVisual').append('<button type="button" class="home__mainVideoSkip -en">SKIP</button>')
+    setTimeout(() => {
+      jQuery('.home__mainVisual').append('<img src="/test-site/wp-content/themes/mamori/assets/images/home/main.jpg" srcset="/test-site/wp-content/themes/mamori/assets/images/home/main.jpg 1x, /test-site/wp-content/themes/mamori/assets/images/home/main@2x.jpg 2x" alt="" class="home__mainImage">')
+    }, 500);
+    setTimeout(() => {
+      mainVideoFadeout()
+    }, 8200);
+    jQuery('.home__mainVideoSkip').on('click', function() {
+      mainVideoFadeout()
+    })
   })
+  video.load()
 
 })
 
