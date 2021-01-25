@@ -4,8 +4,12 @@
 const API_KEY = 'AIzaSyC97AEclCTslyM2V3YTVFaNrecngF3uH0w'
 const CALENDAR_ID = 'qs9fuv1lvl15snqecn0c58n0i4@group.calendar.google.com';
 const CLIENT_ID = '507396238793-88mtbp563rkjsnp3n9agckcjha136ifq.apps.googleusercontent.com'
-
 let calendar = null
+let isMobile = false
+
+if (window.matchMedia( "(max-width: 769px)" ).matches) {
+  isMobile = true
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
@@ -18,16 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     locale: 'ja',
     displayEventTime: false, // don't show the time column in list view
+    buttonText: {
+      today: '今日'
+    },
 
     // テストキー
-    googleCalendarApiKey: 'AIzaSyC97AEclCTslyM2V3YTVFaNrecngF3uH0w',
+    googleCalendarApiKey: API_KEY,
     // 本番用キー
     // googleCalendarApiKey: 'AIzaSyCa6wPZlPPoPd2LWpKA3HXPplOoSk1RGtE',
-    events: 'qs9fuv1lvl15snqecn0c58n0i4@group.calendar.google.com',
+    events: CALENDAR_ID,
     eventColor: '#836c39',
 
     eventClick: function(arg) {
-      // opens events in a popup window
       window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
       arg.jsEvent.preventDefault() // don't navigate in main tab
     },
@@ -68,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
             minuteIncrement: 30,
             defaultDate: dateFns.format(dateFns.addMinutes(clickDatetime.dateStr, 30), 'HH-mm')
           }
-          console.log(startTime.defaultDate)
 
           flatpickr('.reserve__startDate', startDate);
           flatpickr('.reserve__startTime', startTime);
@@ -77,13 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if(clickDatetime.dateStr < now) {
-        alert('過去の時刻に予約はできません。')
+        alert('現在以降の時間を選択してください。')
         return false
       } else {
         if(!gapi.auth2.getAuthInstance().isSignedIn.get()) {
           gapi.auth2.getAuthInstance().signIn({scope: "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.events"})
           .then(function() {
             console.log("Sign-in successful");
+            calendar.refetchEvents()
             signinChanged()
             inputDatePicker()
           },
@@ -99,9 +105,10 @@ document.addEventListener('DOMContentLoaded', function() {
         bool ? 'block' : 'none';
     }
   });
-
+  if(isMobile) {
+    calendar.changeView('timeGridDay');
+  }
   calendar.render()
-
 });
 
 // Make sure the client is loaded and sign-in is complete before calling this method.
@@ -113,6 +120,8 @@ function execute() {
   const endDate = document.getElementById('end-date').value.replace(/年/g, '-').replace(/月/g, '-').replace(/日/g, '')
   const endTime = document.getElementById('end-time').value
   const endDateTime = endDate + 'T' + endTime + ':10+09:00'
+
+  jQuery('.reserve__modalErrorMessage').hide()
 
   return gapi.client.calendar.events.insert({
     "calendarId": CALENDAR_ID,
@@ -129,13 +138,19 @@ function execute() {
     }
   })
   .then(function(response) {
-      // Handle the results here (response.result has the parsed body).
       modal.style.display = 'none';
       calendar.refetchEvents()
-      // location.reload()
-    },
-    function(err) { console.error("Execute error", err);
-  });
+    })
+    .catch(err => {
+      console.log(err)
+      if (err.status === 400) {
+        jQuery('.reserve__modalErrorMessage.-dateTime').show()
+      } else if (err.status === 403) {
+        jQuery('.reserve__modalErrorMessage.-permisson').show()
+      } else {
+        jQuery('.reserve__modalErrorMessage.-other').show()
+      }
+    })
 }
 
 function signinChanged() {
@@ -146,8 +161,10 @@ function signinChanged() {
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut()
+  calendar.refetchEvents()
   document.getElementById('sign-in-button').style.display = 'block'
   document.getElementById('sign-out-button').style.display = 'none'
+
 }
 
 function authenticate() {
@@ -168,12 +185,12 @@ function authenticate() {
   });
 }())
 
-
 // modal
 window.onload = function() {
   const closeButton = document.getElementById('closeBtn');
 
   closeButton.addEventListener('click', function() {
+    jQuery('.reserve__modalErrorMessage').hide()
     modal.style.display = 'none';
   })
 }
