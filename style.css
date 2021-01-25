@@ -714,6 +714,23 @@ span.wpcf7-list-item label {
   margin-right: 6px;
 }
 
+.loader {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  z-index: 100;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+
 @media screen and (max-width: 480px) {
   .side-conversion {
     display: none;
@@ -962,6 +979,14 @@ span.wpcf7-list-item label {
   }
   .join-form-label::before {
     margin-right: 6px;
+  }
+
+  .loader {
+    top: calc(50% - 6px);
+    left: calc(50% - 12px);
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
   }
 }
 .l-doubleCol {
@@ -1648,22 +1673,6 @@ span.wpcf7-list-item label {
   height: 56.2vw;
   background-color: #333333;
 }
-.home__loader {
-  position: absolute;
-  top: calc(50% - 24px);
-  left: calc(50% - 24px);
-  z-index: 100;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid transparent;
-  border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-animation: rotation 1s linear infinite;
-  animation: rotation 1s linear infinite;
-}
 .home__mainVideo {
   position: relative;
   z-index: 10;
@@ -1963,12 +1972,6 @@ span.wpcf7-list-item label {
   }
 }
 @media screen and (max-width: 480px) {
-  .home__loader {
-    top: calc(50% - 6px);
-    left: calc(50% - 12px);
-    width: 24px;
-    height: 24px;
-  }
   .home__mainVideoSkip {
     bottom: 3vw;
     left: 3vw;
@@ -3640,6 +3643,64 @@ span.wpcf7-list-item label {
 .booking__wrapper #booking-package input[type=text] {
   pointer-events: none;
   border: none;
+}
+
+.reserve__wrapper {
+  position: relative;
+  width: 80%;
+  margin: 80px auto 0;
+}
+.reserve__wrapper #sign-in-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.reserve__wrapper #sign-out-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  padding: 8px 24px;
+  color: #ffffff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+}
+.reserve__wrapper #sign-out-button:hover {
+  cursor: pointer;
+}
+.reserve__wrapper #loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.reserve__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.reserve__modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.reserve__loader {
+  border-color: #1f2a66;
 }
 
 /*

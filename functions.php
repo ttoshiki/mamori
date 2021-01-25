@@ -162,6 +162,12 @@ function mamori_scripts()
 
     wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/js/main.js', array(), '', true);
 
+    if (is_page('opendays') || is_page('reserve')) {
+        wp_enqueue_script('flatpicker-script', 'https://cdn.jsdelivr.net/npm/flatpickr', array(), '', true);
+        wp_enqueue_style('flatpicker-style', 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css', array(), '');
+        wp_style_add_data('flatpicker-style', 'rtl', 'replace');
+    }
+
     if (is_front_page()) {
         wp_enqueue_script('home-script', get_template_directory_uri() . '/assets/js/home.js', array(), '', true);
     } elseif (is_page('faq')) {
@@ -172,7 +178,10 @@ function mamori_scripts()
         wp_enqueue_style('fullcalendar-style', get_template_directory_uri() . '/assets/css/lib/fullcalendar/main.css', array(), '');
         wp_style_add_data('fullcalendar-style', 'rtl', 'replace');
         wp_enqueue_script('fullcalendar-script', get_template_directory_uri() . '/assets/js/lib/fullcalendar/main.min.js', array(), '', true);
-        wp_enqueue_script('reserve-script', get_template_directory_uri() . '/assets/js/reserve.js', array(), '', true);
+        wp_enqueue_script('google-api', 'https://apis.google.com/js/api.js', '', true);
+        wp_enqueue_script('google-platform', 'https://apis.google.com/js/platform.js?onload=init', '', true);
+        wp_enqueue_script('reserve-script', get_template_directory_uri() . '/assets/js/reserve.js', array(), '', false);
+        wp_enqueue_script('date-fns-script', 'https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.28.5/date_fns.min.js', array(), '', false);
     }
 
     if (is_front_page() || is_page('price')) {
