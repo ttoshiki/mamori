@@ -41,7 +41,7 @@ get_header();
                     <input type="text" class="reserve__startTime reserve__selectTime" id="start-time" readonly>
                     <span class="reserve__selectDateRange">から</span>
                   </div>
-                  <span class="reserve__dateTimeBetween -pc -tab">~</span>
+                  <span class="reserve__dateTimeBetween">~</span>
                   <div class="reserve__dateTime">
                     <input type="text" class="reserve__endDate reserve__selectDate" id="end-date" readonly>
                     <input type="text" class="reserve__endTime reserve__selectTime" id="end-time" readonly>
