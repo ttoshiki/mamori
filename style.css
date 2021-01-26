@@ -1342,7 +1342,7 @@ span.wpcf7-list-item label {
 }
 
 @media screen and (max-width: 480px) {
-  .footer.home {
+  .footer {
     padding-bottom: 60px;
   }
   .footer__logo {
