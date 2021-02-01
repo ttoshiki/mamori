@@ -3836,6 +3836,9 @@ span.wpcf7-list-item label {
   .reserve__wrapper .fc .fc-toolbar-title {
     font-size: 16px;
   }
+  .reserve__wrapper #calendar {
+    height: 90vh;
+  }
   .reserve__modalContent {
     width: 96%;
     padding: 16px;
