@@ -15,9 +15,11 @@
 		<span class="bottom-conversion-text -en">TEL</span>
 	</a>
 	<a href="<?php echo home_url('/contact/'); ?>" class="bottom-conversion-link -contact">
-		<span class="bottom-conversion-text -en">CONTACT</span><span class="bottom-conversion-text -ja">(お問い合わせ)</span>
+		<span class="bottom-conversion-text -en">CONTACT</span>
+		<span class="bottom-conversion-text -caution">(お問い合わせ)</span>
 	</a>
-	<a href="<?php echo home_url('/preparation/'); ?>" class="bottom-conversion-link -mypage">
-		<span class="bottom-conversion-text -en">MY PAGE</span><span class="bottom-conversion-text -ja">(マイページ)</span>
+	<a href="<?php echo home_url('/preparation/'); ?>" class="bottom-conversion-link -reserve">
+		<span class="bottom-conversion-text">ミーティングルーム予約</span>
+		<span class="bottom-conversion-text -caution">(会員様向け)</span>
 	</a>
 </aside>

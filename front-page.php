@@ -18,7 +18,7 @@ get_header();
 	<main class="site-main">
 		<div class="home__wrapper">
 			<section class="home__mainVisual">
-				<span class="home__loader"></span>
+				<span class="loader home__loader"></span>
 				<video playsinline muted class="home__mainVideo">
 					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/home/main.mp4" type="video/mp4">
 				</video>
@@ -206,7 +206,6 @@ get_header();
 					</div>
 				</section>
 				<?php get_template_part('template-parts/side-conversion') ?>
-				<?php get_template_part('template-parts/bottom-conversion') ?>
 			</div>
 			<?php get_template_part('template-parts/join-modal') ?>
 		</div>

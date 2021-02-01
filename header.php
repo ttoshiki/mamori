@@ -30,7 +30,6 @@
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/64x64.png">
 	<title>Mamori</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -162,9 +161,9 @@
 						</a>
 					</li>
 					<li class="header__navConversionItem">
-						<a href="<?php echo home_url('/preparation/'); ?>" class="header__navConversionLink -mypage">
-							<span class="header__navConversionText -en">MYPAGE</span>
-							<span class="header__navConversionText">マイページ</span>
+						<a href="<?php echo home_url('/preparation/'); ?>" class="header__navConversionLink -reserve">
+							<span class="header__navConversionText -large">ミーティングルーム予約</span>
+							<span class="header__navConversionText">会員様向け</span>
 						</a>
 					</li>
 				</ul>
