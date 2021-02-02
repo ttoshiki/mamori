@@ -60,9 +60,9 @@ get_header();
               <div class="faq__questionAnswerInner">
                 <span class="faq__itemAnswerLabel">A</span>
                 <p class="faq__answer">
-                  時間会員にご登録いただくことで可能です。ただしスタッフは常駐しておりませんので<br>
-                  規定の日時にご来店いただき、鍵の設定が完了した後、ご利用いただけます。<br>
-                  <span class="faq__answerCaution">オープン直後はスタッフ常駐日時が変則的になります。<br class="-pc">詳しくは「NEWS(お知らせ)」でご確認ください。</span>
+                  申し訳ありません。<br>
+                  京都Mamoriは月額会員のみのご契約となっております。<br>
+                  臨時のキャンペーンなどで一定時間ドロップイン可能になることもございますので<br>お知らせにてご確認ください。
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ get_header();
               <div class="faq__questionAnswerInner">
                 <span class="faq__itemAnswerLabel">A</span>
                 <p class="faq__answer">
-                  時間会員は有料、月額会員は無料です。（月の利用時間制限あり）<br>
-                  ミーティングルームのご利用は(マイページ内)のご予約ページからお申し込みください。
+                  無料です。（月の利用時間制限あり）<br>
+                  ミーティングルームのご利用はサイト内のご予約ページからお申し込みください。
                 </p>
               </div>
             </div>
@@ -119,7 +119,7 @@ get_header();
                 <span class="faq__itemAnswerLabel">A</span>
                 <p class="faq__answer">
                   ゲストビジターとしてミーティングルームへ無料でお招き入れいただけます。<br>
-                  ミーティングルームのご利用は(マイページ内)のご予約ページからお申し込みください。
+                  ミーティングルームのご利用はサイト内のご予約ページからお申し込みください。
                 </p>
               </div>
             </div>
@@ -137,8 +137,9 @@ get_header();
               <div class="faq__questionAnswerInner">
                 <span class="faq__itemAnswerLabel">A</span>
                 <p class="faq__answer">
-                  時間会員にご登録いただくことで2名個室のご利用が可能です。<br>
-                  4名個室は月額会員さまのみ、ご利用が可能となっております。
+                  申し訳ありません。<br>
+                  セキュリティの関係上ミーティングルームだけの利用は原則お受けしておりません。<br>
+                  法人さまでミーティングルームのみ継続してご契約されたい場合は<br class="-pc">個別プランをご用意いたしますのでお問い合わせください。
                 </p>
               </div>
             </div>
@@ -178,32 +179,6 @@ get_header();
                   ただMamori自体が“静寂”をコンセプトとしておりますので、<br class="-pc">
                   声の大きさや会話時間などご配慮をお願いいたします。<br>
                   WEB会議等のご利用は完全個室のミーティングルームをおすすめいたします。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__questionWrapper">
-              <span class="faq__itemQuestionLabel">Q</span>
-              <p class="faq__question">
-                月額会員から時間会員へ<br class="-sp">変更する際の手続きを<br class="-sp">教えてください。
-              </p>
-              <div class="faq__questionIcon -plus isShow"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_plus_circle.svg'); ?></div>
-              <div class="faq__questionIcon -minus"><?php echo file_get_contents(get_template_directory() . '/assets/images/icons/icon_minus_circle.svg'); ?></div>
-            </div>
-            <div class="faq__questionAnswer">
-              <div class="faq__questionAnswerInner">
-                <span class="faq__itemAnswerLabel">A</span>
-                <p class="faq__answer">
-                  毎月10日の「ご見学・お手続き」時間までに<a href="<?php echo home_url('/contact/'); ?>" class="faq__textLink">お問い合わせフォーム</a>よりご連絡ください。<br>
-                  Mamoriからのメール受信を持ちまして、翌月からの時間会員への変更が適用となります。<br>
-                  <span class="faq__answerCaution">
-                    ご連絡後 2日を経過しても受付メールが届かない場合はお問い合わせください。<br>
-                    お問い合わせにご入力いただくメールアドレスは、会員登録時と同じものでお願いします。<br>
-                  </span>
-                  <span class="faq__answerCaution">
-                    会員登録時のメールアドレスが使用できなくなってしまった方は、<br class="-pc">別の有効なメールアドレスを入力し、その旨を「お問い合わせ内容」にご記載ください。　
-                  </span>
                 </p>
               </div>
             </div>
