@@ -1,7 +1,7 @@
 'use strict'
 
 // google API
-const API_KEY = 'AIzaSyC97AEclCTslyM2V3YTVFaNrecngF3uH0w'
+const API_KEY = 'AIzaSyCa6wPZlPPoPd2LWpKA3HXPplOoSk1RGtE'
 const CALENDAR_ID = 'qs9fuv1lvl15snqecn0c58n0i4@group.calendar.google.com';
 const CLIENT_ID = '507396238793-88mtbp563rkjsnp3n9agckcjha136ifq.apps.googleusercontent.com'
 let calendar = null
@@ -26,10 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       today: '今日'
     },
 
-    // テストキー
     googleCalendarApiKey: API_KEY,
-    // 本番用キー
-    // googleCalendarApiKey: 'AIzaSyCa6wPZlPPoPd2LWpKA3HXPplOoSk1RGtE',
     events: CALENDAR_ID,
     eventColor: '#836c39',
 
