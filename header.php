@@ -26,6 +26,7 @@
 	<meta property="og:locale" content="ja_JP" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="twitter:card" content="summary" />
+	<meta name="google-site-verification" content="rSG9jqLvkB_KD-oFdr-uOIX7thXfoJILWoykW2C_Lk0" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon_32.ico">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/64x64.png">
 	<title>Mamori</title>
