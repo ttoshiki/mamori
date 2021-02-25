@@ -18,7 +18,7 @@
 		<span class="bottom-conversion-text -en">CONTACT</span>
 		<span class="bottom-conversion-text -caution">(お問い合わせ)</span>
 	</a>
-	<a href="<?php echo home_url('/preparation/'); ?>" class="bottom-conversion-link -reserve">
+	<a href="<?php echo home_url('/reserve/'); ?>" class="bottom-conversion-link -reserve">
 		<span class="bottom-conversion-text">ミーティングルーム予約</span>
 		<span class="bottom-conversion-text -caution">(会員様向け)</span>
 	</a>
