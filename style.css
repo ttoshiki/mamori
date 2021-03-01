@@ -315,6 +315,9 @@ body.fixed {
 .wp-block-image {
   margin: 24px 0;
 }
+.wp-block-image img {
+  height: auto;
+}
 
 .site-main .form-input input:-moz-read-only,
 .site-main .form-input textarea:-moz-read-only {

@@ -233,6 +233,10 @@ body.fixed {
 
 .wp-block-image {
   margin: 24px 0;
+
+  img {
+    height: auto;
+  }
 }
 
 .site-main .form-input input:read-only,
